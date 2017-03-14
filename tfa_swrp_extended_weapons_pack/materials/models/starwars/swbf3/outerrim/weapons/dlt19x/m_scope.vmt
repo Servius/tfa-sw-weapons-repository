@@ -1,0 +1,13 @@
+"VertexlitGeneric"
+{
+$basetexture "models\starwars\swbf3\outerrim\weapons\dlt19x/M_Scope"
+"$phongexponenttexture" "models\starwars\swbf3\outerrim\weapons\dlt19x/M_Scope_exp"
+"$phong" "1"
+ "$phongexponent" 12
+ "$phongboost" "1"
+ "$phongfresnelranges" "[0.25 0.15 0.05]"
+
+$rimlight 1
+ $rimlightexponent 0.5
+ $rimlightboost .1
+}
