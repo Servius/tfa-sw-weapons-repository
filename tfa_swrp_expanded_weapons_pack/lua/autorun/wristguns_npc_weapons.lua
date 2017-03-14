@@ -1,0 +1,6 @@
+list.Add( "NPCUsableWeapons", { class = "npc_sw_sparks_wristyellow",	title = "SW_Wristyellow" }  )
+list.Add( "NPCUsableWeapons", { class = "npc_sw_sparks_wristwhite",	title = "SW_Wristwhite" }  )
+list.Add( "NPCUsableWeapons", { class = "npc_sw_sparks_wristpurple",	title = "SW_Wristpurple" }  )
+list.Add( "NPCUsableWeapons", { class = "npc_sw_sparks_wristgreen",	title = "SW_Wristgreen" }  )
+list.Add( "NPCUsableWeapons", { class = "npc_sw_sparks_wristblue",	title = "SW_Wristblue" }  )
+list.Add( "NPCUsableWeapons", { class = "npc_sw_sparks_wristred",	title = "SW_Wristred" }  )

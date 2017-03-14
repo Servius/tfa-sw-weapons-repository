@@ -1,0 +1,9 @@
+ENT.Type = "anim"
+ENT.Base = "base_entity"
+ENT.PrintName = "Taser Cartridges"
+ENT.Author = "Anders"
+ENT.Spawnable = true
+ENT.AdminSpawnable = true 
+ENT.Category = "Taser Cartridges"
+ENT.AmmoType = "taser_ammo"
+ENT.Amount = 10

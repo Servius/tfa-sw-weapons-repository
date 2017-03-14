@@ -1,0 +1,9 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\weapons\w_models\DL44\blaster_pistol_inview"
+	"$bumpmap" "models\weapons\w_models\DL44\blaster_pistol_inview_n"
+	"$halflambert" "1"
+	"$translucent" 1
+	"$alphatest" 1
+	"$Nocull" 1
+}
