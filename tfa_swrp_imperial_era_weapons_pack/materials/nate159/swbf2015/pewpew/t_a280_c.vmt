@@ -1,0 +1,19 @@
+"VertexLitGeneric"
+{
+	$basetexture 				"nate159\swbf2015\pewpew\T_A280_C"
+	$bumpmap 					"nate159\swbf2015\pewpew\T_A280_NW"
+	
+	$envmap 					env_cubemap
+	$envmaptint 				"[0.1 0.1 0.1]"
+	//$selfillum_envmapmask_alpha 1
+
+    $phong 						1
+    $phongexponent 				9
+    $phongfresnelranges			"[1.0 1.0 1.0]"
+	$phongboost					0.5
+	$PhongAlbedoTint 			1
+
+	$rimlight 					1										
+	$rimlightexponent 			6								
+	$rimlightboost 				1	
+}
