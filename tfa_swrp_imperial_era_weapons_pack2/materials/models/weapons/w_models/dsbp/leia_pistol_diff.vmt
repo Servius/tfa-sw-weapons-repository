@@ -1,0 +1,9 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\weapons\w_models\DSBP\Leia_Pistol_Diff"
+	"$bumpmap" "models\weapons\w_models\DSBP\Leia_Pistol_Norma"
+	"$halflambert" "1"
+	"$translucent" 1
+	"$alphatest" 1
+	"$Nocull" 1
+}
