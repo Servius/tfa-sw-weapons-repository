@@ -1,142 +1,149 @@
-if (SERVER) then
-	AddCSLuaFile("shared.lua")
+if ( SERVER ) then
+
+	AddCSLuaFile( "shared.lua" )
+
 end
 
-if (CLIENT) then
-	SWEP.PrintName = "Z6 Rotary Blaster"
-	SWEP.Author = "TFA"
-	SWEP.ViewModelFOV = 50
-	SWEP.Slot = 4
-	SWEP.SlotPos = 72
+if ( CLIENT ) then
+
+	SWEP.PrintName			= "Z6 Rotary Blaster Blue"			
+	SWEP.Author				= "Tfa, Servius"
+	SWEP.ViewModelFOV      	= 50
+	SWEP.Slot				= 4
+	SWEP.SlotPos			= 72	
 end
 
-SWEP.HoldType = "crossbow"
-SWEP.Base = "tfa_swsft_base"
+SWEP.HoldType				= "crossbow"
+SWEP.Base					= "tfa_swsft_base"
+
 SWEP.Category = "TFA Star Wars"
-SWEP.Spawnable = true
-SWEP.AdminSpawnable = true
+
+SWEP.Spawnable				= true
+SWEP.AdminSpawnable			= true
+
 SWEP.HoldType = "crossbow"
 SWEP.ViewModelFOV = 56.08040201005
 SWEP.ViewModelFlip = false
 SWEP.ViewModel = "models/weapons/tfa_sw_z6_v2.mdl"
-SWEP.WorldModel = "models/weapons/w_z6_rotary_blaster.mdl" --"models/weapons/w_crossbow.mdl"
+SWEP.WorldModel = "models/weapons/w_z6_rotary_blaster.mdl"--"models/weapons/w_crossbow.mdl"
 SWEP.ShowViewModel = true
 SWEP.ShowWorldModel = true
 SWEP.UseHands = true
-
 SWEP.ViewModelBoneMods = {
-	["ValveBiped.Bip01_R_Finger01"] = {
-		scale = Vector(1, 1, 1),
-		pos = Vector(0, 0, 0),
-		angle = Angle(0, 0, 15.312)
-	},
-	["barrel"] = {
-		scale = Vector(1, 1, 1),
-		pos = Vector(0, 0, 0),
-		angle = Angle(0, 0, 0)
-	}
+	["ValveBiped.Bip01_R_Finger01"] = { scale = Vector(1, 1, 1), pos = Vector(0, 0, 0), angle = Angle(0, 0, 15.312) },
+	["barrel"] = { scale = Vector(1, 1, 1), pos = Vector(0, 0, 0), angle = Angle(0, 0, 0) }
 }
 
-SWEP.VMPos = Vector(2, -2, -1)
+SWEP.VMPos = Vector(2,-2,-1)
 
-sound.Add({
+sound.Add( {
 	name = "TFA_SW_Z6.Fire",
-	channel = CHAN_USER_BASE + 11,
+	channel = CHAN_USER_BASE+11,
 	volume = 1.0,
 	level = 120,
-	pitch = {95, 110},
+	pitch = { 95, 110 },
 	sound = "weapons/repeat-1.wav"
-})
+} )
 
-sound.Add({
+sound.Add( {
 	name = "TFA_SW_Z6.StartSpin",
-	channel = CHAN_USER_BASE + 12,
+	channel = CHAN_USER_BASE+12,
 	volume = 1.0,
 	level = 70,
-	pitch = {100, 100},
+	pitch = { 100, 100 },
 	sound = "weapons/z6_startspin.wav"
-})
+} )
 
-sound.Add({
+sound.Add( {
 	name = "TFA_SW_Z6.StopSpin",
-	channel = CHAN_USER_BASE + 12,
+	channel = CHAN_USER_BASE+12,
 	volume = 1.0,
 	level = 70,
-	pitch = {100, 100},
+	pitch = { 100, 100 },
 	sound = "weapons/z6_stopspin.wav"
-})
+} )
 
-sound.Add({
+sound.Add( {
 	name = "TFA_SW_Z6.Spin",
-	channel = CHAN_USER_BASE + 12,
+	channel = CHAN_USER_BASE+12,
 	volume = 1.0,
 	level = 70,
-	pitch = {100, 100},
+	pitch = { 100, 100 },
 	sound = "weapons/z6_spin.wav"
-})
+} )
 
-sound.Add({
+sound.Add( {
 	name = "TFA_SW_Z6.Reload",
-	channel = CHAN_USER_BASE + 12,
+	channel = CHAN_USER_BASE+12,
 	volume = 1.0,
 	level = 120,
-	pitch = {95, 110},
+	pitch = { 95, 110 },
 	sound = "weapons/DC15A_reload.wav"
-})
+} )
 
-SWEP.Primary.Sound = Sound("TFA_SW_Z6.Fire")
-SWEP.Primary.ReloadSound = Sound("weapons/DC15A_reload.wav")
-SWEP.Weight = 5
-SWEP.AutoSwitchTo = false
-SWEP.AutoSwitchFrom = false
-SWEP.Primary.Recoil = 0.5
-SWEP.Primary.Damage = 25
-SWEP.Primary.NumShots = 1
-SWEP.Primary.Spread = 0.03
-SWEP.Primary.ClipSize = 250
-SWEP.Primary.RPM = 120
+SWEP.Primary.Sound = Sound ("TFA_SW_Z6.Fire");
+SWEP.Primary.ReloadSound = Sound ("weapons/DC15A_reload.wav");
+
+SWEP.Weight					= 5
+SWEP.AutoSwitchTo			= false
+SWEP.AutoSwitchFrom			= false
+
+SWEP.Primary.Recoil			= 0.5
+SWEP.Primary.Damage			= 25
+SWEP.Primary.NumShots		= 1
+SWEP.Primary.Spread			= 0.03
+SWEP.Primary.ClipSize		= 250
+SWEP.Primary.RPM = 250
 SWEP.Primary.RPM_Base = 120
 SWEP.Primary.RPM_Max = 1200
 SWEP.Primary.RPM_TransitionTime = 4
-SWEP.Primary.DefaultClip = 1000
-SWEP.Primary.Automatic = true
-SWEP.Primary.Ammo = "ar2"
+SWEP.Primary.DefaultClip	= 1000
+SWEP.Primary.Automatic		= true
+SWEP.Primary.Ammo			= "ar2"
 SWEP.TracerName = "effect_sw_laser_blue"
-SWEP.Secondary.Automatic = false
-SWEP.Secondary.Ammo = "none"
+
+SWEP.Secondary.Automatic	= false
+SWEP.Secondary.Ammo			= "none"
+
 SWEP.data = {}
 SWEP.data.ironsights = 0
-SWEP.BlowbackVector = Vector(0, -3, 0.025)
-SWEP.Blowback_Only_Iron = false
+
+SWEP.BlowbackVector = Vector(0,-3,0.025)
+SWEP.Blowback_Only_Iron  = false
+
 SWEP.DoProceduralReload = true
 SWEP.ProceduralReloadTime = 3
-SWEP.WElements = {}
 
---["element_name"] = { type = "Model", model = "models/weapons/w_z6_rotary_blaster.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(20.194, 1, -8.351), angle = Angle(-21.119, 0, 180), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
+SWEP.WElements = {
+	--["element_name"] = { type = "Model", model = "models/weapons/w_z6_rotary_blaster.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(20.194, 1, -8.351), angle = Angle(-21.119, 0, 180), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
+}
+
 SWEP.Offset = {
 	Pos = {
-		Up = -8.351,
-		Right = 1,
-		Forward = 20.194
+	Up = -8.351,
+	Right = 1,
+	Forward = 20.194,
 	},
 	Ang = {
-		Up = 0,
-		Right = -21.19,
-		Forward = 178
+	Up = 0,
+	Right = -21.19,
+	Forward = 178
 	},
 	Scale = 1
 }
 
 SWEP.NextSpinSound = 0
+
 SWEP.BarrelRotation = 0
 SWEP.BarrelVelocity = 0
-SWEP.BarrelVelocityMax = 360 * 4.25
+SWEP.BarrelVelocityMax = 360*4.25
 SWEP.BarrelAcceleration = SWEP.BarrelVelocityMax / SWEP.Primary.RPM_TransitionTime
 SWEP.BarrelFriction = SWEP.BarrelVelocityMax / SWEP.Primary.RPM_TransitionTime * 2
-local oldsh, sh, shfac, rpmfac, baracc
+
+local oldsh,sh,shfac,rpmfac,baracc
 local rpmdif = SWEP.Primary.RPM_Max - SWEP.Primary.RPM_Base
 
-DEFINE_BASECLASS("tfa_swsft_base")
+DEFINE_BASECLASS("tfa_swsft_base_servius")
 
 function SWEP:Deploy()
 	self.BarrelRotation = 0

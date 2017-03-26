@@ -100,7 +100,7 @@ SWEP.Primary.RPM_TransitionTime = 4
 SWEP.Primary.DefaultClip	= 1000
 SWEP.Primary.Automatic		= true
 SWEP.Primary.Ammo			= "ar2"
-SWEP.TracerName = "effect_sw_laser_red"
+SWEP.TracerName = "effect_sw_laser_blue"
 
 SWEP.Secondary.Automatic	= false
 SWEP.Secondary.Ammo			= "none"
@@ -115,7 +115,7 @@ SWEP.DoProceduralReload = true
 SWEP.ProceduralReloadTime = 3
 
 SWEP.WElements = {
-	//["element_name"] = { type = "Model", model = "models/weapons/w_z6_rotary_blaster.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(20.194, 1, -8.351), angle = Angle(-21.119, 0, 180), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
+	--["element_name"] = { type = "Model", model = "models/weapons/w_z6_rotary_blaster.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(20.194, 1, -8.351), angle = Angle(-21.119, 0, 180), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
 }
 
 SWEP.Offset = {
