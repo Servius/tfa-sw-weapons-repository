@@ -132,7 +132,7 @@ SWEP.VMBodyGroups = nil --{
 
 --[[WORLDMODEL]]--
 
-SWEP.WorldModel			= "models/your/wmodel/path/here.mdl" -- Weapon world model path
+SWEP.WorldModel			= "models/weapons/synbf3/w_EE3.mdl" -- Weapon world model path
 
 SWEP.WMBodyGroups = nil--{
 	--[0] = 1,
@@ -242,7 +242,7 @@ SWEP.BlowbackCurrent = 0 --Amount of blowback currently, for bones
 SWEP.BlowbackBoneMods = nil --Viewmodel bone mods via SWEP Creation Kit
 SWEP.Blowback_Only_Iron = true --Only do blowback on ironsights
 SWEP.Blowback_PistolMode = false --Do we recover from blowback when empty?
-SWEP.Blowback_Shell_Enabled = true
+SWEP.Blowback_Shell_Enabled = false
 SWEP.Blowback_Shell_Effect = "ShellEject"
 
 
@@ -322,7 +322,7 @@ SWEP.TracerDelay		= 0.01 --Delay for lua tracer effect
 
 --Impact Effects
 
-SWEP.ImpactEffect = "sw_laser_bit"--Impact Effect
+SWEP.ImpactEffect = "vox_sw_impact_2"--Impact Effect
 SWEP.ImpactDecal = "FadingScorch"--Impact Decal
 
 --[[EVENT TABLE]]--
@@ -341,7 +341,7 @@ SWEP.EventTable = {} --Event Table, used for custom events when an action is pla
 --[[RENDER TARGET]]--
 
 SWEP.VElements = {
-	["element_name"] = { type = "Model", model = "models/rtcircle.mdl", bone = "v_ee3_reference001", rel = "", pos = Vector(0, 0.45, 4.65), angle = Angle(0, 90, 180), size = Vector(0.2, 0.2, 0.2), color = Color(255, 255, 255, 255), surpresslightning = false, material = "!tfa_rtmaterial", skin = 0, bodygroup = {} }
+	["element_name"] = { type = "Model", model = "models/rtcircle.mdl", bone = "v_ee3_reference001", rel = "", pos = Vector(0, 0.44, 4.65), angle = Angle(0, 90, 180), size = Vector(0.23, 0.23, 0.23), color = Color(255, 255, 255, 255), surpresslightning = false, material = "!tfa_rtmaterial", skin = 0, bodygroup = {} }
 }
 
 local function  drawFilledCircle( x, y, radius, seg )
@@ -515,3 +515,36 @@ SWEP.Secondary.Ammo			= "none" -- Self explanitory, ammo type.
 SWEP.ConDamageMultiplier = 1
 
 SWEP.Base				= "tfa_gun_base"
+
+function SWEP:DrawHands()
+    self.UseHandsDefault = self.UseHandsDefault or self.UseHands
+    if !self.UseHandsDefault then return end
+    if !IsValid(self) or !self:OwnerIsValid() then return end
+    local vm = self.OwnerViewModel
+    if !IsValid(vm) then return end
+   
+    if !IsValid(self.Owner.SWHands) then
+        self.Owner.SWHands = ClientsideModel("models/weapons/c_clonearms.mdl")
+        self.Owner.SWHands:SetParent(vm)
+        self.Owner.SWHands:SetPos(self.Owner:GetShootPos())
+        self.Owner.SWHands:SetAngles(self.Owner:EyeAngles())
+        self.Owner.SWHands:AddEffects( EF_BONEMERGE )
+        self.Owner.SWHands:SetNoDraw(true)
+        self.Owner.SWHands.BoneMergedEnt = vm
+    elseif self.Owner.SWHands:GetParent() != vm then
+        self.Owner.SWHands:SetModel("models/weapons/c_clonearms.mdl")
+        self.Owner.SWHands:SetParent(vm)
+        self.Owner.SWHands:SetPos(self.Owner:GetShootPos())
+        self.Owner.SWHands:SetAngles(self.Owner:EyeAngles())
+        self.Owner.SWHands:AddEffects( EF_BONEMERGE )
+    elseif self.Owner.SWHands:GetModel()!="models/weapons/c_clonearms.mdl" then
+        self.Owner.SWHands:SetModel("models/weapons/c_clonearms.mdl")      
+    end
+   
+    if self.Owner.SWHands then
+        self.Owner.SWHands:DrawModel()
+    end
+   
+    self.UseHands = false
+   
+end

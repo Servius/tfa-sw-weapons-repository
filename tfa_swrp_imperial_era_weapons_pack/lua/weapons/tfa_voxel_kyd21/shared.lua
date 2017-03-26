@@ -1,10 +1,10 @@
-SWEP.Gun					= ("tfa_voxel_dsbp") --Make sure this is unique.  Specically, your folder name.
+SWEP.Gun					= ("tfa_voxel_kyd21") --Make sure this is unique.  Specically, your folder name.
 if (GetConVar(SWEP.Gun.."_allowed")) != nil then
 	if not (GetConVar(SWEP.Gun.."_allowed"):GetBool()) then SWEP.Base = "tfa_blacklisted" SWEP.PrintName = SWEP.Gun return end
 end
 SWEP.Base				= "tfa_gun_base"
 SWEP.Category				= "TFA Imperial Era Weapons" --The category.  Please, just choose something generic or something I've already done if you plan on only doing like one swep..
-SWEP.Manufacturer = "Drearian Defense Conglomerate" --Gun Manufactrer (e.g. Hoeckler and Koch )
+SWEP.Manufacturer = "Blastech Industries" --Gun Manufactrer (e.g. Hoeckler and Koch )
 SWEP.Author				= "Teduken" --Author Tooltip
 SWEP.Contact				= "http://www.voxelservers.net/" --Contact Info Tooltip
 SWEP.Purpose				= "" --Purpose Tooltip
@@ -13,7 +13,7 @@ SWEP.Spawnable				= true --Can you, as a normal user, spawn this?
 SWEP.AdminSpawnable			= true --Can an adminstrator spawn this?  Does not tie into your admin mod necessarily, unless its coded to allow for GMod's default ranks somewhere in its code.  Evolve and ULX should work, but try to use weapon restriction rather than these.
 SWEP.DrawCrosshair			= true		-- Draw the crosshair?
 SWEP.DrawCrosshairIS = false --Draw the crosshair in ironsights?
-SWEP.PrintName				= "Defender Sporting Blaster Pistol"		-- Weapon name (Shown on HUD)
+SWEP.PrintName				= "KYD-21"		-- Weapon name (Shown on HUD)
 SWEP.Slot				= 2				-- Slot in the weapon selection menu.  Subtract 1, as this starts at 0.
 SWEP.SlotPos				= 73			-- Position in the slot
 SWEP.DrawAmmo				= true		-- Should draw the default HL2 ammo counter if enabled in the GUI.
@@ -26,8 +26,8 @@ SWEP.Weight				= 30			-- This controls how "good" the weapon is for autopickup.
 --[[WEAPON HANDLING]]--
 
 --Firing related
-SWEP.Primary.Sound = Sound ("weapons/synbf3/SCOUTBLASTER_fire.wav");
-SWEP.Primary.ReloadSound = Sound ("weapons/synbf3/T21_reload.wav");
+SWEP.Primary.Sound = Sound ("weapons/synbf3/dl44_fire.wav");
+SWEP.Primary.ReloadSound = Sound ("weapons/synbf3/dl44_reload.wav");
 
 SWEP.Primary.SilencedSound 			= nil				-- This is the sound of the weapon, when silenced.
 SWEP.Primary.PenetrationMultiplier = 1 --Change the amount of something this gun can penetrate through
@@ -117,7 +117,7 @@ SWEP.ProjectileModel = nil --Entity to shoot's model
 
 --[[VIEWMODEL]]--
 
-SWEP.ViewModel			= "models/weapons/v_dsbp.mdl" --Viewmodel path
+SWEP.ViewModel			= "models/weapons/v_kyd21.mdl" --Viewmodel path
 SWEP.ViewModelFOV			= 65		-- This controls how big the viewmodel looks.  Less is more.
 SWEP.ViewModelFlip			= false		-- Set this to true for CSS models, or false for everything else (with a righthanded viewmodel.)
 SWEP.MaterialTable = nil --Make sure the viewmodel and the worldmodel have the same material ids.  Next, fill this in with your desired submaterials.
@@ -159,7 +159,7 @@ SWEP.VMBodyGroups = nil --{
 
 --[[WORLDMODEL]]--
 
-SWEP.WorldModel			= "models/weapons/w_dsbp.mdl" -- Weapon world model path
+SWEP.WorldModel			= "models/weapons/w_kyd21.mdl" -- Weapon world model path
 
 SWEP.WMBodyGroups = nil--{
 	--[0] = 1,

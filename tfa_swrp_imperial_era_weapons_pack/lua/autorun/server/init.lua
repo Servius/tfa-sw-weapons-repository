@@ -1,9 +1,12 @@
 local function Plug( )
 
 print("The TFA IMPERIAL ERA SWEP PACK was made by Teduken")
-print("This version is the github development branch edited by Servius.")
-print("Temporarily removed smartrocket")
-print("Changed T-21B from an RT scope to a scope overlay")
-print("Fixed tracers, if you already had a star wars weapons pack installed besides this one you wouldn't have noticed this issue")
+print("Geebs has sex with boys")
+print("===IMPERIAL TFA MOST RECENT UPDATE===")
+print("Added DL-18, DT-12, KYD-21 and Smart Rocket")
+print("Fixed Shells and all Hands on guns, thanks to TGC SWRP Founder for pointing this out and providing me with a fix")
+print("Various visual fixed")
+print("Fixed potential compatibility issues with other addons")
+
 end
 hook.Add("PlayerInitialSpawn", "Updates", Plug)

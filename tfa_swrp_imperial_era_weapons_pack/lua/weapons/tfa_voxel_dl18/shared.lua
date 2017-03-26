@@ -1,10 +1,10 @@
-SWEP.Gun					= ("tfa_voxel_dsbp") --Make sure this is unique.  Specically, your folder name.
+SWEP.Gun					= ("tfa_voxel_dl18") --Make sure this is unique.  Specically, your folder name.
 if (GetConVar(SWEP.Gun.."_allowed")) != nil then
 	if not (GetConVar(SWEP.Gun.."_allowed"):GetBool()) then SWEP.Base = "tfa_blacklisted" SWEP.PrintName = SWEP.Gun return end
 end
 SWEP.Base				= "tfa_gun_base"
 SWEP.Category				= "TFA Imperial Era Weapons" --The category.  Please, just choose something generic or something I've already done if you plan on only doing like one swep..
-SWEP.Manufacturer = "Drearian Defense Conglomerate" --Gun Manufactrer (e.g. Hoeckler and Koch )
+SWEP.Manufacturer = "" --Gun Manufactrer (e.g. Hoeckler and Koch )
 SWEP.Author				= "Teduken" --Author Tooltip
 SWEP.Contact				= "http://www.voxelservers.net/" --Contact Info Tooltip
 SWEP.Purpose				= "" --Purpose Tooltip
@@ -12,8 +12,8 @@ SWEP.Instructions				= "" --Instructions Tooltip
 SWEP.Spawnable				= true --Can you, as a normal user, spawn this?
 SWEP.AdminSpawnable			= true --Can an adminstrator spawn this?  Does not tie into your admin mod necessarily, unless its coded to allow for GMod's default ranks somewhere in its code.  Evolve and ULX should work, but try to use weapon restriction rather than these.
 SWEP.DrawCrosshair			= true		-- Draw the crosshair?
-SWEP.DrawCrosshairIS = false --Draw the crosshair in ironsights?
-SWEP.PrintName				= "Defender Sporting Blaster Pistol"		-- Weapon name (Shown on HUD)
+SWEP.DrawCrosshairIS = true --Draw the crosshair in ironsights?
+SWEP.PrintName				= "DL-18 Blaster Pistol"		-- Weapon name (Shown on HUD)
 SWEP.Slot				= 2				-- Slot in the weapon selection menu.  Subtract 1, as this starts at 0.
 SWEP.SlotPos				= 73			-- Position in the slot
 SWEP.DrawAmmo				= true		-- Should draw the default HL2 ammo counter if enabled in the GUI.
@@ -31,13 +31,13 @@ SWEP.Primary.ReloadSound = Sound ("weapons/synbf3/T21_reload.wav");
 
 SWEP.Primary.SilencedSound 			= nil				-- This is the sound of the weapon, when silenced.
 SWEP.Primary.PenetrationMultiplier = 1 --Change the amount of something this gun can penetrate through
-SWEP.Primary.Damage		= 25					-- Damage, in standard damage points.
+SWEP.Primary.Damage		= 23					-- Damage, in standard damage points.
 SWEP.Primary.HullSize = 0 --Big bullets, increase this value.  They increase the hull size of the hitscan bullet.
 SWEP.DamageType = nil--See DMG enum.  This might be DMG_SHOCK, DMG_BURN, DMG_BULLET, etc.
 SWEP.Primary.NumShots	= 1 --The number of shots the weapon fires.  SWEP.Shotgun is NOT required for this to be >1.
 SWEP.Primary.Automatic			= false					-- Automatic/Semi Auto
 SWEP.Primary.RPM				= 600					-- This is in Rounds Per Minute / RPM
-SWEP.Primary.RPM_Semi				= 80					-- RPM for semi-automatic or burst fire.  This is in Rounds Per Minute / RPM
+SWEP.Primary.RPM_Semi				= 120					-- RPM for semi-automatic or burst fire.  This is in Rounds Per Minute / RPM
 SWEP.Primary.RPM_Burst				= nil					-- RPM for burst fire, overrides semi.  This is in Rounds Per Minute / RPM
 SWEP.Primary.BurstDelay				= nil					-- Delay between bursts, leave nil to autocalculate
 SWEP.FiresUnderwater = true
@@ -58,8 +58,8 @@ SWEP.FireModeName = nil --Change to a text value to override it
 
 --Ammo Related
 
-SWEP.Primary.ClipSize			= 9					-- This is the size of a clip
-SWEP.Primary.DefaultClip			= 45					-- This is the number of bullets the gun gives you, counting a clip as defined directly above.
+SWEP.Primary.ClipSize			= 15					-- This is the size of a clip
+SWEP.Primary.DefaultClip			= 60					-- This is the number of bullets the gun gives you, counting a clip as defined directly above.
 SWEP.Primary.Ammo			= "ar2"					-- What kind of ammo.  Options, besides custom, include pistol, 357, smg1, ar2, buckshot, slam, SniperPenetratedRound, and AirboatGun.
 SWEP.Primary.AmmoConsumption = 1 --Ammo consumed per shot
 --Pistol, buckshot, and slam like to ricochet. Use AirboatGun for a light metal peircing shotgun pellets
@@ -74,8 +74,8 @@ SWEP.Primary.StaticRecoilFactor = 0.5 	--Amount of recoil to directly apply to E
 
 --Firing Cone Related
 
-SWEP.Primary.Spread		= .04					--This is hip-fire acuracy.  Less is more (1 is horribly awful, .0001 is close to perfect)
-SWEP.Primary.IronAccuracy = .00000001	-- Ironsight accuracy, should be the same for shotguns
+SWEP.Primary.Spread		= .03					--This is hip-fire acuracy.  Less is more (1 is horribly awful, .0001 is close to perfect)
+SWEP.Primary.IronAccuracy = .005	-- Ironsight accuracy, should be the same for shotguns
 
 --Unless you can do this manually, autodetect it.  If you decide to manually do these, uncomment this block and remove this line.
 --SWEP.Primary.SpreadMultiplierMax = 2.5 --How far the spread can expand when you shoot.
@@ -117,55 +117,35 @@ SWEP.ProjectileModel = nil --Entity to shoot's model
 
 --[[VIEWMODEL]]--
 
-SWEP.ViewModel			= "models/weapons/v_dsbp.mdl" --Viewmodel path
+SWEP.ViewModel			= "models/weapons/synbf3/c_dh17.mdl" --Viewmodel path
 SWEP.ViewModelFOV			= 65		-- This controls how big the viewmodel looks.  Less is more.
 SWEP.ViewModelFlip			= false		-- Set this to true for CSS models, or false for everything else (with a righthanded viewmodel.)
 SWEP.MaterialTable = nil --Make sure the viewmodel and the worldmodel have the same material ids.  Next, fill this in with your desired submaterials.
-SWEP.UseHands = false --Use gmod c_arms system.
+SWEP.UseHands = true --Use gmod c_arms system.
 SWEP.VMPos = Vector(0,0,0) --The viewmodel positional offset, constantly.  Subtract this from any other modifications to viewmodel position.
 SWEP.VMAng = Vector(0,0,0) --The viewmodel angular offset, constantly.   Subtract this from any other modifications to viewmodel angle.
 
 
+
+
+
 SWEP.ViewModelBoneMods = {
-	["Bone06"] = { scale = Vector(0.009, 0.009, 0.009), pos = Vector(0, 0, 0), angle = Angle(0, 0, 0) },
-	["Bone20"] = { scale = Vector(0.009, 0.009, 0.009), pos = Vector(0, 0, 0), angle = Angle(0, 0, 0) },
-	["Bone08"] = { scale = Vector(0.009, 0.009, 0.009), pos = Vector(0, 0, 0), angle = Angle(0, 0, 0) },
-	["Bone10"] = { scale = Vector(0.009, 0.009, 0.009), pos = Vector(0, 0, 0), angle = Angle(0, 0, 0) },
-	["Bone02"] = { scale = Vector(0.009, 0.009, 0.009), pos = Vector(0, 0, 0), angle = Angle(0, 0, 0) },
-	["Bone21"] = { scale = Vector(0.009, 0.009, 0.009), pos = Vector(0, 0, 0), angle = Angle(0, 0, 0) },
-	["Bone09"] = { scale = Vector(0.009, 0.009, 0.009), pos = Vector(0, 0, 0), angle = Angle(0, 0, 0) },
-	["Bone17"] = { scale = Vector(0.009, 0.009, 0.009), pos = Vector(0, 0, 0), angle = Angle(0, 0, 0) },
-	["Dummy02"] = { scale = Vector(0.009, 0.009, 0.009), pos = Vector(0, 0, 0), angle = Angle(0, 0, 0) },
-	["muzzle_flash"] = { scale = Vector(0.009, 0.009, 0.009), pos = Vector(0, 0, 0), angle = Angle(0, 0, 0) },
-	["Bone05"] = { scale = Vector(0.009, 0.009, 0.009), pos = Vector(0, 0, 0), angle = Angle(0, 0, 0) },
-	["Bone18"] = { scale = Vector(0.009, 0.009, 0.009), pos = Vector(0, 0, 0), angle = Angle(0, 0, 0) },
-	["Bone13"] = { scale = Vector(0.009, 0.009, 0.009), pos = Vector(0, 0, 0), angle = Angle(0, 0, 0) },
-	["Bone16"] = { scale = Vector(0.009, 0.009, 0.009), pos = Vector(0, 0, 0), angle = Angle(0, 0, 0) },
-	["Bone03"] = { scale = Vector(0.009, 0.009, 0.009), pos = Vector(0, 0, 0), angle = Angle(0, 0, 0) },
-	["Bone22"] = { scale = Vector(0.009, 0.009, 0.009), pos = Vector(0, 0, 0), angle = Angle(0, 0, 0) },
-	["Bone12"] = { scale = Vector(0.009, 0.009, 0.009), pos = Vector(0, 0, 0), angle = Angle(0, 0, 0) },
-	["Bone04"] = { scale = Vector(0.009, 0.009, 0.009), pos = Vector(0, 0, 0), angle = Angle(0, 0, 0) },
-	["Bone01"] = { scale = Vector(0.009, 0.009, 0.009), pos = Vector(0, 0, 0), angle = Angle(0, 0, 0) },
-	["Bone14"] = { scale = Vector(0.009, 0.009, 0.009), pos = Vector(0, 0, 0), angle = Angle(0, 0, 0) },
-	["ejection"] = { scale = Vector(0.009, 0.009, 0.009), pos = Vector(0, 0, 0), angle = Angle(0, 0, 0) }
+	["v_dh17_reference001"] = { scale = Vector(0.009, 0.009, 0.009), pos = Vector(0, 0, 0), angle = Angle(0, 0, 0) }
 }
 
+SWEP.VElements = {
+	["dl"] = { type = "Model", model = "models/swbf3/outerrim/weapons/dl18.mdl", bone = "v_dh17_reference001", rel = "", pos = Vector(0, -3, -2.451), angle = Angle(0, 90, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
+}
 
-SWEP.VMBodyGroups = nil --{
-	--[0] = 1,
-	--[1] = 4,
-	--[2] = etc.
---}
+SWEP.WElements = {
+	["18"] = { type = "Model", model = "models/swbf3/outerrim/weapons/dl18.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(7, 1, 1.5), angle = Angle(-10, 0, 180), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
+}
 
 --[[WORLDMODEL]]--
 
-SWEP.WorldModel			= "models/weapons/w_dsbp.mdl" -- Weapon world model path
+SWEP.WorldModel			= "models/weapons/synbf3/w_dh17.mdl" -- Weapon world model path
 
-SWEP.WMBodyGroups = nil--{
-	--[0] = 1,
-	--[1] = 4,
-	--[2] = etc.
---}
+
 
 SWEP.HoldType 				= "pistol"		-- This is how others view you carrying the weapon. Options include:
 -- normal melee melee2 fist knife smg ar2 pistol rpg physgun grenade shotgun crossbow slam passive
@@ -196,8 +176,8 @@ SWEP.Scoped				= false  --Draw a scope overlay?
 SWEP.ScopeOverlayThreshold = 0.875 --Percentage you have to be sighted in to see the scope.
 SWEP.BoltTimerOffset = 0.25 --How long you stay sighted in after shooting, with a bolt action.
 
-SWEP.ScopeScale = 0.5 --Scale of the scope overlay
-SWEP.ReticleScale = 0.7 --Scale of the reticle overlay
+SWEP.ScopeScale = 0.65 --Scale of the scope overlay
+SWEP.ReticleScale = 0.9 --Scale of the reticle overlay
 
 --GDCW Overlay Options.  Only choose one.
 
@@ -205,7 +185,7 @@ SWEP.Secondary.UseACOG			= false	 --Overlay option
 SWEP.Secondary.UseMilDot			= false			 --Overlay option
 SWEP.Secondary.UseSVD			= false		 --Overlay option
 SWEP.Secondary.UseParabolic		= false		 --Overlay option
-SWEP.Secondary.UseElcan			= false	 --Overlay option
+SWEP.Secondary.UseElcan			= true	 --Overlay option
 SWEP.Secondary.UseGreenDuplex		= false		 --Overlay option
 
 if surface then
@@ -226,17 +206,18 @@ SWEP.ShellTime			= .35 -- For shotguns, how long it takes to insert a shell.
 
 --[[SPRINTING]]--
 
-SWEP.RunSightsPos = Vector (3.16,0,-16.280) --Change this, using SWEP Creation Kit preferably
-SWEP.RunSightsAng = Vector (29.548,0,-19.698) --Change this, using SWEP Creation Kit preferably
+SWEP.RunSightsPos = Vector (3.039, -8.643, -4.62) --Change this, using SWEP Creation Kit preferably
+SWEP.RunSightsAng = Vector (32.361, 0, 0) --Change this, using SWEP Creation Kit preferably
 
 --[[IRONSIGHTS]]--
 
 SWEP.data 				= {}
 SWEP.data.ironsights			= 1 --Enable Ironsights
-SWEP.Secondary.IronFOV			= 70					-- How much you 'zoom' in. Less is more!  Don't have this be <= 0.  A good value for ironsights is like 70.
+SWEP.Secondary.IronFOV			= 50					-- How much you 'zoom' in. Less is more!  Don't have this be <= 0.  A good value for ironsights is like 70.
 
-SWEP.IronSightsPos = Vector(-3.76, -6.231, 1.769)
-SWEP.IronSightsAng = Vector(2.111, 0, 0)
+SWEP.IronSightsPos = Vector(0, 0, 0)
+SWEP.IronSightsAng = Vector(0, 0, 0)
+
 
 --[[INSPECTION]]--
 

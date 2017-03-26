@@ -7,10 +7,10 @@ SWEP.Category				= "TFA Imperial Era Weapons" --The category.  Please, just choo
 SWEP.Manufacturer = "Blastech Industries" --Gun Manufactrer (e.g. Hoeckler and Koch )
 SWEP.Author				= "Teduken" --Author Tooltip
 SWEP.Contact				= "http://www.voxelservers.net/" --Contact Info Tooltip
-SWEP.Purpose				= "BROKEN - WILL BE FIXED IN FUTURE UPDATE" --Purpose Tooltip
+SWEP.Purpose				= "" --Purpose Tooltip
 SWEP.Instructions				= "" --Instructions Tooltip
-SWEP.Spawnable				= false --Can you, as a normal user, spawn this?
-SWEP.AdminSpawnable			= false --Can an adminstrator spawn this?  Does not tie into your admin mod necessarily, unless its coded to allow for GMod's default ranks somewhere in its code.  Evolve and ULX should work, but try to use weapon restriction rather than these.
+SWEP.Spawnable				= true --Can you, as a normal user, spawn this?
+SWEP.AdminSpawnable			= true --Can an adminstrator spawn this?  Does not tie into your admin mod necessarily, unless its coded to allow for GMod's default ranks somewhere in its code.  Evolve and ULX should work, but try to use weapon restriction rather than these.
 SWEP.DrawCrosshair			= true		-- Draw the crosshair?
 SWEP.DrawCrosshairIS = false --Draw the crosshair in ironsights?
 SWEP.PrintName				= "Smart Rocket"		-- Weapon name (Shown on HUD)
@@ -26,8 +26,8 @@ SWEP.Weight				= 30			-- This controls how "good" the weapon is for autopickup.
 --[[WEAPON HANDLING]]--
 
 --Firing related
-SWEP.Primary.ReloadSound = Sound ("weapons/DC17M_AT_reload.wav");
-SWEP.Primary.Sound 			= Sound("weapons/DC17M_AT_fire.wav")				-- This is the sound of the weapon, when you shoot.
+SWEP.Primary.ReloadSound = Sound ("weapons/smg1/smg1_reload.wav");
+SWEP.Primary.Sound 			= Sound("weapons/explode5.wav")				-- This is the sound of the weapon, when you shoot.
 SWEP.Primary.SilencedSound 			= nil				-- This is the sound of the weapon, when silenced.
 SWEP.Primary.PenetrationMultiplier = 1 --Change the amount of something this gun can penetrate through
 SWEP.Primary.Damage		= 0.01					-- Damage, in standard damage points.
@@ -59,7 +59,7 @@ SWEP.FireModeName = nil --Change to a text value to override it
 
 SWEP.Primary.ClipSize			= 1					-- This is the size of a clip
 SWEP.Primary.DefaultClip			= 2					-- This is the number of bullets the gun gives you, counting a clip as defined directly above.
-SWEP.Primary.Ammo			= "ar2"					-- What kind of ammo.  Options, besides custom, include pistol, 357, smg1, ar2, buckshot, slam, SniperPenetratedRound, and AirboatGun.
+SWEP.Primary.Ammo			= "rpg_round"					-- What kind of ammo.  Options, besides custom, include pistol, 357, smg1, ar2, buckshot, slam, SniperPenetratedRound, and AirboatGun.
 SWEP.Primary.AmmoConsumption = 1 --Ammo consumed per shot
 --Pistol, buckshot, and slam like to ricochet. Use AirboatGun for a light metal peircing shotgun pellets
 
@@ -110,7 +110,7 @@ SWEP.SprintFOVOffset = 3.75 --Add this onto the FOV when we're sprinting.
 
 --[[PROJECTILES]]--
 
-SWEP.ProjectileEntity = "e60r_rocket" --Entity to shoot
+SWEP.ProjectileEntity = "vox_e60r_rocket" --Entity to shoot
 SWEP.ProjectileVelocity = 500 --Entity to shoot's velocity
 SWEP.ProjectileModel = nil --Entity to shoot's model
 
@@ -183,7 +183,7 @@ SWEP.Scoped				= true --Draw a scope overlay?
 SWEP.ScopeOverlayThreshold = 0.875 --Percentage you have to be sighted in to see the scope.
 SWEP.BoltTimerOffset = 0.25 --How long you stay sighted in after shooting, with a bolt action.
 
-SWEP.ScopeScale = 0.5 --Scale of the scope overlay
+SWEP.ScopeScale = 0.6 --Scale of the scope overlay
 SWEP.ReticleScale = 0.7 --Scale of the reticle overlay
 
 --GDCW Overlay Options.  Only choose one.
@@ -256,7 +256,7 @@ SWEP.BlowbackCurrent = 0 --Amount of blowback currently, for bones
 SWEP.BlowbackBoneMods = nil --Viewmodel bone mods via SWEP Creation Kit
 SWEP.Blowback_Only_Iron = true --Only do blowback on ironsights
 SWEP.Blowback_PistolMode = false --Do we recover from blowback when empty?
-SWEP.Blowback_Shell_Enabled = true
+SWEP.Blowback_Shell_Enabled = false
 SWEP.Blowback_Shell_Effect = "ShellEject"
 
 
@@ -312,7 +312,7 @@ SWEP.MuzzleAttachment			= "1" 		-- Should be "1" for CSS models or "muzzle" for 
 --SWEP.MuzzleAttachmentRaw = 1 --This will override whatever string you gave.  This is the raw attachment number.  This is overridden or created when a gun makes a muzzle event.
 SWEP.ShellAttachment			= "2" 		-- Should be "2" for CSS models or "shell" for hl2 models
 
-SWEP.DoMuzzleFlash = true --Do a muzzle flash?
+SWEP.DoMuzzleFlash = false --Do a muzzle flash?
 SWEP.CustomMuzzleFlash = true --Disable muzzle anim events and use our custom flashes?
 SWEP.AutoDetectMuzzleAttachment = false --For multi-barrel weapons, detect the proper attachment?
 SWEP.MuzzleFlashEffect = nil --Change to a string of your muzzle flash effect.  Copy/paste one of the existing from the base.
@@ -452,3 +452,37 @@ SWEP.Secondary.Ammo			= "none" -- Self explanitory, ammo type.
 SWEP.ConDamageMultiplier = 1
 
 SWEP.Base				= "tfa_gun_base"
+
+function SWEP:DrawHands()
+    self.UseHandsDefault = self.UseHandsDefault or self.UseHands
+    if !self.UseHandsDefault then return end
+    if !IsValid(self) or !self:OwnerIsValid() then return end
+    local vm = self.OwnerViewModel
+    if !IsValid(vm) then return end
+   
+    if !IsValid(self.Owner.SWHands) then
+        self.Owner.SWHands = ClientsideModel("models/weapons/c_clonearms.mdl")
+        self.Owner.SWHands:SetParent(vm)
+        self.Owner.SWHands:SetPos(self.Owner:GetShootPos())
+        self.Owner.SWHands:SetAngles(self.Owner:EyeAngles())
+        self.Owner.SWHands:AddEffects( EF_BONEMERGE )
+        self.Owner.SWHands:SetNoDraw(true)
+        self.Owner.SWHands.BoneMergedEnt = vm
+    elseif self.Owner.SWHands:GetParent() != vm then
+        self.Owner.SWHands:SetModel("models/weapons/c_clonearms.mdl")
+        self.Owner.SWHands:SetParent(vm)
+        self.Owner.SWHands:SetPos(self.Owner:GetShootPos())
+        self.Owner.SWHands:SetAngles(self.Owner:EyeAngles())
+        self.Owner.SWHands:AddEffects( EF_BONEMERGE )
+    elseif self.Owner.SWHands:GetModel()!="models/weapons/c_clonearms.mdl" then
+        self.Owner.SWHands:SetModel("models/weapons/c_clonearms.mdl")      
+    end
+   
+    if self.Owner.SWHands then
+        self.Owner.SWHands:DrawModel()
+    end
+   
+    self.UseHands = false
+   
+end
+
