@@ -8,7 +8,8 @@ Feel free to help improve these addons by making changes locally and sending in 
 2. Unless you have shown to be totally trustworth when it comes to your changes to this repository you will have to work off a pull request only access. This is to prevent people from breaking your own work as much as you breaking someone elses. 
 3. Feel free to ask questions, discuss changes, and even use this repository as a reference point for people interested in your specific addon. A lot of people use this content and it makes sense for them to be able to know what we are working on. (to, at the very least, avoid having to answer their question every time they ask) 
 4. It is 100% okay to use this repository as a way to have players create bug reports for your addon. In fact it's probably the best way to go about helping the players.
-5. If necessary moving your addon to a seperate addon can be done. Just try to leave a link to the new location here in the readme. 
+5. If necessary moving your addon to a seperate repository can be done. Just try to leave a link to the new location here in the readme. 
+
 
 ### Tutorials, Guides, Resources! 
 If you are new to Git please do not be put off by the concept of an unfamiliar system. The use of git is quite simple and can extremely useful when working in a large group on a project like this.
@@ -47,3 +48,7 @@ https://docs.google.com/document/d/1o599ftTRcHWWmDRIibNfC5NcJJF1YTY9IizqnxzgM7U/
 - You can also watch the video located here: 
 https://www.youtube.com/watch?v=72a28tleThY&t=484s
 
+## RULES OF USE
+- It is completley not acceptable to claim any of the work posted here by someone else as your own work. 
+- You may not re-upload other peoples work under any circumstances. 
+If found violating any of the above a [DMCA])https://www.google.com/search?q=dmca&rlz=1C1CHBD_enUS728US728&oq=dmca&aqs=chrome..69i57.575j0j7&sourceid=chrome&ie=UTF-8) will be filed. 
