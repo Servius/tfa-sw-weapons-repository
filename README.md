@@ -1,4 +1,5 @@
-# TFA SW Repository
+ TFA SW Repository
+ ======
 Official branch for the TFA Star Wars weapons. 
 
 Feel free to help improve these addons by making changes locally and sending in pull requests with finished work. If you are new to Git please do not be put off by the concept of a new system. The use of git is quite simple and can extremely useful when working. Go to the following link to look through a tutorial I have setup: 
