@@ -1,0 +1,9 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\weapons\w_models\IHR\heavy_repeater"
+	"$bumpmap" "models\weapons\w_models\IHR\heavy_repeater_n"
+	"$halflambert" "1"
+	"$translucent" 1
+	"$alphatest" 1
+	"$Nocull" 1
+}

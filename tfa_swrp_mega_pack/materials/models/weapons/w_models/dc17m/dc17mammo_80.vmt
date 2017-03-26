@@ -1,0 +1,16 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\weapons\w_models\DC17M\dc17mammo\DC17mAmmo_80"
+	"$halflambert" "1"
+	"$selfillum" 1
+	"$nocull" 1
+	"$phong" "1"
+	"$phongexponent" "5"
+	"$phongboost"	".2"
+	"$phongfresnelranges"	"[0.25 0.5 1]"
+
+	//"$detail" "models\weapons\w_models\DC17M\corroded_metal"
+	//"$detailscale" 10.300
+	//"$detailblendfactor" .35
+	//"$detailblendmode" 0
+}

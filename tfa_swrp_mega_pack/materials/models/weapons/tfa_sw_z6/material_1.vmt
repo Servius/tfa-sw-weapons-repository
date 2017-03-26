@@ -1,0 +1,12 @@
+"VertexLitGeneric"
+{
+	$basetexture "models/weapons/tfa_sw_z6/z6"	
+	$bumpmap "null-bumpmap"
+	$phongexponenttexture "models/weapons/tfa_sw_z6/fexp"
+	
+	$phong "1"
+	$phongexponent "8"
+	$phongalbedotint "1"
+	$phongboost "16"
+	$phongfresnelranges "[0.3 0.75 1.0]"
+}

@@ -1,0 +1,5 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\weapons\w_models\swrcdeton\DemolitionCharge"
+	"$bumpmap" "models\weapons\w_models\swrcdeton\DemolitionCharge_normal"
+}

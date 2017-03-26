@@ -1,0 +1,17 @@
+"Unlittwotexture"
+{
+	"$baseTexture" "models\weapons\w_models\DC17M\DC17mSniperScope"
+	"$texture2" "models\weapons\w_models\DC17M\noise"
+	"$additive" 1
+	"$nocull" 1
+	"$model" 1
+
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+			"texturescrollvar" "$texture2transform"
+			"texturescrollrate" 10
+			"texturescrollangle" -50
+		}
+}

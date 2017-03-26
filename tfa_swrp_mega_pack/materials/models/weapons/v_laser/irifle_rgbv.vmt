@@ -1,0 +1,12 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models/weapons/V_laser/irifle_rgbv"
+	"$bumpmap" "models/weapons/V_laser/irifle_bumpSpec"
+	"$envmap" "env_cubemap"				//dynamically loaded cubemap based on player position
+	
+	"$normalmapalphaenvmapmask" 1		//specular mask can go in bump tex
+	"$envmapsaturation" 0.5			//how shiny it is?
+	"$model" 1			//yes, its for a model, dipshit.
+	
+	"$selfillum" "1"		//causes alpha in RGB to be used as self illum instead of transparency
+}
