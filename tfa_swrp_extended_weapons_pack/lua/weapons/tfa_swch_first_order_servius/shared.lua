@@ -39,12 +39,12 @@ SWEP.AutoSwitchFrom			= false
 SWEP.Primary.Sound 			= Sound ("weapons/starwars/f11_fire.wav");
 SWEP.Primary.ReloadSound 		= Sound ("weapons/starwars/f11_reload.wav");
 
-SWEP.Primary.Recoil			= 0.3
+SWEP.Primary.Recoil			= 0.5
 SWEP.Primary.Damage			= 25
 SWEP.Primary.NumShots			= 1
 
 SWEP.Primary.Spread			= 0.0125
-SWEP.Primary.IronAccuracy = .01	-- Ironsight accuracy, should be the same for shotguns
+SWEP.Primary.IronAccuracy = .003	-- Ironsight accuracy, should be the same for shotguns
 
 SWEP.Primary.ClipSize			= 45
 SWEP.Primary.RPM 			= 60/0.175
@@ -65,19 +65,7 @@ SWEP.FireModes = {
 	"3Burst",
 	"Single"
 }
-
-
-
-
-	
 local weaponcol = Color(0.435*255,0.10*255,0.7*255,255)
-
-
-
-
-
-
-
 
 SWEP.IronSightsSensitivity = 0.25 --Useful for a RT scope.  Change this to 0.25 for 25% sensitivity.  This is if normal FOV compenstaion isn't your thing for whatever reason, so don't change it for normal scopes.
 SWEP.BlowbackVector = Vector(0,-1,0.05)

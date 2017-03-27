@@ -1,0 +1,5 @@
+"VertexLitGeneric"
+{
+	"$basetexture"	"HUD\scopes\sw_scope_01"
+	$translucent 1
+}

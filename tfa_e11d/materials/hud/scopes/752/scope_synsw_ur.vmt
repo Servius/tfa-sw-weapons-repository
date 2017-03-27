@@ -1,0 +1,8 @@
+"UnlitGeneric"
+{
+	"$spriteorientation" "vp_parallel"
+	"$spriteorigin" "[ 0.50 0.50 ]"
+	"$basetexture" "hud\scopes\752/scope_synsw_ur"
+	"$ignorez"	"1"
+	"$translucent"	"1"
+}

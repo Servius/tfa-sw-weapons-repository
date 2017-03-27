@@ -1,0 +1,22 @@
+"VertexLitGeneric"
+{
+	$basetexture 				"models\carbonf\synbf3\w_models\tok\T_T21_C"
+	$bumpmap 					"models\carbonf\synbf3\w_models\tok\T_T21_C_N"
+	"$nocull" 1
+	"$normalmapalphaenvmapmask" 1
+	"$phong" "1"
+	"$halflambert" "1"
+	"$phongexponent" "25"
+	"$phongboost" "1"	
+	"$phongfresnelranges"	"[ 0.7 3 10 ]"
+	"$phongalbedotint" "1"
+
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[ .1 .1 .1 ]"
+
+	"$rimlight" "1"
+	"$rimlightexponent" "5"
+	"$rimlightboost" ".25"
+
+}
+

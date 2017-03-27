@@ -45,7 +45,7 @@ SWEP.Primary.HullSize = 0 --Big bullets, increase this value.  They increase the
 SWEP.Primary.DamageType = bit.bor(DMG_SHOCK) --See DMG enum.  This might be DMG_SHOCK, DMG_BURN, DMG_BULLET, etc.
 SWEP.Primary.NumShots	= 1 --The number of shots the weapon fires.  SWEP.Shotgun is NOT required for this to be >1.
 SWEP.Primary.Automatic			= true					-- Automatic/Semi Auto
-SWEP.Primary.RPM				= 450					-- This is in Rounds Per Minute / RPM
+SWEP.Primary.RPM = 60/0.175					-- This is in Rounds Per Minute / RPM
 SWEP.Primary.RPM_Semi				= 450					-- RPM for semi-automatic or burst fire.  This is in Rounds Per Minute / RPM
 SWEP.Primary.RPM_Burst				= 450					-- RPM for burst fire, overrides semi.  This is in Rounds Per Minute / RPM
 SWEP.Primary.BurstDelay				= nil					-- Delay between bursts, leave nil to autocalculate
@@ -71,16 +71,16 @@ SWEP.Primary.Ammo			= "ar2"					-- What kind of ammo.  Options, besides custom, 
 SWEP.DisableChambering = true --Disable round-in-the-chamber
 
 --Recoil Related
-SWEP.Primary.KickUp			= 0.5					-- This is the maximum upwards recoil (rise)
+SWEP.Primary.KickUp			= 0					-- This is the maximum upwards recoil (rise)
 SWEP.Primary.KickDown			= 0					-- This is the maximum downwards recoil (skeet)
 SWEP.Primary.KickHorizontal			= 0					-- This is the maximum sideways recoil (no real term)
-SWEP.Primary.StaticRecoilFactor = 0.5 	--Amount of recoil to directly apply to EyeAngles.  Enter what fraction or percentage (in decimal form) you want.  This is also affected by a convar that defaults to 0.5.
+SWEP.Primary.StaticRecoilFactor = 0 	--Amount of recoil to directly apply to EyeAngles.  Enter what fraction or percentage (in decimal form) you want.  This is also affected by a convar that defaults to 0.5.
 
 --Firing Cone Related
 
 SWEP.Primary.Spread		= .0125					--This is hip-fire acuracy.  Less is more (1 is horribly awful, .0001 is close to perfect)
-SWEP.Primary.IronAccuracy = .0020	-- Ironsight accuracy, should be the same for shotguns
-
+SWEP.Primary.IronAccuracy = .005	-- Ironsight accuracy, should be the same for shotguns
+SWEP.Primary.SpreadMultiplierMax = 2.5 --How far the spread can expand when you shoot.
 --Range Related
 SWEP.Primary.Range = -1 -- The distance the bullet can travel in source units.  Set to -1 to autodetect based on damage/rpm.
 SWEP.Primary.RangeFalloff = -1 -- The percentage of the range the bullet damage starts to fall off at.  Set to 0.8, for example, to start falling off after 80% of the range.
@@ -89,23 +89,7 @@ SWEP.Primary.RangeFalloff = -1 -- The percentage of the range the bullet damage 
 
 SWEP.MaxPenetrationCounter=1 --The maximum number of ricochets.  To prevent stack overflows.
 
---Misc
-SWEP.IronRecoilMultiplier=0.5 --Multiply recoil by this factor when we're in ironsights.  This is proportional, not inversely.
-SWEP.CrouchRecoilMultiplier=0.65  --Multiply recoil by this factor when we're crouching.  This is proportional, not inversely.
-SWEP.JumpRecoilMultiplier=1.3  --Multiply recoil by this factor when we're crouching.  This is proportional, not inversely.
-SWEP.WallRecoilMultiplier=1.1  --Multiply recoil by this factor when we're changing state e.g. not completely ironsighted.  This is proportional, not inversely.
-SWEP.ChangeStateRecoilMultiplier=1.3  --Multiply recoil by this factor when we're crouching.  This is proportional, not inversely.
-SWEP.CrouchAccuracyMultiplier=0.5--Less is more.  Accuracy * 0.5 = Twice as accurate, Accuracy * 0.1 = Ten times as accurate
-SWEP.ChangeStateAccuracyMultiplier=1.5 --Less is more.  A change of state is when we're in the progress of doing something, like crouching or ironsighting.  Accuracy * 2 = Half as accurate.  Accuracy * 5 = 1/5 as accurate
-SWEP.JumpAccuracyMultiplier=2--Less is more.  Accuracy * 2 = Half as accurate.  Accuracy * 5 = 1/5 as accurate
-SWEP.WalkAccuracyMultiplier=1.35--Less is more.  Accuracy * 2 = Half as accurate.  Accuracy * 5 = 1/5 as accurate
-SWEP.IronSightTime = 0.3 --The time to enter ironsights/exit it.
-SWEP.NearWallTime = 0.25 --The time to pull up  your weapon or put it back down
-SWEP.ToCrouchTime = 0.05 --The time it takes to enter crouching state
-SWEP.WeaponLength = 40 --Almost 3 feet Feet.  This should be how far the weapon sticks out from the player.  This is used for calculating the nearwall trace.
-SWEP.MoveSpeed = 1 --Multiply the player's movespeed by this.
-SWEP.IronSightsMoveSpeed = 0.8 --Multiply the player's movespeed by this when sighting.
-SWEP.SprintFOVOffset = 3.75 --Add this onto the FOV when we're sprinting.
+
 
 --[[VIEWMODEL ANIMATION HANDLING]]--
 
@@ -127,7 +111,6 @@ SWEP.ForceEmptyFireOff = true --Disables empty fire animations.  Set to false to
 
 SWEP.DoMuzzleFlash = false --Do a muzzle flash?
 SWEP.CustomMuzzleFlash = false --Disable muzzle anim events and use our custom flashes?
---------------------
 
 
 SWEP.HoldType = "ar2"
@@ -154,6 +137,7 @@ SWEP.AutoSwitchFrom			= false
 
 
 SWEP.TracerName = "effect_sw_laser_blue"
+SWEP.TracerCount 		= 1 	--0 disables, otherwise, 1 in X chance
 
 SWEP.Secondary.Automatic	= false
 SWEP.Secondary.Ammo			= "none"

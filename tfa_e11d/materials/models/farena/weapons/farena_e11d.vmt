@@ -1,0 +1,20 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models\farena\weapons\e11d\e11d_d"
+	"$bumpmap" "models\farena\weapons\e11d\e11d_n"
+	"$nocull"	"1"
+
+	"$normalmapalphaenvmapmask" "1"
+	"$envmaptint" "[.1 .1 .1]"
+	"$envmapcontrast" ".4"
+                "$ambientocclusion" 1
+                "$ambientoccltexture" "models\farena\weapons\e11d\e11d_a"	
+	
+	"$phong" 	"1"
+	"$phongexponent" 	"24"
+	"$phongboost"	 "3"
+	"$phongfresnelranges" "[0.25 0.75  0.3]"
+	"$phongexponenttexture" 	"models\farena\weapons\e11d\e11d_m"	
+                //"$phongwarptexture"		"models\farena\weapons\e11d\e11d_m"
+                "$lightwarptexture" "models\farena\common\clothes_wrp"			
+}

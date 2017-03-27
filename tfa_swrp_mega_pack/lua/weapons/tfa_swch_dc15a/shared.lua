@@ -20,7 +20,7 @@ if ( CLIENT ) then
 end
 
 SWEP.HoldType				= "ar2"
-SWEP.Base					= "tfa_swsft_base"
+SWEP.Base					= "tfa_gun_base"
 
 SWEP.Category = "TFA Star Wars"
 
@@ -52,7 +52,28 @@ SWEP.AutoSwitchFrom			= false
 SWEP.Primary.Recoil			= 0.5
 SWEP.Primary.Damage			= 50
 SWEP.Primary.NumShots		= 1
+
+-- Selective Fire Stuff
+
+SWEP.SelectiveFire		= true --Allow selecting your firemode?
+SWEP.DisableBurstFire	= false --Only auto/single?
+SWEP.OnlyBurstFire		= false --No auto, only burst/single?
+SWEP.DefaultFireMode 	= "" --Default to auto or whatev
+SWEP.FireModeName = nil --Change to a text value to override it
+
 SWEP.Primary.Spread			= 0.0125
+SWEP.Primary.IronAccuracy = .005	-- Ironsight accuracy, should be the same for shotguns
+SWEP.Primary.SpreadMultiplierMax = 2 --How far the spread can expand when you shoot.
+
+--Range Related
+SWEP.Primary.Range = -1 -- The distance the bullet can travel in source units.  Set to -1 to autodetect based on damage/rpm.
+SWEP.Primary.RangeFalloff = -1 -- The percentage of the range the bullet damage starts to fall off at.  Set to 0.8, for example, to start falling off after 80% of the range.
+
+--Penetration Related
+
+SWEP.MaxPenetrationCounter=1 --The maximum number of ricochets.  To prevent stack overflows.
+
+
 SWEP.Primary.ClipSize		= 50
 SWEP.Primary.RPM = 60/0.175
 SWEP.Primary.DefaultClip	= 150

@@ -73,12 +73,13 @@ SWEP.Primary.Recoil			= 0.5
 SWEP.Primary.Damage			= 50
 SWEP.Primary.NumShots		= 1
 SWEP.Primary.Spread		= 0.0125
+SWEP.Primary.IronAccuracy = .005	-- Ironsight accuracy, should be the same for shotguns
 SWEP.Primary.ClipSize		= 50
 SWEP.Primary.Delay			= 0.35
 SWEP.Primary.DefaultClip	= 75
 SWEP.Primary.Automatic		= false
 SWEP.Primary.Ammo			= "ar2"
-SWEP.TracerName 		= "effect_sw_laser_yellow_akimbo_pu"
+SWEP.TracerName 		= "effect_sw_laser_red_akimbo_pu"
 
 SWEP.Secondary.Automatic	= false
 SWEP.Secondary.Ammo			= "none"

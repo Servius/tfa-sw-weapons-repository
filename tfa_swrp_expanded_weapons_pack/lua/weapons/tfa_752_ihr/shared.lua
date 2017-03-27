@@ -41,6 +41,7 @@ SWEP.Primary.Recoil			= 0.5
 SWEP.Primary.Damage			= 50
 SWEP.Primary.NumShots		= 1
 SWEP.Primary.Spread			= 0.08
+SWEP.Primary.IronAccuracy = .005	-- Ironsight accuracy, should be the same for shotguns
 SWEP.Primary.ClipSize		= 45
 SWEP.Primary.RPM = 60/.09
 SWEP.Primary.DefaultClip	= 180
