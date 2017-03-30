@@ -20,7 +20,7 @@ if ( CLIENT ) then
 end
 
 SWEP.HoldType				= "ar2"
-SWEP.Base					= "tfa_gun_base"
+SWEP.Base					= "tfa_swsft_base_servius"
 
 SWEP.Category = "TFA Star Wars"
 

@@ -58,5 +58,5 @@ SWEP.Secondary.Ammo			= "none"
 
 SWEP.Secondary.IronFOV = 70
 
-SWEP.IronSightsPos = Vector(-4.06, 3, -3)
-SWEP.IronSightsAng = Vector(0.85, 0.209, 0)
+SWEP.IronSightsPos = Vector(-4.65, 3, -3)
+SWEP.IronSightsAng = Vector(0.85, .5, 0)
