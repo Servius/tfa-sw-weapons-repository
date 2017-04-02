@@ -8,7 +8,7 @@ end
 
 if ( CLIENT ) then
 
-	SWEP.PrintName			= "VS-37 Rifle"			
+	SWEP.PrintName			= "Repeating Blaster T1"			
 	SWEP.Author				= "TFA, Servius"
 	SWEP.ViewModelFOV      	= 50
 	SWEP.Slot				= 2
@@ -48,18 +48,18 @@ SWEP.AutoSwitchTo			= false
 SWEP.AutoSwitchFrom			= false
 
 SWEP.Primary.Recoil			= 0.5
-SWEP.Primary.Damage			= 110
+SWEP.Primary.Damage			= 45
 SWEP.Primary.NumShots		= 1
 SWEP.Primary.Spread			= 0.0125
 SWEP.Primary.IronAccuracy = .001	-- Ironsight accuracy, should be the same for shotguns
-SWEP.Primary.ClipSize		= 5
+SWEP.Primary.ClipSize		= 50
 SWEP.Primary.RPM = 60/0.175
-SWEP.Primary.DefaultClip	= 10
---SWEP.Primary.Automatic		= false
+SWEP.Primary.DefaultClip	= 50
+SWEP.Primary.Automatic		= true
 SWEP.Primary.Ammo			= "ar2"
 SWEP.TracerName = "effect_sw_laser_red"
 
-SWEP.SelectiveFire		= false --Allow selecting your firemode?
+SWEP.SelectiveFire		= true --Allow selecting your firemode?
 SWEP.DisableBurstFire	= false --Only auto/single?
 SWEP.OnlyBurstFire		= false --No auto, only burst/single?
 SWEP.DefaultFireMode 	= "single" --Default to auto or whatev
@@ -72,15 +72,15 @@ SWEP.Secondary.Ammo			= "none"
 
 SWEP.Secondary.IronFOV = 70
 
-SWEP.IronSightsPos = Vector(-6, -5, 2.7)
-SWEP.IronSightsAng = Vector(-1.1, -0, 20)
+SWEP.IronSightsPos = Vector(-4, -3, .6)
+SWEP.IronSightsAng = Vector(-1.1, -0, 0)
 
 SWEP.VElements = {
-	["element_name"] = { type = "Model", model = "models/star wars the force unleashed/sniper.mdl", bone = "v_weapon.awm_parent", rel = "", pos = Vector(-6, 6, -2), angle = Angle(178, 90, -92), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = true, material = "", skin = 0, bodygroup = {} }
+	["element_name"] = { type = "Model", model = "models/w_rptnblstr_001.mdl", bone = "v_weapon.awm_parent", rel = "", pos = Vector(-0, -2, -3.1), angle = Angle(90, -92, -0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = true, material = "", skin = 0, bodygroup = {} }
 }
 
 SWEP.WElements = {
-	["element_name2"] = { type = "Model", model = "models/star wars the force unleashed/sniper.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(12, 9.1, 3.5 	), angle = Angle(70, -90, 180), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
+	["element_name2"] = { type = "Model", model = "models/w_rptnblstr_001.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(11, .5, -3	), angle = Angle(10, -180, 180), size = Vector(.9, .8, .9), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
 }
 
 

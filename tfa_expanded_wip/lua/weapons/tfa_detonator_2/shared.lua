@@ -62,7 +62,7 @@ SWEP.Primary.Ammo			= "rpg_round"
 SWEP.Secondary.Automatic	= false
 SWEP.Secondary.Ammo			= "none"
 
-SWEP.ProjectileEntity = "dc17m_at_rocket" --Entity to shoot
+SWEP.ProjectileEntity = "sent_swrc_hoth" --Entity to shoot
 SWEP.ProjectileVelocity = 500 --Entity to shoot's velocity
 
 SWEP.VElements = {
@@ -107,7 +107,7 @@ function SWEP:PlaceTNT( )
 	res = util.TraceLine{ start = self.Owner:GetShootPos( ), endpos = self.Owner:GetShootPos( ) + 115 * self.Owner:GetAimVector( ), filter = self.Owner }
 	
 	if res.Hit then
-		tnt = ents.Create( "sent_swrc_det" )
+		tnt = ents.Create( "sent_swrc_hoth" )
 			tnt:SetPos( res.HitPos + res.HitNormal )
 			res.HitNormal.z = -res.HitNormal.z
 			tnt:SetAngles( res.HitNormal:Angle( ) - Angle( 90, 180, 0 ) )
@@ -145,7 +145,7 @@ function SWEP:TossTNT( )
 
 	nang.z = -nang.z
 
-	tnt = ents.Create( "sent_swrc_det" )
+	tnt = ents.Create( "sent_swrc_hoth" )
 		tnt:SetPos( self.Owner:GetShootPos( ) )
 		tnt:SetAngles( nang:Angle( ) )
 		tnt:SetOwner( self.Owner )

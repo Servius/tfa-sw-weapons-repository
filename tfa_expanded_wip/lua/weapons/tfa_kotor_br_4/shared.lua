@@ -8,7 +8,7 @@ end
 
 if ( CLIENT ) then
 
-	SWEP.PrintName			= "VS-37 Rifle"			
+	SWEP.PrintName			= "Blaster Rifle T4"			
 	SWEP.Author				= "TFA, Servius"
 	SWEP.ViewModelFOV      	= 50
 	SWEP.Slot				= 2
@@ -72,15 +72,15 @@ SWEP.Secondary.Ammo			= "none"
 
 SWEP.Secondary.IronFOV = 70
 
-SWEP.IronSightsPos = Vector(-6, -5, 2.7)
-SWEP.IronSightsAng = Vector(-1.1, -0, 20)
+SWEP.IronSightsPos = Vector(-4, -3, .6)
+SWEP.IronSightsAng = Vector(-1.1, -0, 0)
 
 SWEP.VElements = {
-	["element_name"] = { type = "Model", model = "models/star wars the force unleashed/sniper.mdl", bone = "v_weapon.awm_parent", rel = "", pos = Vector(-6, 6, -2), angle = Angle(178, 90, -92), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = true, material = "", skin = 0, bodygroup = {} }
+	["element_name"] = { type = "Model", model = "models/w_blstrrfl_004.mdl", bone = "v_weapon.awm_parent", rel = "", pos = Vector(-2, -4, -2), angle = Angle(90, -92, -0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = true, material = "", skin = 0, bodygroup = {} }
 }
 
 SWEP.WElements = {
-	["element_name2"] = { type = "Model", model = "models/star wars the force unleashed/sniper.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(12, 9.1, 3.5 	), angle = Angle(70, -90, 180), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
+	["element_name2"] = { type = "Model", model = "models/w_blstrrfl_004.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(12, 2, -3.6 	), angle = Angle(10, -180, 180), size = Vector(.85, .85, .85), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
 }
 
 

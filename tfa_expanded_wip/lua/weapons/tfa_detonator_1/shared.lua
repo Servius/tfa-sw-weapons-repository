@@ -31,6 +31,7 @@ SWEP.ShowViewModel = true
 SWEP.ShowWorldModel = false
 SWEP.UseHands = true
 SWEP.ViewModelBoneMods = {
+	["v_weapon.awm_parent"] = { scale = Vector(0.009, 0.009, 0.009), pos = Vector(0, 0, 0), angle = Angle(0, 0, 0) },
 	["ValveBiped.Bip01_L_Clavicle"] = { scale = Vector(1, 1, 1), pos = Vector(2.427, 1.802, 0.259), angle = Angle(0, 0, 0) },
 	["v_weapon.famas"] = { scale = Vector(0.009, 0.009, 0.009), pos = Vector(0, 0, 0), angle = Angle(0, 0, 0) }
 }
