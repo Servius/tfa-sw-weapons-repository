@@ -47,7 +47,7 @@ SWEP.Weight					= 5
 SWEP.AutoSwitchTo			= false
 SWEP.AutoSwitchFrom			= false
 
-SWEP.Primary.Recoil			= 0.5
+SWEP.Primary.Recoil			= 0.1
 SWEP.Primary.Damage			= 45
 SWEP.Primary.NumShots		= 1
 SWEP.Primary.Spread			= 0.0125
@@ -65,15 +65,13 @@ SWEP.OnlyBurstFire		= false --No auto, only burst/single?
 SWEP.DefaultFireMode 	= "single" --Default to auto or whatev
 SWEP.FireModeName = nil --Change to a text value to override it
 
-
-
 SWEP.Secondary.Automatic	= false
 SWEP.Secondary.Ammo			= "none"
 
 SWEP.Secondary.IronFOV = 70
 
-SWEP.IronSightsPos = Vector(-4, -3, .6)
-SWEP.IronSightsAng = Vector(-1.1, -0, 0)
+SWEP.IronSightsPos = Vector(-7.5, -3, .6)
+SWEP.IronSightsAng = Vector(0, -0, -3)
 
 SWEP.VElements = {
 	["element_name"] = { type = "Model", model = "models/w_rptnblstr_001.mdl", bone = "v_weapon.awm_parent", rel = "", pos = Vector(-0, -2, -3.1), angle = Angle(90, -92, -0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = true, material = "", skin = 0, bodygroup = {} }
@@ -82,7 +80,6 @@ SWEP.VElements = {
 SWEP.WElements = {
 	["element_name2"] = { type = "Model", model = "models/w_rptnblstr_001.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(11, .5, -3	), angle = Angle(10, -180, 180), size = Vector(.9, .8, .9), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
 }
-
 
 SWEP.BlowbackVector = Vector(0,-3,0.025)
 SWEP.Blowback_Only_Iron  = false

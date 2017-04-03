@@ -52,27 +52,25 @@ SWEP.Primary.Damage			= 110
 SWEP.Primary.NumShots		= 1
 SWEP.Primary.Spread			= 0.0125
 SWEP.Primary.IronAccuracy = .001	-- Ironsight accuracy, should be the same for shotguns
-SWEP.Primary.ClipSize		= 5
+SWEP.Primary.ClipSize		= 15
 SWEP.Primary.RPM = 60/0.175
-SWEP.Primary.DefaultClip	= 10
---SWEP.Primary.Automatic		= false
+SWEP.Primary.DefaultClip	= 50
+SWEP.Primary.Automatic		= true
 SWEP.Primary.Ammo			= "ar2"
 SWEP.TracerName = "effect_sw_laser_red"
 
-SWEP.SelectiveFire		= false --Allow selecting your firemode?
+SWEP.SelectiveFire		= true --Allow selecting your firemode?
 SWEP.DisableBurstFire	= false --Only auto/single?
 SWEP.OnlyBurstFire		= false --No auto, only burst/single?
-SWEP.DefaultFireMode 	= "single" --Default to auto or whatev
+SWEP.DefaultFireMode 	= "" --Default to auto or whatev
 SWEP.FireModeName = nil --Change to a text value to override it
-
-
 
 SWEP.Secondary.Automatic	= false
 SWEP.Secondary.Ammo			= "none"
 
 SWEP.Secondary.IronFOV = 70
 
-SWEP.IronSightsPos = Vector(-4, -3, .6)
+SWEP.IronSightsPos = Vector(-6.2, -0, -1.5)
 SWEP.IronSightsAng = Vector(-1.1, -0, 0)
 
 SWEP.VElements = {
@@ -83,9 +81,24 @@ SWEP.WElements = {
 	["element_name2"] = { type = "Model", model = "models/w_blstrrfl_004.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(12, 2, -3.6 	), angle = Angle(10, -180, 180), size = Vector(.85, .85, .85), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
 }
 
-
 SWEP.BlowbackVector = Vector(0,-3,0.025)
 SWEP.Blowback_Only_Iron  = false
 
 SWEP.DoProceduralReload = true
 SWEP.ProceduralReloadTime = 2.5
+
+SWEP.Scoped				= true
+SWEP.Secondary.UseGreenDuplex		= true
+SWEP.ScopeScale = .9--Scale of the scope overlay
+SWEP.ReticleScale = .65 --Scale of the reticle overlay
+SWEP.Secondary.IronFOV = 30
+
+if surface then
+	SWEP.Secondary.ScopeTable = nil --[[
+		{
+			scopetex = surface.GetTextureID("scope/gdcw_closedsight"),
+			reticletex = surface.GetTextureID("scope/gdcw_acogchevron"),
+			dottex = surface.GetTextureID("scope/gdcw_acogcross")
+		}
+	]]--
+end
