@@ -43,8 +43,8 @@ SWEP.ViewModelBoneMods = {
 	["ValveBiped.Bip01_R_Finger0"] = { scale = Vector(0.85, 0.85, 0.85), pos = Vector(-1.297, 0, 0), angle = Angle(0, 0, 0) }
 }
 
-SWEP.Primary.Sound = Sound ("weapons/synbf3/dlt19_fire.wav");
-SWEP.Primary.ReloadSound = Sound ("weapons/DC15A_reload.wav");
+SWEP.Primary.Sound = Sound("weapons/DC17_fire.wav")
+SWEP.Primary.ReloadSound = Sound("weapons/DC17_reload.wav")
 
 SWEP.Primary.KickUp			= 2
 
@@ -62,7 +62,7 @@ SWEP.Primary.RPM = 450
 SWEP.Primary.DefaultClip	= 50
 SWEP.Primary.Automatic		= true
 SWEP.Primary.Ammo			= "ar2"
-SWEP.TracerName = "effect_sw_laser_red"
+SWEP.TracerName = "effect_sw_laser_blue"
 
 SWEP.SelectiveFire		= true --Allow selecting your firemode?
 SWEP.DisableBurstFire	= false --Only auto/single?
@@ -75,8 +75,8 @@ SWEP.Secondary.Ammo			= "none"
 
 SWEP.Secondary.IronFOV = 70
 
-SWEP.IronSightsPos = Vector(-4, -3, .6)
-SWEP.IronSightsAng = Vector(-1.1, -0, 0)
+SWEP.IronSightsPos = Vector(-6.5, -3, .6)
+SWEP.IronSightsAng = Vector(1, -7, -2)
 
 SWEP.WElements = {
 	["element_name2"] = { type = "Model", model = "models/dc17chrome/dc17chrome.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(3.599, 0.899, 0), angle = Angle(12.857, -176.495, 180), size = Vector(1.399, 1.399, 1.399), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }

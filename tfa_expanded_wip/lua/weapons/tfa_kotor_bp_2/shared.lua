@@ -72,8 +72,8 @@ SWEP.Secondary.Ammo			= "none"
 
 SWEP.Secondary.IronFOV = 70
 
-SWEP.IronSightsPos = Vector(-4, -3, .6)
-SWEP.IronSightsAng = Vector(-1.1, -0, 0)
+SWEP.IronSightsPos = Vector(-2, 1, 2)
+SWEP.IronSightsAng = Vector(5, 3, -4)
 
 SWEP.WElements = {
 	["element_name"] = { type = "Model", model = "models/w_blstrpstl_002.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(3.5, 1.557, -1.201), angle = Angle(171.817, 0, 0), size = Vector(0.79, 0.79, 0.79), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
