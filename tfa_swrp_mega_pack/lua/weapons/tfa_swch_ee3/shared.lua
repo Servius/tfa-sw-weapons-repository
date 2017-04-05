@@ -38,9 +38,10 @@ SWEP.Primary.Sound = Sound ("weapons/EE3_fire.wav");
 SWEP.Primary.ReloadSound = Sound ("weapons/EE3_reload.wav");
 
 SWEP.Primary.Recoil			= 0.5
-SWEP.Primary.Damage			= 50
-SWEP.Primary.NumShots		= 1
-SWEP.Primary.Spread			= 0.0125
+SWEP.Primary.Damage			= 75
+SWEP.Primary.NumShots		= 3
+SWEP.Primary.Spread		    = .175					--This is hip-fire acuracy.  Less is more (1 is horribly awful, .0001 is close to perfect)
+SWEP.Primary.IronAccuracy   = .175
 SWEP.Primary.ClipSize		= 50
 SWEP.Primary.RPM = 60/0.2
 SWEP.Primary.DefaultClip	= 150
