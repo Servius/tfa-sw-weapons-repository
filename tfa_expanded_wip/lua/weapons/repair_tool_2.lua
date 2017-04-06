@@ -204,7 +204,7 @@ end
 function SWEP:RepairEffect(pos)
 	local fx = EffectData()
 		fx:SetOrigin( pos )
-	util.Effect( "StunstickImpact", fx, true )
+	util.Effect( "Sparks", fx, true )
 
 end
 

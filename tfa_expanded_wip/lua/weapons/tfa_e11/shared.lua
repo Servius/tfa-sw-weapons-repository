@@ -8,7 +8,7 @@ end
 
 if ( CLIENT ) then
 
-	SWEP.PrintName			= "Blaster Rifle T1"			
+	SWEP.PrintName			= "E-11"			
 	SWEP.Author				= "TFA, Servius"
 SWEP.ViewModelFOV = 70
 	SWEP.Slot				= 2
@@ -33,7 +33,7 @@ SWEP.ShowWorldModel = false
 SWEP.UseHands = true
 
 SWEP.ViewModelBoneMods = {
-	["v_weapon.awm_parent"] = { scale = Vector(0.009, 0.009, 0.009), pos = Vector(1.667, 0, 0), angle = Angle(0, 0, 0) }
+	["v_weapon.awm_parent"] = { scale = Vector(0.009, 0.009, 0.009), pos = Vector(0, 0, 0), angle = Angle(0, 0, 0) }
 }
 
 SWEP.Primary.Sound = Sound ("weapons/synbf3/dlt19_fire.wav");
@@ -70,15 +70,15 @@ SWEP.Secondary.Ammo			= "none"
 
 SWEP.Secondary.IronFOV = 70
 
-SWEP.IronSightsPos = Vector(-4.821, -7, 1.809)
-SWEP.IronSightsAng = Vector(3.517, -2.112, 2.813)
+SWEP.IronSightsPos = Vector(-6.961, -7.2, 2.16)
+SWEP.IronSightsAng = Vector(0, 0.6, 0)
 
 SWEP.WElements = {
-	["element_gun"] = { type = "Model", model = "models/w_blstrrfl_001.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(11.5, 1.557, -4), angle = Angle(164.804, -1.17, -3.507), size = Vector(0.82, 0.82, 0.82), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
+	["element_name"] = { type = "Model", model = "models/weapons/w_e11.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(10, 0.5, -4.7), angle = Angle(0, -90, 170), size = Vector(1.014, 1.014, 1.014), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
 }
 SWEP.VElements = {
-	["element_scope"] = { type = "Model", model = "models/rtcircle.mdl", bone = "v_weapon.awm_parent", rel = "element_gun", pos = Vector(12, 1.59, 4.199), angle = Angle(0, 0, -90), size = Vector(0.34, 0.34, 0.34), color = Color(255, 255, 255, 255), surpresslightning = false, material = "!tfa_rtmaterial", skin = 0, bodygroup = {} },
-	["element_gun"] = { type = "Model", model = "models/w_blstrrfl_001.mdl", bone = "v_weapon.awm_parent", rel = "", pos = Vector(-0.519, -2.597, -7.792), angle = Angle(92.337, -3.507, -82.987), size = Vector(0.95, 0.95, 0.95), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
+	["element_scope"] = { type = "Model", model = "models/rtcircle.mdl", bone = "v_weapon.awm_parent", rel = "element_name", pos = Vector(0.98, -8.829, 2.65), angle = Angle(180, -90, 90), size = Vector(0.3, 0.3, 0.3), color = Color(255, 255, 255, 255), surpresslightning = false, material = "!tfa_rtmaterial", skin = 0, bodygroup = {} },
+	["element_name"] = { type = "Model", model = "models/weapons/w_e11.mdl", bone = "v_weapon.awm_parent", rel = "", pos = Vector(0.899, -4, -6), angle = Angle(-178, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
 }
 
 
@@ -189,25 +189,25 @@ end
 
 --[[
 SWEP.WElements = {
-	["element_gun"] = { type = "Model", model = "models/w_blstrrfl_001.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(11.5, 1.557, -4), angle = Angle(164.804, -1.17, -3.507), size = Vector(0.82, 0.82, 0.82), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
+	["element_name"] = { type = "Model", model = "models/weapons/w_e11.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(10, 0.5, -4.7), angle = Angle(0, -90, 170), size = Vector(1.014, 1.014, 1.014), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
 }
 SWEP.VElements = {
-	["element_scope"] = { type = "Model", model = "models/rtcircle.mdl", bone = "v_weapon.awm_parent", rel = "element_gun", pos = Vector(11.947, 1.557, 4.199), angle = Angle(0, 0, 0), size = Vector(0.301, 0.301, 0.301), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
-	["element_gun"] = { type = "Model", model = "models/w_blstrrfl_001.mdl", bone = "v_weapon.awm_parent", rel = "", pos = Vector(-0.519, -2.597, -7.792), angle = Angle(92.337, -3.507, -82.987), size = Vector(0.95, 0.95, 0.95), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
+	["element_scope"] = { type = "Model", model = "models/rtcircle.mdl", bone = "v_weapon.awm_parent", rel = "element_name", pos = Vector(0.98, -8.829, 2.65), angle = Angle(180, -90, 0), size = Vector(0.3, 0.3, 0.3), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
+	["element_name"] = { type = "Model", model = "models/weapons/w_e11.mdl", bone = "v_weapon.awm_parent", rel = "", pos = Vector(0.899, -4, -6), angle = Angle(-178, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
 }
 
-SWEP.IronSightsPos = Vector(-4.821, -8.844, 1.809)
-SWEP.IronSightsAng = Vector(3.517, -2.112, 2.813)
+SWEP.IronSightsPos = Vector(-6.961, -7.2, 2.16)
+SWEP.IronSightsAng = Vector(0, 0.6, 0)
 
 SWEP.HoldType = "ar2"
 SWEP.ViewModelFOV = 70
 SWEP.ViewModelFlip = false
 SWEP.UseHands = true
 SWEP.ViewModel = "models/weapons/cstrike/c_snip_awp.mdl"
-SWEP.WorldModel = "models/weapons/w_dc15sa.mdl"
+SWEP.WorldModel = "models/weapons/w_irifle.mdl"
 SWEP.ShowViewModel = true
 SWEP.ShowWorldModel = false
 SWEP.ViewModelBoneMods = {
-	["v_weapon.awm_parent"] = { scale = Vector(0.009, 0.009, 0.009), pos = Vector(1.667, 0, 0), angle = Angle(0, 0, 0) }
+	["v_weapon.awm_parent"] = { scale = Vector(0.009, 0.009, 0.009), pos = Vector(0, 0, 0), angle = Angle(0, 0, 0) }
 }
 --]]

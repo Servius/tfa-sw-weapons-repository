@@ -7,14 +7,12 @@ if ( SERVER ) then
 end
 
 if ( CLIENT ) then
-
-	SWEP.PrintName			= "Blaster Pistol T2"			
+	SWEP.PrintName			= "DH-17"	
 	SWEP.Author				= "TFA, Servius"
 	SWEP.ViewModelFOV      	= 50
 	SWEP.Slot				= 2
 	SWEP.SlotPos			= 3
 end
-
 
 SWEP.Base					= "tfa_swsft_base_servius"
 
@@ -27,18 +25,15 @@ SWEP.HoldType = "pistol"
 SWEP.ViewModelFOV = 56
 SWEP.ViewModelFlip = false
 SWEP.ViewModel = "models/weapons/synbf3/c_dh17.mdl"
-SWEP.WorldModel = "models/weapons/w_dc15sa.mdl"
+SWEP.WorldModel = "models/weapons/w_dl44.mdl"
 SWEP.ShowViewModel = true
 SWEP.ShowWorldModel = false
 SWEP.UseHands = true
 
 SWEP.ViewModelBoneMods = {
+	["ValveBiped.Bip01_R_UpperArm"] = { scale = Vector(1, 1, 1), pos = Vector(-0, 0, 0), angle = Angle(0, 0, 0) },
 	["v_dh17_reference001"] = { scale = Vector(0.009, 0.009, 0.009), pos = Vector(0, 0, 0), angle = Angle(0, 0, 0) },
-	["ValveBiped.Bip01_R_Finger02"] = { scale = Vector(1, 0.941, 1), pos = Vector(0, 0, 0), angle = Angle(0, 0, 0) },
-	["ValveBiped.Bip01_R_Finger32"] = { scale = Vector(1, 1, 1), pos = Vector(-0.186, -0.186, 0.185), angle = Angle(0, 0, 0) },
-	["ValveBiped.Bip01_R_Finger42"] = { scale = Vector(1, 1, 1), pos = Vector(0.185, -0.186, 0), angle = Angle(0, 0, 0) },
-	["ValveBiped.Bip01_R_Finger22"] = { scale = Vector(1, 1, 1), pos = Vector(-0.186, 0.185, 0), angle = Angle(0, 0, 0) },
-	["ValveBiped.Bip01_R_Finger0"] = { scale = Vector(1, 0.009, 1.292), pos = Vector(0, 0, 0), angle = Angle(0, 0, 0) }
+	["ValveBiped.Bip01_R_Hand"] = { scale = Vector(1, 1, 1), pos = Vector(-0, 0, 0), angle = Angle(0, 0, 0) }
 }
 
 SWEP.Primary.Sound = Sound ("weapons/synbf3/dlt19_fire.wav");
@@ -73,17 +68,15 @@ SWEP.Secondary.Ammo			= "none"
 
 SWEP.Secondary.IronFOV = 70
 
-SWEP.IronSightsPos = Vector(-5.628, -6.231, 1.809)
-SWEP.IronSightsAng = Vector(0, -4.7, -0.704)
-
+SWEP.IronSightsPos = Vector(-4.5, -0, 0.819)
+SWEP.IronSightsAng = Vector(1, -0, 0)
 SWEP.WElements = {
-	["element_name"] = { type = "Model", model = "models/w_blstrpstl_003.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(2.596, 1.557, -0.519), angle = Angle(8.182, 180, 180), size = Vector(0.885, 0.885, 0.885), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
+	["element_name"] = { type = "Model", model = "models/weapons/w_dh17.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(9.869, 0.518, -3.636), angle = Angle(0, -90, 180), size = Vector(0.959, 0.959, 0.959), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
 }
 SWEP.VElements = {
-	["element_scope"] = { type = "Model", model = "models/rtcircle.mdl", bone = "v_dh17_reference001", rel = "element_name", pos = Vector(0.738, 0, 4.98), angle = Angle(0, 0, 180), size =	 Vector(0.241, 0.241,0.241), color = Color(255, 255, 255, 255), surpresslightning = false, material = "!tfa_rtmaterial", skin = 0, bodygroup = {} },
-	["element_name"] = { type = "Model", model = "models/w_blstrpstl_003.mdl", bone = "v_dh17_reference001", rel = "", pos = Vector(0.4, 0.28, -0.519), angle = Angle(-1.17, -82.987, -1.17), size = Vector(0.69, 0.69, 0.69), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
+	["element_scope"] = { type = "Model", model = "models/rtcircle.mdl", bone = "v_dh17_reference001", rel = "element_reference", pos = Vector(0.4, -10.19, 2.89), angle = Angle(0, 90, 180), size = Vector(0.289, 0.289, 0.289), color = Color(255, 255, 255, 255), surpresslightning = false, material = "!tfa_rtmaterial", skin = 0, bodygroup = {} },
+	["element_reference"] = { type = "Model", model = "models/weapons/w_dh17.mdl", bone = "v_dh17_reference001", rel = "", pos = Vector(0.899, -4.676, 2.596), angle = Angle(-180, 0, 180), size = Vector(0.82, 0.82, 0.82), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
 }
-
 local function  drawFilledCircle( x, y, radius, seg )
 	local kirkle = {}
 
@@ -127,8 +120,8 @@ SWEP.RTCode = function( self, mat )
 	
 		ang = AngPos.Ang
 		
-		ang:RotateAroundAxis(ang:Right(), 0)
-		ang:RotateAroundAxis(ang:Up(), -5)
+		ang:RotateAroundAxis(ang:Right(), 2)
+		ang:RotateAroundAxis(ang:Up(), -7)
 
 	end
 	
@@ -167,6 +160,7 @@ SWEP.RTCode = function( self, mat )
 	
 end
 
+
 SWEP.BlowbackVector = Vector(0,-3,0.025)
 SWEP.Blowback_Only_Iron  = false
 
@@ -178,25 +172,27 @@ SWEP.ViewModelFOV = 70
 SWEP.ViewModelFlip = false
 SWEP.UseHands = true
 SWEP.ViewModel = "models/weapons/synbf3/c_dh17.mdl"
-SWEP.WorldModel = "models/weapons/w_dc15sa.mdl"
+SWEP.WorldModel = "models/weapons/w_dl44.mdl"
 SWEP.ShowViewModel = true
 SWEP.ShowWorldModel = false
 SWEP.ViewModelBoneMods = {
-	["v_dh17_reference001"] = { scale = Vector(0.009, 0.009, 0.009), pos = Vector(0, 0, 0), angle = Angle(0, 0, 0) },
-	["ValveBiped.Bip01_R_Finger21"] = { scale = Vector(1, 1, 1), pos = Vector(-0.556, 0, 0), angle = Angle(0, 0, 0) },
-	["ValveBiped.Bip01_R_Finger02"] = { scale = Vector(1, 1, 1), pos = Vector(0.555, -0.556, 0), angle = Angle(0, 0, 0) },
-	["ValveBiped.Bip01_R_Finger2"] = { scale = Vector(0.961, 0.961, 0.961), pos = Vector(0, 0, 0), angle = Angle(0, 0, 0) },
-	["ValveBiped.Bip01_R_Finger01"] = { scale = Vector(0.924, 0.924, 0.924), pos = Vector(-0.186, 0, 0), angle = Angle(0, 0, 0) },
-	["ValveBiped.Bip01_R_Finger42"] = { scale = Vector(1, 1, 1), pos = Vector(0.185, -0.556, 0.185), angle = Angle(-3.333, 0, 0) },
-	["ValveBiped.Bip01_R_Finger32"] = { scale = Vector(1, 1, 1), pos = Vector(-0.186, -0.341, 0.185), angle = Angle(0, 0, 0) },
-	["ValveBiped.Bip01_R_Finger22"] = { scale = Vector(0.904, 0.85, 0.904), pos = Vector(-0.556, -0.186, 0.185), angle = Angle(5.556, 0, 0) },
-	["ValveBiped.Bip01_R_Finger0"] = { scale = Vector(0.85, 0.85, 0.85), pos = Vector(-1.297, 0, 0), angle = Angle(0, 0, 0) }
+	["ValveBiped.Bip01_R_UpperArm"] = { scale = Vector(1, 1, 1), pos = Vector(-0.186, 0, 0), angle = Angle(0, 0, 0) },
+	["slingring"] = { scale = Vector(0.009, 0.009, 0.009), pos = Vector(-30, 0, 0), angle = Angle(0, 0, 0) },
+	["v_dh17_reference001"] = { scale = Vector(0.009, 0.009, 0.009), pos = Vector(0.925, 0, 0), angle = Angle(0, 0, 0) },
+	["dh17"] = { scale = Vector(1, 1, 1), pos = Vector(30, 0, 0), angle = Angle(0, 0, 0) },
+	["Object002"] = { scale = Vector(1, 1, 1), pos = Vector(30, 0, 0), angle = Angle(0, 0, 0) },
+	["trigger"] = { scale = Vector(1, 1, 1), pos = Vector(-30, 0, 0), angle = Angle(0, 0, 0) },
+	["Object001"] = { scale = Vector(1, 1, 1), pos = Vector(0.925, 0, 0), angle = Angle(0, 0, 0) },
+	["ValveBiped.Bip01_R_Hand"] = { scale = Vector(1, 1, 1), pos = Vector(-0.556, 0, 0), angle = Angle(0, 0, 0) }
 }
 SWEP.WElements = {
-	["element_name"] = { type = "Model", model = "models/w_blstrpstl_003.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(2.596, 1.557, -0.519), angle = Angle(8.182, 180, 180), size = Vector(0.885, 0.885, 0.885), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
+	["element_name"] = { type = "Model", model = "models/weapons/w_dh17.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(9.869, 0.518, -3.636), angle = Angle(0, -90, 180), size = Vector(0.959, 0.959, 0.959), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
 }
 SWEP.VElements = {
-	["element_scope"] = { type = "Model", model = "models/rtcircle.mdl", bone = "v_dh17_reference001", rel = "element_name", pos = Vector(0.779, 0, 5), angle = Angle(0, 0, 0), size = Vector(0.237, 0.237, 0.237), color = Color(255, 255, 255, 255), surpresslightning = false, material = "!tfa_rtmaterial", skin = 0, bodygroup = {} },
-	["element_name"] = { type = "Model", model = "models/w_blstrpstl_003.mdl", bone = "v_dh17_reference001", rel = "", pos = Vector(0.4, 0.28, -0.519), angle = Angle(-1.17, -82.987, -1.17), size = Vector(0.69, 0.69, 0.69), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
+	["element_scope"] = { type = "Model", model = "models/rtcircle.mdl", bone = "v_dh17_reference001", rel = "element_reference", pos = Vector(0.4, -10.19, 2.89), angle = Angle(0, 90, 0), size = Vector(0.289, 0.289, 0.289), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
+	["element_reference"] = { type = "Model", model = "models/weapons/w_dh17.mdl", bone = "v_dh17_reference001", rel = "", pos = Vector(0.899, -4.676, 2.596), angle = Angle(-180, -2.991, 180), size = Vector(0.82, 0.82, 0.82), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
 }
+
+SWEP.IronSightsPos = Vector(-3.961, -9.631, 0.819)
+SWEP.IronSightsAng = Vector(1.2, 3.71, 0)
 --]]
