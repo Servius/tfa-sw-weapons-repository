@@ -1,0 +1,15 @@
+local function EUPlug( )
+
+print("Star Wars Expanded Pack Changelog 1.0")
+print("===MOST RECENT UPDATE===")
+print("- Added this on spawn console message to help inform people what has changed with this addon.")
+print("- 15+ new guns added.")
+print("- NPC Weapons added.")
+print("NOTICE: If you are interested in developing this addon feel free to take a look at the git repository located here:")
+print("https://github.com/Servius/tfa-sw-weapons-repository")
+print("I'd love the opportunity to work with any of you talented peeps out there.")
+print("SERVER OWNERS:")
+print("Please, if you are using any non-star wars weapons please contact me. If you are using the OG Mega-Pack you need to switch to the Uni-Pack.")
+print("Also, please contact me to setup your transfer to a more secure long term solution to the quoute TFA BASE IS BROKEN USE THIS VERSION unquoute.)
+end
+hook.Add("PlayerInitialSpawn", "EUUpdates", EUPlug)
