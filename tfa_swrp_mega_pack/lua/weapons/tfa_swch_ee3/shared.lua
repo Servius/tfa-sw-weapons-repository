@@ -34,8 +34,8 @@ SWEP.Weight					= 5
 SWEP.AutoSwitchTo			= false
 SWEP.AutoSwitchFrom			= false
 
-SWEP.Primary.Sound = Sound ("weapons/EE3_fire.wav");
-SWEP.Primary.ReloadSound = Sound ("weapons/EE3_reload.wav");
+SWEP.Primary.Sound = Sound ("weapons/synbf3/EE3_fire.wav");
+SWEP.Primary.ReloadSound = Sound ("weapons/synbf3/EE3_reload.wav");
 
 SWEP.Primary.Recoil			= 0.5
 SWEP.Primary.Damage			= 70
