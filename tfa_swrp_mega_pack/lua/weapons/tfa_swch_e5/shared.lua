@@ -51,7 +51,7 @@ SWEP.TracerName = "effect_sw_laser_red"
 SWEP.Secondary.Automatic	= false
 SWEP.Secondary.Ammo			= "none"
 
-SWEP.IronSightsPos = Vector(-4.75, -8.612, 1.4)
+SWEP.IronSightsPos = Vector(-4.75, -7, 1.4)
 SWEP.IronSightsAng = Vector(0, 0, 0)
 
 SWEP.VElements = {
