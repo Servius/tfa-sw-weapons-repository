@@ -1,0 +1,9 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\weapons\w_models\KOTOR\blaster_rifle\KOTOR_blaster_rifle_d"
+	"$bumpmap" "models\weapons\w_models\KOTOR\blaster_rifle\KOTOR_blaster_rifle_n"
+	"$halflambert" "1"
+	"$translucent" 1
+	"$alphatest" 1
+	"$Nocull" 1
+}

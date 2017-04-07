@@ -4,6 +4,7 @@ SWEP.ViewModelFOV      	= 56
 SWEP.Slot				= 2
 SWEP.HoldType				= "ar2"
 SWEP.Base					= "tfa_swsft_base"
+SWEP.Instructions				= "This gun is called 'WESTAR M5' not WEST-AR-M5. This is for the idiots that have been saying its the latter of the two." --Instructions Tooltip
 
 SWEP.Category = "TFA Star Wars"
 
