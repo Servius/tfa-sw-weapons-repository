@@ -1,4 +1,4 @@
-local function EUPlug( )
+local function ExpandedPlug( )
 
 print("Star Wars Expanded Pack Changelog 1.0")
 print("===MOST RECENT UPDATE===")
@@ -12,4 +12,4 @@ print("SERVER OWNERS:")
 print("Please, if you are using any non-star wars weapons please contact me. If you are using the OG Mega-Pack you need to switch to the Uni-Pack.")
 print("Also, please contact me to setup your transfer to a more secure long term solution to the quoute TFA BASE IS BROKEN USE THIS VERSION unquoute.)
 end
-hook.Add("PlayerInitialSpawn", "EUUpdates", EUPlug)
+hook.Add("PlayerInitialSpawn", "ExpandedUpdates", ExpandedPlug)
