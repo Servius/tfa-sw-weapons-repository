@@ -1,6 +1,6 @@
 
 SWEP.PrintName = "Repair Tool"
-SWEP.Author = "Liam0102"
+SWEP.Author = "Liam0102, Servius"
 SWEP.Purpose = "Repair Star Wars Vehicles"
 SWEP.Instructions = "Left Click to Repair"
 SWEP.Category = "Star Wars"
@@ -9,12 +9,50 @@ SWEP.Slot = 3
 SWEP.SlotPos = 5
 SWEP.DrawAmmo	= false
 SWEP.DrawCrosshair = true
-SWEP.ViewModel = "models/weapons/c_toolgun.mdl"
-SWEP.WorldModel = "models/weapons/w_toolgun.mdl"
-SWEP.AnimPrefix = "python"
-SWEP.HoldType = "pistol"
+SWEP.ViewModel = "models/weapons/synbf3/c_dh17.mdl"
+SWEP.WorldModel = "models/weapons/w_c4.mdl"
+--SWEP.AnimPrefix = "python"
+SWEP.HoldType = "slam"
 SWEP.Spawnable = true
 SWEP.AdminSpawnable = false
+SWEP.ShowViewModel = true
+SWEP.ShowWorldModel = false
+SWEP.UseHands = true
+SWEP.ViewModelBoneMods = {
+	["v_dh17_reference001"] = { scale = Vector(0.009, 0.009, 0.009), pos = Vector(0, 0, 0), angle = Angle(0, 0, 0) },
+	["ValveBiped.Bip01_R_Finger11"] = { scale = Vector(1, 1, 1), pos = Vector(0, 1.5, 0), angle = Angle(-30, 0, 0) },
+	["ValveBiped.Bip01_R_Finger32"] = { scale = Vector(1, 1, 1), pos = Vector(0.555, -0.186, 0), angle = Angle(-3.333, 0, 0) },
+	["ValveBiped.Bip01_R_Finger42"] = { scale = Vector(1, 1, 1), pos = Vector(0.925, -0.186, 0), angle = Angle(-3.333, 0, 0) }
+}
+SWEP.VElements = {
+	["element_view"] = { type = "Model", model = "models/props/starwars/weapons/fusion_cutter.mdl", bone = "v_dh17_reference001", rel = "", pos = Vector(0.2, 0.1, -5), angle = Angle(0, 94.675, 0), size = Vector(0.699, 0.699, 0.699), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
+}
+SWEP.WElements = {
+	["element_world"] = { type = "Model", model = "models/props/starwars/weapons/fusion_cutter.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(2.4, 1.6, 5), angle = Angle(0, 0, 180), size = Vector(0.99, 0.99, 0.99), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
+}
+
+--[[
+SWEP.HoldType = "slam"
+SWEP.ViewModelFOV = 70
+SWEP.ViewModelFlip = false
+SWEP.UseHands = true
+SWEP.ViewModel = "models/weapons/synbf3/c_dh17.mdl"
+SWEP.WorldModel = "models/weapons/w_c4.mdl"
+SWEP.ShowViewModel = true
+SWEP.ShowWorldModel = false
+SWEP.ViewModelBoneMods = {
+	["v_dh17_reference001"] = { scale = Vector(0.009, 0.009, 0.009), pos = Vector(0, 0, 0), angle = Angle(0, 0, 0) },
+	["ValveBiped.Bip01_R_Finger11"] = { scale = Vector(1, 1, 1), pos = Vector(0, 1.5, 0), angle = Angle(-30, 0, 0) },
+	["ValveBiped.Bip01_R_Finger32"] = { scale = Vector(1, 1, 1), pos = Vector(0.555, -0.186, 0), angle = Angle(-3.333, 0, 0) },
+	["ValveBiped.Bip01_R_Finger42"] = { scale = Vector(1, 1, 1), pos = Vector(0.925, -0.186, 0), angle = Angle(-3.333, 0, 0) }
+}
+SWEP.VElements = {
+	["element_view"] = { type = "Model", model = "models/props/starwars/weapons/fusion_cutter.mdl", bone = "v_dh17_reference001", rel = "", pos = Vector(0.2, 0.1, -5), angle = Angle(0, 94.675, 0), size = Vector(0.699, 0.699, 0.699), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
+}
+SWEP.WElements = {
+	["element_world"] = { type = "Model", model = "models/props/starwars/weapons/fusion_cutter.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(2.4, 1.6, 5), angle = Angle(0, 0, 180), size = Vector(0.99, 0.99, 0.99), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
+}
+]]
 
 
 SWEP.Primary.ClipSize = -1
