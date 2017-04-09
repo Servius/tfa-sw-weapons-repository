@@ -40,10 +40,10 @@ SWEP.Primary.ReloadSound = Sound ("weapons/DLT19_reload.wav");
 
 
 SWEP.Primary.Recoil			= 0.9
-SWEP.Primary.Damage			= 35
+SWEP.Primary.Damage			= 10
 SWEP.Primary.NumShots		= 6
-SWEP.Primary.Spread			= 0.175
-SWEP.Primary.IronAccuracy = .150	-- Ironsight accuracy, should be the same for shotguns
+SWEP.Primary.Spread			= 0.05
+SWEP.Primary.IronAccuracy = .005	-- Ironsight accuracy, should be the same for shotguns
 SWEP.Primary.ClipSize		= 20
 SWEP.Primary.RPM = 12/0.13125
 SWEP.Primary.DefaultClip	= 60

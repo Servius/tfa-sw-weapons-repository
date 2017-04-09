@@ -22,14 +22,14 @@ SWEP.ViewModelBoneMods = {
 }
 
 SWEP.VElements = {
-	["Slugthrower"] = { type = "Model", model = "models/swbf3/rep/shotgun.mdl", bone = "Object001", rel = "", pos = Vector(0, 6, -3), angle = Angle(1, -90, 0), size = Vector(1.144, 1.144, 1.144), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
+	["Slugthrower"] = { type = "Model", model = "models/swbf3/reb/shotgun.mdl", bone = "Object001", rel = "", pos = Vector(0, 5, -2), angle = Angle(0, -90, 0), size = Vector(1.144, 1.144, 1.144), color = Color(255, 255, 255, 255), surpresslightning = true, material = "", skin = 0, bodygroup = {} }
 }
 SWEP.WElements = {
-	["Cycler"] = { type = "Model", model = "models/swbf3/rep/shotgun.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(10, 1, 0.5), angle = Angle(-7, 0, 180), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
+	["Cycler"] = { type = "Model", model = "models/swbf3/reb/shotgun.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(14, 1, -1), angle = Angle(-15, 0, 180), size = Vector(.85, .85, .85), color = Color(255, 255, 255, 255), surpresslightning = true, material = "", skin = 0, bodygroup = {} }
 }
 end
 
-SWEP.HoldType				= "ar2"
+SWEP.HoldType				= "shotgun"
 SWEP.Base					= "tfa_gun_base"
 
 SWEP.ViewModelFlip = false
@@ -45,8 +45,7 @@ SWEP.AdminSpawnable			= true
 SWEP.ViewModel = "models/weapons/synbf3/c_a280.mdl"
 SWEP.WorldModel = "models/weapons/synbf3/w_a280.mdl"
 
-
-SWEP.Primary.Sound = Sound ("weapons/repcannon_fire.mp3");
+SWEP.Primary.Sound = Sound ("weapons/tfa_fusionblaster/gunfire/sniper_military_fire_1_incendiary.wav");
 SWEP.Primary.ReloadSound = Sound ("weapons/synbf3/a280_reload.wav");
 
 SWEP.ForceDryFireOff = true --Disables dryfire.  Set to false to enable them.
@@ -64,20 +63,24 @@ SWEP.CustomMuzzleFlash = false --Disable muzzle anim events and use our custom f
 SWEP.AutoDetectMuzzleAttachment = false --For multi-barrel weapons, detect the proper attachment?
 SWEP.MuzzleFlashEffect = "" --Change to a string of your muzzle flash effect.  Copy/paste one of the existing from the base.
 
-
-SWEP.Primary.Spread		= .05					--This is hip-fire acuracy.  Less is more (1 is horribly awful, .0001 is close to perfect)
-SWEP.Primary.IronAccuracy = .05	-- Ironsight accuracy, should be the same for shotguns
+SWEP.Primary.Spread		= .0575					--This is hip-fire acuracy.  Less is more (1 is horribly awful, .0001 is close to perfect)
+SWEP.Primary.IronAccuracy = .0575	-- Ironsight accuracy, should be the same for shotguns
 SWEP.Primary.Recoil			= 0.5
-SWEP.Primary.Damage			= 30
-SWEP.Primary.NumShots		= 5
+SWEP.Primary.Damage			= 15
+SWEP.Primary.NumShots		= 7
 SWEP.Primary.Cone			= 0.05
-SWEP.Primary.ClipSize		= 8
+SWEP.Primary.ClipSize		= 2
 SWEP.Primary.RPM				= 120
-SWEP.Primary.DefaultClip	= 75
+SWEP.Primary.DefaultClip	= 16
 SWEP.Primary.Automatic		= false
 SWEP.Primary.Ammo			= "ar2"
 
-SWEP.IronSightsPos 			= Vector(1, 15, 0)
+SWEP.DisableChambering = true --Disable round-in-the-chamber
+
+SWEP.Primary.KickUp = 2 -- This is the maximum upwards recoil (rise)
+SWEP.TracerCount 		= 1 	--0 disables, otherwise, 1 in X chance
+
+SWEP.IronSightsPos 			= Vector(-3.8, 10, .1)
 SWEP.IronSightsAng 			= Vector(0, 0, 0)
 
 SWEP.Primary.KickUp			= 0.2					-- This is the maximum upwards recoil (rise)
@@ -92,7 +95,7 @@ SWEP.Primary.RangeFalloff = 0.5 -- The percentage of the range the bullet damage
 
 SWEP.ImpactEffect = "effect_sw_impact" --Impact Effect
 SWEP.Tracer				= 0		--Bullet tracer.  TracerName overrides this.
-SWEP.TracerName 		= "effect_sw_laser_blue" 	--Change to a string of your tracer name.  Can be custom.
+SWEP.TracerName 		= "effect_sw_laser_red" 	--Change to a string of your tracer name.  Can be custom.
 
 SWEP.Secondary.Automatic	= false
 SWEP.Secondary.Ammo			= "none"

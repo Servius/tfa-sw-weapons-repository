@@ -3,15 +3,19 @@ AddCSLuaFile("shared.lua")
 include("shared.lua")
 function ENT:Initialize()
 	self:SetModel("models/star wars the force unleashed/thermal_detonator.mdl")
+	--self:SetMass(.1)
 	self:PhysicsInit(SOLID_VPHYSICS)
 	self:SetMoveType(MOVETYPE_VPHYSICS)
 	self:SetSolid(SOLID_VPHYSICS)
 	self:SetUseType(SIMPLE_USE)
 	local phys = self:GetPhysicsObject()
 
+	     --  if IsValid(phys) then
+	 --     -- 	phys:SetMass(200)
+
 	phys:Wake()
 
-	util.SpriteTrail(self, 0, Color(95 * 2,63 * 2,127 * 2), false, 15, 1, 4, 1/(15+1)*0.5, "trails/plasma.vmt")
+--	util.SpriteTrail(self, 0, Color(95 * 2,63 * 2,127 * 2), false, 15, 1, 4, 1/(15+1)*0.5, "trails/plasma.vmt")
 
 	self.countsounds = 100
 	timer.Simple(1,function()
@@ -27,12 +31,12 @@ function ENT:Initialize()
 				explode:SetKeyValue("iMagnitude","200")
 				explode:Fire("Explode",0,0)
 				
-				explode:EmitSound("ambient/alarms/klaxon1.wav",90,60)
+				explode:EmitSound("aweapons/sw_detonator.wav",90,60)
 
 				timer.Destroy("babysounds"..self:EntIndex())
 				self:Remove()
 			else
-				self:EmitSound("ambient/alarms/klaxon1.wav",80,self.countsounds)
+				self:EmitSound("weapons/sw_detonator.wav",80,self.countsounds)
 				self.countsounds = self.countsounds + 10
 			end
 		end)
@@ -51,7 +55,7 @@ function ENT:OnTakeDamage()
 		explode:SetKeyValue("iMagnitude","200")
 		explode:Fire("Explode",0,0)
 		
-		explode:EmitSound("ambient/alarms/klaxon1.wav",90,60)
+		explode:EmitSound("weapons/sw_detonator.wav",90,60)
 
 		timer.Destroy("babysounds"..self:EntIndex())
 		self:Remove()

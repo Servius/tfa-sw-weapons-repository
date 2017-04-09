@@ -111,7 +111,7 @@ SWEP.RTOpaque = true
 
 local g36
 if surface then
-	g36 = surface.GetTextureID("scope/gdcw_nvgilluminatedduplex") --the texture you vant to use
+	g36 = surface.GetTextureID("scope/gdcw_green_nobar") --the texture you vant to use
 end
 
 SWEP.RTCode = function( self, mat )

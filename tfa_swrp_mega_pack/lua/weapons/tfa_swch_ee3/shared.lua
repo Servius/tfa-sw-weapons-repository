@@ -34,39 +34,22 @@ SWEP.Weight					= 5
 SWEP.AutoSwitchTo			= false
 SWEP.AutoSwitchFrom			= false
 
-SWEP.Primary.Sound = Sound ("weapons/synbf3/EE3_fire.wav");
-SWEP.Primary.ReloadSound = Sound ("weapons/synbf3/EE3_reload.wav");
+SWEP.Primary.Sound = Sound ("weapons/EE3_fire.wav");
+SWEP.Primary.ReloadSound = Sound ("weapons/EE3_reload.wav");
 
 SWEP.Primary.Recoil			= 0.5
-SWEP.Primary.Damage			= 70
+SWEP.Primary.Damage			= 50
 SWEP.Primary.NumShots		= 1
-SWEP.Primary.Spread		    = 0.0125				--This is hip-fire acuracy.  Less is more (1 is horribly awful, .0001 is close to perfect)
-SWEP.Primary.IronAccuracy   = 0.0125
+SWEP.Primary.Spread			= 0.0125
 SWEP.Primary.ClipSize		= 50
+SWEP.Primary.RPM = 60/0.2
 SWEP.Primary.DefaultClip	= 150
-SWEP.Primary.Automatic = false -- Automatic/Semi Auto
-SWEP.Primary.RPM = 600 -- This is in Rounds Per Minute / RPM
-SWEP.Primary.RPM_Burst = 600 -- RPM for burst fire, overrides semi.  This is in Rounds Per Minute / RPM
-SWEP.Primary.BurstDelay = nil -- Delay between bursts, leave nil to autocalculate
+SWEP.Primary.Automatic		= false
 SWEP.Primary.Ammo			= "ar2"
 SWEP.TracerName = "effect_sw_laser_red"
 
 SWEP.Secondary.Automatic	= false
 SWEP.Secondary.Ammo			= "none"
-
---Range Related
-SWEP.Primary.Range = 500 -- The distance the bullet can travel in source units.  Set to -1 to autodetect based on damage/rpm.
-SWEP.Primary.RangeFalloff = 0.25 -- The percentage of the range the bullet damage starts to fall off at.  Set to 0.8, for example, to start falling off after 80% of the range.
--- Selective Fire Stuff
- SWEP.FireModes = {
-"3Burst",
-"Single"
-}
-
-SWEP.SelectiveFire = true --Allow selecting your firemode?
-SWEP.OnlyBurstFire = true --No auto, only burst/single?
-SWEP.DefaultFireMode = "3Burst" --Default to auto or whatev
-
 
 SWEP.IronSightsPos = Vector(-4.64, -12.938, 1.059)
 SWEP.IronSightsAng = Vector(0, 0, -0.491)
@@ -100,7 +83,7 @@ SWEP.RTOpaque = true
 
 local g36
 if surface then
-	g36 = surface.GetTextureID("scope/gdcw_nvgilluminatedduplex") --the texture you vant to use
+	g36 = surface.GetTextureID("scope/gdcw_green_nobar") --the texture you vant to use
 end
 
 SWEP.RTCode = function( self, mat )

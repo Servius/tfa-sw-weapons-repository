@@ -29,7 +29,7 @@ SWEP.Weight				= 30			-- This controls how "good" the weapon is for autopickup.
 SWEP.Primary.Sound 			= Sound("TFA_SW_CISSHOT.1")				-- This is the sound of the weapon, when you shoot.
 SWEP.Primary.SilencedSound 			= nil				-- This is the sound of the weapon, when silenced.
 SWEP.Primary.PenetrationMultiplier = 1 --Change the amount of something this gun can penetrate through
-SWEP.Primary.Damage		= 35					-- Damage, in standard damage points.
+SWEP.Primary.Damage		= 20					-- Damage, in standard damage points.
 SWEP.Primary.HullSize = 0 --Big bullets, increase this value.  They increase the hull size of the hitscan bullet.
 SWEP.DamageType = DMG_SHOCK--See DMG enum.  This might be DMG_SHOCK, DMG_BURN, DMG_BULLET, etc.
 SWEP.Primary.NumShots	= 5 --The number of shots the weapon fires.  SWEP.Shotgun is NOT required for this to be >1.
@@ -66,8 +66,8 @@ SWEP.Primary.StaticRecoilFactor = 0.05 	--Amount of recoil to directly apply to 
 
 --Firing Cone Related
 
-SWEP.Primary.Spread		= .175					--This is hip-fire acuracy.  Less is more (1 is horribly awful, .0001 is close to perfect)
-SWEP.Primary.IronAccuracy = .150	-- Ironsight accuracy, should be the same for shotguns
+SWEP.Primary.Spread		= .05					--This is hip-fire acuracy.  Less is more (1 is horribly awful, .0001 is close to perfect)
+SWEP.Primary.IronAccuracy = .05	-- Ironsight accuracy, should be the same for shotguns
 
 --Unless you can do this manually, autodetect it.  If you decide to manually do these, uncomment this block and remove this line.
 --SWEP.Primary.SpreadMultiplierMax = 2.5 --How far the spread can expand when you shoot.
