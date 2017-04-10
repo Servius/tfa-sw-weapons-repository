@@ -38,7 +38,7 @@ SWEP.ViewModelBoneMods = {
 	["ValveBiped.Bip01_L_Finger0"] = { scale = Vector(1, 1, 1), pos = Vector(-1, -1, 1), angle = Angle(0, 1.447, 0) }
 }
 
-SWEP.Primary.Sound = Sound ("weapons/DC15A_fire.wav");
+SWEP.Primary.Sound = Sound ("NPC_Combine.GrenadeLaunch");
 SWEP.Primary.ReloadSound = Sound ("weapons/DC15A_reload.wav");
 
 SWEP.Weight					= 5
@@ -49,7 +49,7 @@ SWEP.Primary.Recoil			= 10
 SWEP.Primary.Damage			= 200
 SWEP.Primary.NumShots		= 1
 SWEP.Primary.Spread			= 0.05
-SWEP.Primary.ClipSize		= 1
+SWEP.Primary.ClipSize		= 3
 SWEP.Primary.RPM = 60/1
 SWEP.Primary.DefaultClip	= 3
 SWEP.Primary.Automatic		= true
@@ -58,8 +58,8 @@ SWEP.Primary.Ammo			= "rpg_round"
 SWEP.Secondary.Automatic	= false
 SWEP.Secondary.Ammo			= "none"
 
-SWEP.ProjectileEntity = "dc17m_at_rocket" --Entity to shoot
-SWEP.ProjectileVelocity = 500 --Entity to shoot's velocity
+SWEP.ProjectileEntity = "ent_baby_explosive2" --Entity to shoot
+SWEP.ProjectileVelocity = 100 --Entity to shoot's velocity
 
 SWEP.Scoped				= false
 SWEP.Secondary.UseGreenDuplex		= false

@@ -56,7 +56,7 @@ SWEP.Scoped = true
 SWEP.Secondary.IronFOV = 30
 
 
-SWEP.ProjectileEntity = "dc17m_at_rocket" --Entity to shoot
+SWEP.ProjectileEntity = "dc17m_at_rocket2" --Entity to shoot
 SWEP.ProjectileVelocity = 500 --Entity to shoot's velocity
 
 function SWEP:Think()

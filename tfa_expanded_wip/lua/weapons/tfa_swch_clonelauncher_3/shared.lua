@@ -63,7 +63,7 @@ SWEP.Primary.Ammo			= "rpg_round"
 SWEP.Secondary.Automatic	= false
 SWEP.Secondary.Ammo			= "none"
 
-SWEP.ProjectileEntity = "dc17m_at_rocket" --Entity to shoot
+SWEP.ProjectileEntity = "dc17m_at_rocket2" --Entity to shoot
 SWEP.ProjectileVelocity = 500 --Entity to shoot's velocity
 
 SWEP.VElements = {
