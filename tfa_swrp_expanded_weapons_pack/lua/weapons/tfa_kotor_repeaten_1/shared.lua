@@ -47,13 +47,13 @@ SWEP.Weight					= 5
 SWEP.AutoSwitchTo			= false
 SWEP.AutoSwitchFrom			= false
 
-SWEP.Primary.Recoil			= 0.1
+SWEP.Primary.Recoil			= 0.3
 SWEP.Primary.Damage			= 45
 SWEP.Primary.NumShots		= 1
 SWEP.Primary.Spread			= 0.0125
 SWEP.Primary.IronAccuracy = .001	-- Ironsight accuracy, should be the same for shotguns
 SWEP.Primary.ClipSize		= 50
-SWEP.Primary.RPM = 60/0.175
+SWEP.Primary.RPM            = 60/0.175
 SWEP.Primary.DefaultClip	= 50
 SWEP.Primary.Automatic		= true
 SWEP.Primary.Ammo			= "ar2"

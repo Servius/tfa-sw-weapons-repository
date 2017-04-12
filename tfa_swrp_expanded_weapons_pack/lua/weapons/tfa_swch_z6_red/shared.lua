@@ -100,7 +100,7 @@ SWEP.Primary.RPM_TransitionTime = 4
 SWEP.Primary.DefaultClip	= 1000
 SWEP.Primary.Automatic		= true
 SWEP.Primary.Ammo			= "ar2"
-SWEP.TracerName = "effect_sw_laser_blue"
+SWEP.TracerName = "effect_sw_laser_red"
 
 SWEP.Secondary.Automatic	= false
 SWEP.Secondary.Ammo			= "none"
