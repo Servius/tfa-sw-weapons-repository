@@ -45,8 +45,8 @@ SWEP.Weight					= 5
 SWEP.AutoSwitchTo			= false
 SWEP.AutoSwitchFrom			= false
 
-SWEP.Primary.Recoil			= 0.5
-SWEP.Primary.Damage			= 35
+SWEP.Primary.Recoil			= 0.3
+SWEP.Primary.Damage			= 55
 SWEP.Primary.NumShots		= 1
 SWEP.Primary.Spread			= 0.0125
 SWEP.Primary.IronAccuracy = .001	-- Ironsight accuracy, should be the same for shotguns
@@ -69,6 +69,7 @@ SWEP.Secondary.Automatic	= false
 SWEP.Secondary.Ammo			= "none"
 
 SWEP.Secondary.IronFOV = 70
+
 
 SWEP.IronSightsPos = Vector(-6.961, -7.2, 2.16)
 SWEP.IronSightsAng = Vector(0, 0.6, 0)

@@ -45,8 +45,8 @@ SWEP.Weight					= 5
 SWEP.AutoSwitchTo			= false
 SWEP.AutoSwitchFrom			= false
 
-SWEP.Primary.Recoil			= 0.5
-SWEP.Primary.Damage			= 50
+SWEP.Primary.Recoil			= 0.4
+SWEP.Primary.Damage			= 75
 SWEP.Primary.NumShots		= 3
 SWEP.Primary.Spread			= 0.0225
 SWEP.Primary.IronAccuracy = .001	-- Ironsight accuracy, should be the same for shotguns
@@ -67,6 +67,10 @@ SWEP.Secondary.Automatic	= false
 SWEP.Secondary.Ammo			= "none"
 
 SWEP.Secondary.IronFOV = 70
+
+--Range Related
+SWEP.Primary.Range = -1 -- The distance the bullet can travel in source units.  Set to -1 to autodetect based on damage/rpm.
+SWEP.Primary.RangeFalloff = 0.7 -- The percentage of the range the bullet damage starts to fall off at.  Set to 0.8, for example, to start falling off after 80% of the range.
 
 SWEP.IronSightsPos = Vector(-3.8, -4, 0.86)
 SWEP.IronSightsAng = Vector(1.2, 4, 0)
