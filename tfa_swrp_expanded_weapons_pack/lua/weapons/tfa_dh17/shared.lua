@@ -2,11 +2,11 @@ if ( SERVER ) then
 	AddCSLuaFile( "shared.lua" )
 end
 if ( CLIENT ) then
-	SWEP.PrintName			= "DH-17"	
-	SWEP.Author				= "TFA, Servius"
-	SWEP.ViewModelFOV      	= 50
-	SWEP.Slot				= 2
-	SWEP.SlotPos			= 3
+	SWEP.PrintName = "DH-17"	
+	SWEP.Author = "TFA, Servius"
+	SWEP.ViewModelFOV = 50
+	SWEP.Slot = 2
+	SWEP.SlotPos = 3
 end
 SWEP.Base = "tfa_3dscoped_base"
 SWEP.Category = "TFA Star Wars"
@@ -90,7 +90,7 @@ SWEP.DamageType = DMG_SHOCK
 SWEP.RTMaterialOverride = 0
 SWEP.RTScopeAttachment = -1
 SWEP.Scoped_3D = true
-SWEP.ScopeReticule = "scope/gdcw_green_nobar" 
+SWEP.ScopeReticule = "scope/gdcw_vibrantred_nobar" 
 SWEP.Secondary.ScopeZoom = 8
 SWEP.ScopeReticule_Scale = {2.5,2.5}
 SWEP.Secondary.UseACOG			= false	 --Overlay option
