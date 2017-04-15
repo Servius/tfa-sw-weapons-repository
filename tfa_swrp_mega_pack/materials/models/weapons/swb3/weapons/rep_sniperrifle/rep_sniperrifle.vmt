@@ -11,7 +11,7 @@
 	"$envmaptint" "[ .1 .1 .1 ]"					
  	"$envmapFresnel" "0.5"					
 
-	"$phong" "1"					
+				
 
 }
 
