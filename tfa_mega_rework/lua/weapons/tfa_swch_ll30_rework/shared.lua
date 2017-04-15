@@ -3,7 +3,7 @@ if ( SERVER ) then
 end
 if ( CLIENT ) then
 	SWEP.PrintName			= "LL-30"			
-	SWEP.Author				= "Syntax_Error752"
+	SWEP.Author				= "TFA, Servius"
 	SWEP.ViewModelFOV      	= 70
 	SWEP.Slot				= 1
 	SWEP.SlotPos			= 5

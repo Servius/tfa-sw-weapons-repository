@@ -424,7 +424,7 @@ SWEP.ViewModelBoneMods = {
 }
 
 SWEP.VElements = {
-	["element_name"] = { type = "Model", model = "models/swbf3/rep/shotgun.mdl", bone = "v_weapon.xm1014_Parent", rel = "", pos = Vector(0, 2.22, -10.186), angle = Angle(-88.567, 90, 0), size = Vector(1.062, 1.062, 1.062), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
+	["element_name"] = { type = "Model", model = "models/swbf3/rep/shotgun.mdl", bone = "v_weapon.xm1014_Parent", rel = "", pos = Vector(0, 2.22, -10.186), angle = Angle(-88.567, 90, 0), size = Vector(1.062, 1.062, 1.062), color = Color(255, 255, 255, 255), surpresslightning = true, material = "", skin = 0, bodygroup = {} }
 }
 
 SWEP.Primary.ReloadSound = Sound("TFA_SW_REPSHOT.Reload")
