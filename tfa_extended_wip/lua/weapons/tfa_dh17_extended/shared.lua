@@ -83,7 +83,7 @@ SWEP.ThirdPersonReloadDisable=false
 SWEP.Primary.DamageType = DMG_SHOCK
 SWEP.DamageType = DMG_SHOCK
 --3dScopedBase stuff
-SWEP.RTMaterialOverride = 0
+SWEP.RTMaterialOverride = -1
 SWEP.RTScopeAttachment = -1
 SWEP.Scoped_3D = true
 SWEP.ScopeReticule = "scope/gdcw_red_nobar" 

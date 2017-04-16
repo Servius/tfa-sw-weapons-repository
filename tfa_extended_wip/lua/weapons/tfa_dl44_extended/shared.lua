@@ -57,10 +57,10 @@ SWEP.IronSightsAng = Vector(0, 0, 0)
 SWEP.VElements = {
 	["element_scope"] = { type = "Model", model = "models/rtcircle.mdl", bone = "v_dl44_reference001", rel = "", pos = Vector(1.5, 2.5, 3.7), angle = Angle(1.169, -90, 17.531), size = Vector(0.34, 0.34, 0.34), color = Color(255, 255, 255, 255), surpresslightning = false, material = "!tfa_rtmaterial", skin = 0, bodygroup = {} }
 }
-SWEP.WElements = {
-	["element_scope"] = { type = "Model", model = "models/rtcircle.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(-6, 1.799, -3.691), angle = Angle(170, 0, 0), size = Vector(0.25, 0.25, 0.25), color = Color(255, 255, 255, 255), surpresslightning = false, material = "!tfa_rtmaterial", skin = 0, bodygroup = {} },
-	["element_scope+"] = { type = "Model", model = "models/rtcircle.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(-5.72, 0.029, -2.701), angle = Angle(170, 0, 0), size = Vector(0.23, 0.23, 0.23), color = Color(255, 255, 255, 255), surpresslightning = false, material = "!tfa_rtmaterial", skin = 0, bodygroup = {} }
-}
+--SWEP.WElements = {
+	--["element_scope"] = { type = "Model", model = "models/rtcircle.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(-6, 1.799, -3.691), angle = Angle(170, 0, 0), size = Vector(0.25, 0.25, 0.25), color = Color(255, 255, 255, 255), surpresslightning = false, material = "!tfa_rtmaterial", skin = 0, bodygroup = {} },
+--	["element_scope+"] = { type = "Model", model = "models/rtcircle.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(-5.72, 0.029, -2.701), angle = Angle(170, 0, 0), size = Vector(0.23, 0.23, 0.23), color = Color(255, 255, 255, 255), surpresslightning = false, material = "!tfa_rtmaterial", skin = 0, bodygroup = {} }
+--}
 SWEP.BlowbackVector = Vector(0,-3,0.025)
 SWEP.Blowback_Only_Iron  = false
 SWEP.DoProceduralReload = true
@@ -87,7 +87,7 @@ SWEP.ThirdPersonReloadDisable=false
 SWEP.Primary.DamageType = DMG_SHOCK
 SWEP.DamageType = DMG_SHOCK
 --3dScopedBase stuff
-SWEP.RTMaterialOverride = 0
+SWEP.RTMaterialOverride = -1
 SWEP.RTScopeAttachment = -1
 SWEP.Scoped_3D = true
 SWEP.ScopeReticule = "scope/gdcw_red_nobar" 

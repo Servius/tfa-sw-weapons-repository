@@ -22,6 +22,7 @@ SWEP.WorldModel = "models/weapons/synbf3/w_dh17.mdl"
 SWEP.ShowViewModel = true
 SWEP.ShowWorldModel = false
 SWEP.UseHands = true
+SWEP.ViewModelBoneMods = {
 	["Object001"] = { scale = Vector(0.009, 0.009, 0.009), pos = Vector(0, 0, 0), angle = Angle(0, 0, 0) }
 }
 SWEP.Primary.Sound = Sound ("Weapon_E11D.Single");
@@ -88,7 +89,7 @@ SWEP.ThirdPersonReloadDisable=false
 SWEP.Primary.DamageType = DMG_SHOCK
 SWEP.DamageType = DMG_SHOCK
 --[[3dScopedBase stuff
-SWEP.RTMaterialOverride = 0
+SWEP.RTMaterialOverride = -1
 SWEP.RTScopeAttachment = -1
 SWEP.Scoped_3D = true
 SWEP.ScopeReticule = "scope/gdcw_red_nobar" 
