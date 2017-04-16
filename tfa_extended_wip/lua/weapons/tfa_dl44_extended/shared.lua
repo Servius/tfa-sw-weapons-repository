@@ -22,8 +22,8 @@ SWEP.WorldModel = "models/weapons/synbf3/w_dl44.mdl"
 SWEP.ShowViewModel = true
 SWEP.ShowWorldModel = true
 SWEP.UseHands = true
---SWEP.Primary.Sound = Sound ("weapons/DC15A_fire.wav");
---SWEP.Primary.ReloadSound = Sound ("weapons/DC15A_reload.wav");
+SWEP.Primary.Sound = Sound ("weapons/synbf3/dl44_fire.wav");
+SWEP.Primary.ReloadSound = Sound ("weapons/synbf3/battlefront_standard_reload.wav");
 SWEP.Weight					= 5
 SWEP.AutoSwitchTo			= false
 SWEP.AutoSwitchFrom			= false
@@ -45,17 +45,17 @@ SWEP.Primary.RangeFalloff = -1 -- The percentage of the range the bullet damage 
 --Penetration Related
 SWEP.MaxPenetrationCounter = 1 --The maximum number of ricochets.  To prevent stack overflows.
 SWEP.Primary.ClipSize		= 50
-SWEP.Primary.RPM = 60/0.175
+SWEP.Primary.RPM = 200
 SWEP.Primary.DefaultClip	= 150
-SWEP.Primary.Automatic		= true
+SWEP.Primary.Automatic		= false
 SWEP.Primary.Ammo			= "ar2"
 SWEP.Secondary.Automatic	= false
 SWEP.Secondary.Ammo			= "none"
 SWEP.Secondary.IronFOV = 70
-SWEP.IronSightsPos = Vector(-5.941, -9.41, 2.119)
+SWEP.IronSightsPos = Vector(-5.941, -6, 2.119)
 SWEP.IronSightsAng = Vector(0, 0, 0)
 SWEP.VElements = {
-	["element_scope"] = { type = "Model", model = "models/rtcircle.mdl", bone = "v_dl44_reference001", rel = "", pos = Vector(1.5, 2.5, 3.7), angle = Angle(1.169, -90, 17.531), size = Vector(0.34, 0.34, 0.34), color = Color(255, 255, 255, 255), surpresslightning = false, material = "!tfa_rtmaterial", skin = 0, bodygroup = {} }
+	["element_scope"] = { type = "Model", model = "models/rtcircle.mdl", bone = "v_dl44_reference001", rel = "", pos = Vector(1.5, 2.5, 3.7), angle = Angle(0, -90, 0), size = Vector(0.34, 0.34, 0.34), color = Color(255, 255, 255, 255), surpresslightning = false, material = "!tfa_rtmaterial", skin = 0, bodygroup = {} }
 }
 --SWEP.WElements = {
 	--["element_scope"] = { type = "Model", model = "models/rtcircle.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(-6, 1.799, -3.691), angle = Angle(170, 0, 0), size = Vector(0.25, 0.25, 0.25), color = Color(255, 255, 255, 255), surpresslightning = false, material = "!tfa_rtmaterial", skin = 0, bodygroup = {} },

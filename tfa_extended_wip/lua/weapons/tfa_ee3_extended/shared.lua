@@ -22,8 +22,8 @@ SWEP.WorldModel = "models/weapons/synbf3/w_ee3.mdl"
 SWEP.ShowViewModel = true
 SWEP.ShowWorldModel = true
 SWEP.UseHands = true
---SWEP.Primary.Sound = Sound ("weapons/DC15A_fire.wav");
---SWEP.Primary.ReloadSound = Sound ("weapons/DC15A_reload.wav");
+SWEP.Primary.Sound = Sound ("weapons/synbf3/ee3_fire.wav");
+SWEP.Primary.ReloadSound = Sound ("weapons/synbf3/battlefront_standard_reload.wav");
 SWEP.Weight					= 5
 SWEP.AutoSwitchTo			= false
 SWEP.AutoSwitchFrom			= false
@@ -33,9 +33,12 @@ SWEP.Primary.NumShots		= 1
 -- Selective Fire Stuff
 SWEP.SelectiveFire		= true --Allow selecting your firemode?
 SWEP.DisableBurstFire	= false --Only auto/single?
-SWEP.OnlyBurstFire		= false --No auto, only burst/single?
+SWEP.OnlyBurstFire		= true --No auto, only burst/single?
 SWEP.DefaultFireMode 	= "" --Default to auto or whatev
-SWEP.FireModeName = nil --Change to a text value to override it
+ SWEP.FireModes = {
+"3Burst",
+"Single"
+} --Change to a text value to override it
 SWEP.Primary.Spread			= 0.0125
 SWEP.Primary.IronAccuracy = .002	-- Ironsight accuracy, should be the same for shotguns
 SWEP.Primary.SpreadMultiplierMax = 2 --How far the spread can expand when you shoot.
@@ -47,7 +50,7 @@ SWEP.MaxPenetrationCounter = 1 --The maximum number of ricochets.  To prevent st
 SWEP.Primary.ClipSize		= 50
 SWEP.Primary.RPM = 60/0.175
 SWEP.Primary.DefaultClip	= 150
-SWEP.Primary.Automatic		= true
+SWEP.Primary.Automatic		= false
 SWEP.Primary.Ammo			= "ar2"
 SWEP.Secondary.Automatic	= false
 SWEP.Secondary.Ammo			= "none"
@@ -67,7 +70,7 @@ SWEP.ProceduralReloadTime = 2.5
 ----Swft Base Code
 SWEP.TracerCount = 1
 SWEP.MuzzleFlashEffect = ""
-SWEP.TracerName = "effect_sw_laser_green"
+SWEP.TracerName = "effect_sw_laser_red"
 SWEP.Secondary.IronFOV = 70
 SWEP.Primary.KickUp = 0.2
 SWEP.Primary.KickDown = 0.1

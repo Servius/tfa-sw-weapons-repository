@@ -22,16 +22,16 @@ SWEP.WorldModel = "models/weapons/w_dc15sa.mdl"
 SWEP.ShowViewModel = true
 SWEP.ShowWorldModel = true
 SWEP.UseHands = true
---SWEP.Primary.Sound = Sound ("weapons/DC15A_fire.wav");
---SWEP.Primary.ReloadSound = Sound ("weapons/DC15A_reload.wav");
-SWEP.Weight					= 5
+SWEP.Primary.Sound = Sound ("weapons/sw_vaporize.wav");
+SWEP.Primary.ReloadSound = Sound ("weapons/synbf3/battlefront_standard_reload.wav");
+SWEP.Weight					= 15
 SWEP.AutoSwitchTo			= false
 SWEP.AutoSwitchFrom			= false
 SWEP.Primary.Recoil			= 0.5
-SWEP.Primary.Damage			= 50
+SWEP.Primary.Damage			= 110
 SWEP.Primary.NumShots		= 1
 -- Selective Fire Stuff
-SWEP.SelectiveFire		= true --Allow selecting your firemode?
+SWEP.SelectiveFire		= false --Allow selecting your firemode?
 SWEP.DisableBurstFire	= false --Only auto/single?
 SWEP.OnlyBurstFire		= false --No auto, only burst/single?
 SWEP.DefaultFireMode 	= "" --Default to auto or whatev
@@ -43,22 +43,22 @@ SWEP.Primary.SpreadMultiplierMax = 2 --How far the spread can expand when you sh
 SWEP.Primary.Range = -1 -- The distance the bullet can travel in source units.  Set to -1 to autodetect based on damage/rpm.
 SWEP.Primary.RangeFalloff = -1 -- The percentage of the range the bullet damage starts to fall off at.  Set to 0.8, for example, to start falling off after 80% of the range.
 --Penetration Related
-SWEP.MaxPenetrationCounter = 1 --The maximum number of ricochets.  To prevent stack overflows.
-SWEP.Primary.ClipSize		= 50
-SWEP.Primary.RPM = 60/0.175
+SWEP.MaxPenetrationCounter = 4 --The maximum number of ricochets.  To prevent stack overflows.
+SWEP.Primary.ClipSize		= 5
+SWEP.Primary.RPM = 40
 SWEP.Primary.DefaultClip	= 150
-SWEP.Primary.Automatic		= true
+SWEP.Primary.Automatic		= false
 SWEP.Primary.Ammo			= "ar2"
 SWEP.Secondary.Automatic	= false
 SWEP.Secondary.Ammo			= "none"
 SWEP.Secondary.IronFOV = 70
-SWEP.IronSightsPos = Vector(-6.881, -6.633, 2.4)
+SWEP.IronSightsPos = Vector(-6.881, -4, 2.4)
 SWEP.IronSightsAng = Vector(0, 0, 0)
 SWEP.ViewModelBoneMods = {
 	["v_weapon.awm_parent"] = { scale = Vector(0.009, 0.009, 0.009), pos = Vector(0, 0, 0), angle = Angle(0, 0, 0) }
 }
 SWEP.VElements = {
-	["element_scoped"] = { type = "Model", model = "models/rtcircle.mdl", bone = "ValveBiped.Bip01_Spine4", rel = "element_name", pos = Vector(-11.948, 0, 7.998), angle = Angle(180, 0, 0), size = Vector(0.328, 0.328, 0.328), color = Color(255, 255, 255, 255), surpresslightning = false, material = "!tfa_rtmaterial", skin = 0, bodygroup = {} },
+	["element_scoped"] = { type = "Model", model = "models/rtcircle.mdl", bone = "ValveBiped.Bip01_Spine4", rel = "element_name", pos = Vector(-11.948, 0, 7.998), angle = Angle(180, 0, 180), size = Vector(0.328, 0.328, 0.328), color = Color(255, 255, 255, 255), surpresslightning = false, material = "!tfa_rtmaterial", skin = 0, bodygroup = {} },
 	["element_name"] = { type = "Model", model = "models/swbf3/imp/sniperrifle.mdl", bone = "v_weapon.awm_parent", rel = "", pos = Vector(-0.519, 1.557, -9.87), angle = Angle(-90, 90, 0), size = Vector(0.975, 0.975, 0.975), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
 }
 SWEP.WElements = {
@@ -70,8 +70,8 @@ SWEP.DoProceduralReload = true
 SWEP.ProceduralReloadTime = 2.5
 ----Swft Base Code
 SWEP.TracerCount = 1
-SWEP.MuzzleFlashEffect = ""
-SWEP.TracerName = "effect_sw_laser_red"
+SWEP.MuzzleFlashEffect = "effect_zeus_muzzleflash"
+SWEP.TracerName = "tfa_tracer_fubar_blu"
 SWEP.Secondary.IronFOV = 70
 SWEP.Primary.KickUp = 0.2
 SWEP.Primary.KickDown = 0.1
@@ -87,8 +87,8 @@ SWEP.BlowbackVector = Vector(0,-3,0.1)
 SWEP.Blowback_Shell_Enabled = false
 SWEP.Blowback_Shell_Effect = ""
 SWEP.ThirdPersonReloadDisable=false
-SWEP.Primary.DamageType = DMG_SHOCK
-SWEP.DamageType = DMG_SHOCK
+SWEP.Primary.DamageType = bit.bor(DMG_SHOCK,DMG_DISSOLVE)
+SWEP.DamageType = bit.bor(DMG_SHOCK,DMG_DISSOLVE)
 --3dScopedBase stuff
 SWEP.RTMaterialOverride = -1
 SWEP.RTScopeAttachment = -1

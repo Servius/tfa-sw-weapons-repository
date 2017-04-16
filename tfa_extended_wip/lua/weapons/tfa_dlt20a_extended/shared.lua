@@ -22,13 +22,13 @@ SWEP.WorldModel = "models/weapons/synbf3/w_dlt20a.mdl"
 SWEP.ShowViewModel = true
 SWEP.ShowWorldModel = true
 SWEP.UseHands = true
---SWEP.Primary.Sound = Sound ("weapons/DC15A_fire.wav");
---SWEP.Primary.ReloadSound = Sound ("weapons/DC15A_reload.wav");
+SWEP.Primary.Sound = Sound ("weapons/synbf3/dlt20a_fire.wav");
+SWEP.Primary.ReloadSound = Sound ("weapons/synbf3/battlefront_standard_reload.wav");
 SWEP.Weight					= 5
 SWEP.AutoSwitchTo			= false
 SWEP.AutoSwitchFrom			= false
 SWEP.Primary.Recoil			= 0.5
-SWEP.Primary.Damage			= 50
+SWEP.Primary.Damage			= 80
 SWEP.Primary.NumShots		= 1
 -- Selective Fire Stuff
 SWEP.SelectiveFire		= true --Allow selecting your firemode?
@@ -44,18 +44,18 @@ SWEP.Primary.Range = -1 -- The distance the bullet can travel in source units.  
 SWEP.Primary.RangeFalloff = -1 -- The percentage of the range the bullet damage starts to fall off at.  Set to 0.8, for example, to start falling off after 80% of the range.
 --Penetration Related
 SWEP.MaxPenetrationCounter = 1 --The maximum number of ricochets.  To prevent stack overflows.
-SWEP.Primary.ClipSize		= 50
-SWEP.Primary.RPM = 60/0.175
+SWEP.Primary.ClipSize		= 10
+SWEP.Primary.RPM = 150
 SWEP.Primary.DefaultClip	= 150
-SWEP.Primary.Automatic		= true
+SWEP.Primary.Automatic		= false
 SWEP.Primary.Ammo			= "ar2"
 SWEP.Secondary.Automatic	= false
 SWEP.Secondary.Ammo			= "none"
 SWEP.Secondary.IronFOV = 70
-SWEP.IronSightsPos = Vector(-4.08, -12.865, 2.319)
+SWEP.IronSightsPos = Vector(-4.08, -10, 2.319)
 SWEP.IronSightsAng = Vector(0, 0, 0)
 SWEP.VElements = {
-	["element_name"] = { type = "Model", model = "models/rtcircle.mdl", bone = "v_dlt20a_reference001", rel = "", pos = Vector(-0.02, 4.699, 6.199), angle = Angle(-180, -90, 0), size = Vector(0.3, 0.3, 0.3), color = Color(255, 255, 255, 255), surpresslightning = false, material = "!tfa_rtmaterial", skin = 0, bodygroup = {} }
+	["element_name"] = { type = "Model", model = "models/rtcircle.mdl", bone = "v_dlt20a_reference001", rel = "", pos = Vector(-0.02, 4.699, 6.199), angle = Angle(-180, -90, 180), size = Vector(0.3, 0.3, 0.3), color = Color(255, 255, 255, 255), surpresslightning = false, material = "!tfa_rtmaterial", skin = 0, bodygroup = {} }
 }
 SWEP.WElements = {
 	["element_name"] = { type = "Model", model = "models/rtcircle.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(6.9, 1.399, -7.801), angle = Angle(10, 180, 0), size = Vector(0.3, 0.3, 0.3), color = Color(255, 255, 255, 255), surpresslightning = false, material = "!tfa_rtmaterial", skin = 0, bodygroup = {} }
