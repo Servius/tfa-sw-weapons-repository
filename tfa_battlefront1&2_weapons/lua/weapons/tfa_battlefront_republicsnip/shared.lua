@@ -55,7 +55,7 @@ SWEP.VElements = {
 	["element_name"] = { type = "Model", model = "models/bf2/compiled 0.34/republicsniper.mdl", bone = "v_weapon.awm_parent", rel = "", pos = Vector(0, 6.752, -6.753), angle = Angle(-90, 90, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
 }
 SWEP.WElements = {
-	["element_scope"] = { type = "Model", model = "models/rtcircle.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "element_name", pos = Vector(-8.851, 0, 10.979), angle = Angle(0, 180, 0), size = Vector(0.28, 0.28, 0.28), color = Color(255, 255, 255, 255), surpresslightning = false, material = "!tfa_rtmaterial", skin = 0, bodygroup = {} },
+	["element_scope"] = { type = "Model", model = "	", bone = "ValveBiped.Bip01_R_Hand", rel = "element_name", pos = Vector(-8.851, 0, 10.979), angle = Angle(0, 180, 0), size = Vector(0.28, 0.28, 0.28), color = Color(255, 255, 255, 255), surpresslightning = false, material = "!tfa_rtmaterial", skin = 0, bodygroup = {} },
 	["element_name"] = { type = "Model", model = "models/bf2/compiled 0.34/republicsniper.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(12.1, 1, 3), angle = Angle(-10, -1, 180), size = Vector(0.8, 0.8, 0.8), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
 }
 SWEP.BlowbackVector = Vector(0,-3,0.025)
