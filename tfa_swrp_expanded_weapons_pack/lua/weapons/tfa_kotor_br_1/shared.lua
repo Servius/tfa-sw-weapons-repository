@@ -20,19 +20,19 @@ SWEP.WorldModel = "models/weapons/w_irifle.mdl"
 SWEP.ShowViewModel = true
 SWEP.ShowWorldModel = false
 SWEP.UseHands = true
-SWEP.Primary.Sound = Sound ("weapons/synbf3/dlt19_fire.wav");
+SWEP.Primary.Sound = Sound ("weapons/sounds.bif_00815.wav");
 SWEP.Primary.ReloadSound = Sound ("weapons/DC15A_reload.wav");
 SWEP.Primary.KickUp	= 2
 SWEP.Weight	= 5
 SWEP.AutoSwitchTo = false
 SWEP.AutoSwitchFrom	= false
-SWEP.Primary.Recoil	= 0.2
+SWEP.Primary.Recoil	= 0.7
 SWEP.Primary.Damage	= 50
 SWEP.Primary.NumShots = 1
 SWEP.Primary.Spread	= 0.0125
 SWEP.Primary.IronAccuracy = .001	-- Ironsight accuracy, should be the same for shotguns
 SWEP.Primary.ClipSize = 50
-SWEP.Primary.RPM = 450
+SWEP.Primary.RPM = 250
 SWEP.Primary.DefaultClip = 50
 SWEP.Primary.Automatic = true
 SWEP.Primary.Ammo = "ar2"
@@ -40,6 +40,11 @@ SWEP.SelectiveFire = true --Allow selecting your firemode?
 SWEP.DisableBurstFire = false --Only auto/single?
 SWEP.OnlyBurstFire = false --No auto, only burst/single?
 SWEP.DefaultFireMode = "" --Default to auto or whatev
+SWEP.FireModes = {
+"Auto",
+"3Burst",
+"Single"
+}
 SWEP.FireModeName = nil --Change to a text value to override it
 SWEP.Secondary.Automatic = false
 SWEP.Secondary.Ammo	= "none"

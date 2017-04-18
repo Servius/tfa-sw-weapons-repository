@@ -46,7 +46,7 @@ SWEP.ViewModelBoneMods = {
 SWEP.Primary.Sound = Sound("weapons/DC17_fire.wav")
 SWEP.Primary.ReloadSound = Sound("weapons/DC17_reload.wav")
 
-SWEP.Primary.KickUp			= 2
+SWEP.Primary.KickUp			= 0.2
 
 SWEP.Weight					= 5
 SWEP.AutoSwitchTo			= false
@@ -58,13 +58,13 @@ SWEP.Primary.NumShots		= 1
 SWEP.Primary.Spread			= 0.0125
 SWEP.Primary.IronAccuracy = .001	-- Ironsight accuracy, should be the same for shotguns
 SWEP.Primary.ClipSize		= 25
-SWEP.Primary.RPM = 450
+SWEP.Primary.RPM = 60 / 0.2
 SWEP.Primary.DefaultClip	= 75
-SWEP.Primary.Automatic		= true
+SWEP.Primary.Automatic		= false
 SWEP.Primary.Ammo			= "ar2"
 SWEP.TracerName = "effect_sw_laser_blue"
 
-SWEP.SelectiveFire		= true --Allow selecting your firemode?
+SWEP.SelectiveFire		= false --Allow selecting your firemode?
 SWEP.DisableBurstFire	= false --Only auto/single?
 SWEP.OnlyBurstFire		= false --No auto, only burst/single?
 SWEP.DefaultFireMode 	= "" --Default to auto or whatev
