@@ -1,0 +1,5 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/Star Wars The Force Awakens/First Order Trooper/Syphadias/fo_magmatrooper_diff"
+	"$bumpmap" "models/Star Wars The Force Awakens/First Order Trooper/Syphadias/fo_stormtrooper_normal"
+}

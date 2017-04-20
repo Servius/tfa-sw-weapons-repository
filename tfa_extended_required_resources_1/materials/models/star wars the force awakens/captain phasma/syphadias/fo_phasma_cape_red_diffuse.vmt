@@ -1,0 +1,17 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/Star Wars The Force Awakens/Captain Phasma/Syphadias/fo_phasma_cape_red_diff"
+                "$bumpmap"    "models/Star Wars The Force Awakens/Captain Phasma/Dusty/FO_Phasma_Cape_Normal"
+	"$phong" "1"
+	"$phongboost"	"1"
+	"$phongfresnelranges"	"[.5 1 1]"
+	"$phongexponent" "4"
+	"$nocull" "1"
+	"$alphatest"	"1"
+	"$allowalphatocoverage"	"1"
+}
+//Recompiled with custom skins for Caboose by Syphadias
+//This is Not intented to be uploaded by anyone without permission.
+//This was created for a friend and his server to use as is.
+//I DO NOT claim this model as my own as it is property of Dusty.
+//Re-Skins made by Syphadias.

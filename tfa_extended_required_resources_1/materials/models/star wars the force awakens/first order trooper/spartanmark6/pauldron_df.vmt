@@ -1,0 +1,12 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/Star Wars The Force Awakens/First Order Trooper/spartanmark6/pauldron_df"
+	"$bumpmap" "models/Star Wars The Force Awakens/First Order Trooper/spartanmark6/pauldron_nm"
+$halflambert "1"	
+$phongexponent "6"
+$phongfresnelranges	"[1 8 13]"
+$phong 1
+$phongboost .5
+$phongtint "[1 1 1]"
+$ambientocclusion 1
+}

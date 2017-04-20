@@ -1,0 +1,115 @@
+//Material Property of Syphadias and [SLFN]Kaneki Ken the Purchaser of this Skin.
+//Do No Distrubute without [SLFN]Kaneki Kens' Permission. Thanks, Syphadias!
+
+"VertexlitGeneric"
+{
+	"$basetexture" "models/star wars the force awakens/first order trooper/Syphadias/fo_stormtrooper_diff_228"
+	"$selfillum" "1"
+   	"$selfillummask" "models/star wars the force awakens/first order trooper/Syphadias/fo_stormtrooper_diff_228_spec"
+	"$bumpmap" "models/Star Wars The Force Awakens/First Order Trooper/spartanmark6/FO_Stormtrooper_Normal"
+	"$envmap""models/Star Wars The Force Awakens/First Order Trooper/spartanmark6/FO_Stormtrooper_Spec"
+	"$envmapmask""models/star wars the force awakens/first order trooper/spartanmark6/fo_stormtrooper_diff"
+	"$envmapsaturation" "0.5"
+	"$normalmapalphaenvmapmask" "1"
+	"$envmaptint"	"[0.5 0.5 0.5]"
+	"$phong" "1"
+	"$phongboost"	"2"
+	"$phongtint" "[1 1 1]"
+	"$phongfresnelranges"	"[1 8 13]"
+	"$phongexponent" "50"
+	"$nocull" "1"
+	"$halflambert" "1"
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Material Property of Syphadias and [SLFN]Kaneki Ken the Purchaser
+//Do No Distrubute without [SLFN]Kaneki Kens' Permission. Thanks, Syphadias!

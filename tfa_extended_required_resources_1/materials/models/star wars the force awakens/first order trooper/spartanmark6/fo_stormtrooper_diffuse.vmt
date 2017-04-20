@@ -1,0 +1,6 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/Star Wars The Force Awakens/First Order Trooper/spartanmark6/FO_Stormtrooper_Diff"
+	"$bumpmap" "models/Star Wars The Force Awakens/First Order Trooper/spartanmark6/FO_Stormtrooper_Normal"
+	"$envmap""models/Star Wars The Force Awakens/First Order Trooper/spartanmark6/FO_Stormtrooper_Spec"
+}

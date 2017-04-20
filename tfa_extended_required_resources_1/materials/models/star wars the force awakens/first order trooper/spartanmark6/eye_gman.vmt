@@ -1,0 +1,5 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/lt_c/sci_fi/humans/shared/eye-iris-gman"
+	"$Envmap"             "models/lt_c/sci_fi/humans/shared/eye-reflection-cubemap-"
+}

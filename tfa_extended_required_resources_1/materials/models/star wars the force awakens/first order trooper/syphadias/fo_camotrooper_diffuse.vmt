@@ -1,0 +1,6 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/star wars the force awakens/first order trooper/Syphadias/fo_camotrooper_diff"
+	"$selfillum" "1"
+   	"$selfillummask" "models/star wars the force awakens/first order trooper/Syphadias/fo_stormtrooper_diff_228_spec"
+}
