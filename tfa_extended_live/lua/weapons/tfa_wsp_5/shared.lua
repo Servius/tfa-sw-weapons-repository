@@ -48,7 +48,7 @@ SWEP.FireModeName = nil --Change to a text value to override it
 SWEP.Secondary.Automatic	= false
 SWEP.Secondary.Ammo			= "none"
 SWEP.Secondary.IronFOV = 70
-SWEP.IronSightsPos = Vector(-8.04, -5.226, 1.789)
+SWEP.IronSightsPos = Vector(-8.04, -3, 1.789)
 SWEP.IronSightsAng = Vector(0, 0, 0)
 SWEP.VElements = {
 	["element_scope"] = { type = "Model", model = "models/rtcircle.mdl", bone = "v_weapon.awm_parent", rel = "element_name", pos = Vector(-0.401, 2.2, 4.349), angle = Angle(0, -90, 0), size = Vector(0.293, 0.293, 0.293), color = Color(255, 255, 255, 255), surpresslightning = false, material = "!tfa_rtmaterial", skin = 0, bodygroup = {} },
