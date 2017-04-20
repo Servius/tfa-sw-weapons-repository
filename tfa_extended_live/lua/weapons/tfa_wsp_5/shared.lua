@@ -24,7 +24,7 @@ SWEP.UseHands = true
 SWEP.ViewModelBoneMods = {
 	["v_weapon.awm_parent"] = { scale = Vector(0.009, 0.009, 0.009), pos = Vector(0.925, -0.556, 0.185), angle = Angle(0, 0, 0) }
 }
-SWEP.Primary.Sound = Sound ("weapons/wpn_cis_sniperrifle_fire.wav");
+SWEP.Primary.Sound = Sound ("weapons/wpn_td_ionrepeater_r2.mp3");
 SWEP.Primary.ReloadSound = Sound ("weapons/DC15A_reload.wav");
 SWEP.Primary.KickUp			= 5
 SWEP.Weight					= 15
