@@ -71,7 +71,7 @@ SWEP.ProceduralReloadTime = 2.5
 ----Swft Base Code
 SWEP.TracerCount = 1
 SWEP.MuzzleFlashEffect = "effect_zeus_muzzleflash"
-SWEP.TracerName = "tfa_tracer_fubar_blu"
+SWEP.TracerName = "effect_sw_laser_red"
 SWEP.Secondary.IronFOV = 70
 SWEP.Primary.KickUp = 0.2
 SWEP.Primary.KickDown = 0.1
