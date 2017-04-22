@@ -20,8 +20,8 @@ SWEP.WorldModel = "models/weapons/w_dc15sa.mdl"
 SWEP.ShowViewModel = true
 SWEP.ShowWorldModel = false
 SWEP.UseHands = true
-SWEP.Primary.Sound = Sound ("weapons/sounds.bif_00815.wav");
-SWEP.Primary.ReloadSound = Sound ("weapons/DC15A_reload.wav");
+SWEP.Primary.Sound = Sound ("weapons/1misc_guns/WPN_LASER_BLASTER_SHOOT_01.ogg");
+SWEP.Primary.ReloadSound = Sound ("weapons/shared/standard_reload.ogg");
 SWEP.Primary.KickUp			= 2
 SWEP.Weight					= 5
 SWEP.AutoSwitchTo			= false
@@ -49,8 +49,8 @@ SWEP.FireModeName = nil --Change to a text value to override it
 SWEP.Secondary.Automatic	= false
 SWEP.Secondary.Ammo			= "none"
 SWEP.Secondary.IronFOV = 70
-SWEP.IronSightsPos = Vector(-6.95, -5, -1.25)
-SWEP.IronSightsAng = Vector(0, -2.112, 3.517)
+SWEP.IronSightsPos = Vector(-6.8, -0, -.5)
+SWEP.IronSightsAng = Vector(0, 0, 0)
 SWEP.ViewModelBoneMods = {
 	["v_weapon.awm_parent"] = { scale = Vector(0.009, 0.009, 0.009), pos = Vector(1.667, 0, 0), angle = Angle(0, 0, 0) }
 }
@@ -59,7 +59,7 @@ SWEP.WElements = {
 }
 SWEP.VElements = {
 	["element_scope"] = { type = "Model", model = "models/rtcircle.mdl", bone = "v_weapon.awm_parent", rel = "element_gun", pos = Vector(12, -0.749, 6.469), angle = Angle(0, 0, 0), size = Vector(0.34, 0.34, 0.34), color = Color(255, 255, 255, 255), surpresslightning = false, material = "!tfa_rtmaterial", skin = 0, bodygroup = {} },
-	["element_gun"] = { type = "Model", model = "models/w_blstrrfl_004.mdl", bone = "v_weapon.awm_parent", rel = "", pos = Vector(-1.558, -3.636, -8.832), angle = Angle(87.662, -1.17, -85.325), size = Vector(0.95, 0.95, 0.95), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
+	["element_gun"] = { type = "Model", model = "models/w_blstrrfl_004.mdl", bone = "v_weapon.awm_parent", rel = "", pos = Vector(-1.2, -3, -7.5), angle = Angle(90, 0, -90), size = Vector(0.95, 0.95, 0.95), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
 }
 SWEP.BlowbackVector = Vector(0,-3,0.025)
 SWEP.Blowback_Only_Iron  = false

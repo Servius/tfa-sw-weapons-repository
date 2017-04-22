@@ -20,8 +20,8 @@ SWEP.WorldModel = "models/weapons/w_dc15sa.mdl"
 SWEP.ShowViewModel = true
 SWEP.ShowWorldModel = false
 SWEP.UseHands = true
-SWEP.Primary.Sound = Sound ("weapons/synbf3/dlt19_fire.wav");
-SWEP.Primary.ReloadSound = Sound ("weapons/DC15A_reload.wav");
+SWEP.Primary.Sound = Sound ("weapons/dc15sa/dc15sa_fire.ogg");
+SWEP.Primary.ReloadSound = Sound ("weapons/shared/standard_reload.ogg");
 SWEP.Primary.KickUp			= 2
 SWEP.Weight					= 5
 SWEP.AutoSwitchTo			= false
@@ -47,8 +47,8 @@ SWEP.Secondary.IronFOV = 70
 --Range Related
 SWEP.Primary.Range = -1 -- The distance the bullet can travel in source units.  Set to -1 to autodetect based on damage/rpm.
 SWEP.Primary.RangeFalloff = 0.8 -- The percentage of the range the bullet damage starts to fall off at.  Set to 0.8, for example, to start falling off after 80% of the range.
-SWEP.IronSightsPos = Vector(-6.5, -0 , 1)
-SWEP.IronSightsAng = Vector(2.7, -6.8, -3)
+SWEP.IronSightsPos = Vector(-4.5, 2 , 1.5)
+SWEP.IronSightsAng = Vector(0, 0, -0)
 SWEP.ViewModelBoneMods = {
 	["v_dh17_reference001"] = { scale = Vector(0.009, 0.009, 0.009), pos = Vector(0, 0, 0), angle = Angle(0, 0, 0) },
 	["ValveBiped.Bip01_R_Finger21"] = { scale = Vector(1, 1, 1), pos = Vector(-0.556, 0, 0), angle = Angle(0, 0, 0) },
@@ -64,8 +64,8 @@ SWEP.WElements = {
 	["element_name"] = { type = "Model", model = "models/naboosecurity/naboosecurity.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(3.635, 1.557, 0), angle = Angle(15.194, 178.83, 180), size = Vector(1.47, 1.47, 1.47), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
 }
 SWEP.VElements = {
-	["element_scope"] = { type = "Model", model = "models/rtcircle.mdl", bone = "Object001", rel = "element_name", pos = Vector(0.84, 0, 5.3), angle = Angle(0, 0, -1), size = Vector(0.367, 0.367, 0.367), color = Color(255, 255, 255, 255), surpresslightning = false, material = "!tfa_rtmaterial", skin = 0, bodygroup = {} },
-	["element_name"] = { type = "Model", model = "models/naboosecurity/naboosecurity.mdl", bone = "v_dh17_reference001", rel = "", pos = Vector(0.4, 0.28, -0.519), angle = Angle(-1.17, -82.987, -1.17), size = Vector(1.144, 1.144, 1.144), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
+	["element_scope"] = { type = "Model", model = "models/rtcircle.mdl", bone = "Object001", rel = "element_name", pos = Vector(0.84, .01, 5.3), angle = Angle(0, 0, -1), size = Vector(0.367, 0.367, 0.367), color = Color(255, 255, 255, 255), surpresslightning = false, material = "!tfa_rtmaterial", skin = 0, bodygroup = {} },
+	["element_name"] = { type = "Model", model = "models/naboosecurity/naboosecurity.mdl", bone = "v_dh17_reference001", rel = "", pos = Vector(0.4, 0.28, -0.519), angle = Angle(-0, -90, -0), size = Vector(1.144, 1.144, 1.144), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
 }
 SWEP.BlowbackVector = Vector(0,-3,0.025)
 SWEP.Blowback_Only_Iron  = false

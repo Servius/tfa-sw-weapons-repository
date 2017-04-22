@@ -28,7 +28,7 @@ SWEP.AmmoDisplay = { }
 
 SWEP.Sounds	= {
 	ModeSwitch = Sound( "npc/turret_floor/click1.wav" ),
-	ThrowSound = Sound( "weapons/slam/throw.wav" ),
+	ThrowSound = Sound( "weapons/explosives_cannons_superlazers/sw_detonator_stick.ogg" ),
 }
 
 function SWEP:SetupDataTables( )

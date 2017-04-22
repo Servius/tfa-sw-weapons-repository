@@ -4,7 +4,7 @@ end
 if ( CLIENT ) then
 	SWEP.PrintName			= "A280"			
 	SWEP.Author				= "TFA, Servius"
-	SWEP.ViewModelFOV      	= 50
+	SWEP.ViewModelFOV      	= 60
 	SWEP.Slot				= 2
 	SWEP.SlotPos			= 3
 	SWEP.WepSelectIcon = surface.GetTextureID("HUD/killicons/DC15A")	
@@ -15,20 +15,20 @@ SWEP.Category = "TFA Star Wars"
 SWEP.Spawnable				= true
 SWEP.AdminSpawnable			= true
 SWEP.HoldType = "ar2"
-SWEP.ViewModelFOV = 56
+SWEP.ViewModelFOV = 60
 SWEP.ViewModelFlip = false
 SWEP.ViewModel = "models/weapons/synbf3/c_a280.mdl"
 SWEP.WorldModel = "models/weapons/synbf3/w_a280.mdl"
 SWEP.ShowViewModel = true
 SWEP.ShowWorldModel = true
 SWEP.UseHands = true
-SWEP.Primary.Sound = Sound ("weapons/synbf3/a280_fire.wav");
-SWEP.Primary.ReloadSound = Sound ("weapons/synbf3/battlefront_standard_reload.wav");
+SWEP.Primary.Sound = Sound ("weapons/a280/a280_fire.ogg");
+SWEP.Primary.ReloadSound = Sound ("weapons/shared/battlefront_standard_reload.ogg");
 SWEP.Weight					= 5
 SWEP.AutoSwitchTo			= false
 SWEP.AutoSwitchFrom			= false
 SWEP.Primary.Recoil			= 0.02
-SWEP.Primary.Damage			= 50
+SWEP.Primary.Damage			= 40
 SWEP.Primary.NumShots		= 1
 -- Selective Fire Stuff
 SWEP.SelectiveFire		= true --Allow selecting your firemode?
@@ -52,7 +52,7 @@ SWEP.Primary.Ammo			= "ar2"
 SWEP.Secondary.Automatic	= false
 SWEP.Secondary.Ammo			= "none"
 SWEP.Secondary.IronFOV = 70
-SWEP.IronSightsPos = Vector(-4, -7, 1.36)
+SWEP.IronSightsPos = Vector(-4, -6, 1.36)
 SWEP.IronSightsAng = Vector(0, 0, 0)
 SWEP.VElements = {
 	["element_name"] = { type = "Model", model = "models/rtcircle.mdl", bone = "A280", rel = "", pos = Vector(-0.105, -1.8, 6.67), angle = Angle(-180, -90, 180), size = Vector(0.3, 0.3, 0.3), color = Color(255, 255, 255, 255), surpresslightning = false, material = "!tfa_rtmaterial", skin = 0, bodygroup = {} }

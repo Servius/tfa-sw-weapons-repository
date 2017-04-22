@@ -22,8 +22,8 @@ SWEP.WorldModel = "models/weapons/w_dc15sa.mdl"
 SWEP.ShowViewModel = true
 SWEP.ShowWorldModel = true
 SWEP.UseHands = true
-SWEP.Primary.Sound = Sound ("weapons/sw_vaporize.wav");
-SWEP.Primary.ReloadSound = Sound ("weapons/synbf3/battlefront_standard_reload.wav");
+SWEP.Primary.Sound = Sound ("weapons/explosives_cannons_superlazers/sw_vaporize.ogg");
+SWEP.Primary.ReloadSound = Sound ("weapons/shared/battlefront_standard_reload.ogg");
 SWEP.Weight					= 15
 SWEP.AutoSwitchTo			= false
 SWEP.AutoSwitchFrom			= false
@@ -52,13 +52,13 @@ SWEP.Primary.Ammo			= "ar2"
 SWEP.Secondary.Automatic	= false
 SWEP.Secondary.Ammo			= "none"
 SWEP.Secondary.IronFOV = 70
-SWEP.IronSightsPos = Vector(-6.881, -4, 2.4)
+SWEP.IronSightsPos = Vector(-6.881, -3, 2.4)
 SWEP.IronSightsAng = Vector(0, 0, 0)
 SWEP.ViewModelBoneMods = {
 	["v_weapon.awm_parent"] = { scale = Vector(0.009, 0.009, 0.009), pos = Vector(0, 0, 0), angle = Angle(0, 0, 0) }
 }
 SWEP.VElements = {
-	["element_scoped"] = { type = "Model", model = "models/rtcircle.mdl", bone = "ValveBiped.Bip01_Spine4", rel = "element_name", pos = Vector(-11.948, 0, 7.998), angle = Angle(180, 0, 180), size = Vector(0.328, 0.328, 0.328), color = Color(255, 255, 255, 255), surpresslightning = false, material = "!tfa_rtmaterial", skin = 0, bodygroup = {} },
+	["element_scoped"] = { type = "Model", model = "models/rtcircle.mdl", bone = "ValveBiped.Bip01_Spine4", rel = "element_name", pos = Vector(-12.06, -.02, 7.995), angle = Angle(180, 0, 180), size = Vector(0.34, 0.34, 0.34), color = Color(255, 255, 255, 255), surpresslightning = false, material = "!tfa_rtmaterial", skin = 0, bodygroup = {} },
 	["element_name"] = { type = "Model", model = "models/swbf3/imp/sniperrifle.mdl", bone = "v_weapon.awm_parent", rel = "", pos = Vector(-0.519, 1.557, -9.87), angle = Angle(-90, 90, 0), size = Vector(0.975, 0.975, 0.975), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
 }
 SWEP.WElements = {
@@ -70,8 +70,8 @@ SWEP.DoProceduralReload = true
 SWEP.ProceduralReloadTime = 2.5
 ----Swft Base Code
 SWEP.TracerCount = 1
-SWEP.MuzzleFlashEffect = "effect_zeus_muzzleflash"
-SWEP.TracerName = "effect_sw_laser_red"
+SWEP.MuzzleFlashEffect = ""
+SWEP.TracerName = "effect_sw_laser_red_sniper"
 SWEP.Secondary.IronFOV = 70
 SWEP.Primary.KickUp = 0.2
 SWEP.Primary.KickDown = 0.1

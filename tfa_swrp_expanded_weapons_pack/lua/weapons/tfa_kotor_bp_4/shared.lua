@@ -20,8 +20,8 @@ SWEP.WorldModel = "models/weapons/w_dc15sa.mdl"
 SWEP.ShowViewModel = true
 SWEP.ShowWorldModel = false
 SWEP.UseHands = true
-SWEP.Primary.Sound = Sound ("weapons/sounds.bif_00816.wav");
-SWEP.Primary.ReloadSound = Sound ("weapons/DC15A_reload.wav");
+SWEP.Primary.Sound = Sound ("weapons/x8/x8_fire_6.ogg");
+SWEP.Primary.ReloadSound = Sound ("weapons/shared/standard_reload.ogg");
 SWEP.Primary.KickUp = 2
 SWEP.Weight	= 5
 SWEP.AutoSwitchTo = false
@@ -45,8 +45,8 @@ SWEP.FireModeName = nil --Change to a text value to override it
 SWEP.Secondary.Automatic = false
 SWEP.Secondary.Ammo	= "none"
 SWEP.Secondary.IronFOV = 70
-SWEP.IronSightsPos = Vector(-5.628, -6.231, 1.809)
-SWEP.IronSightsAng = Vector(0, -4.7, -0.704)
+SWEP.IronSightsPos = Vector(-4, -0, 1.809)
+SWEP.IronSightsAng = Vector(0, 0, -0)
 SWEP.ViewModelBoneMods = {
 	["v_dh17_reference001"] = { scale = Vector(0.009, 0.009, 0.009), pos = Vector(0, 0, 0), angle = Angle(0, 0, 0) },
 	["ValveBiped.Bip01_R_Finger02"] = { scale = Vector(1, 0.941, 1), pos = Vector(0, 0, 0), angle = Angle(0, 0, 0) },
@@ -60,7 +60,7 @@ SWEP.WElements = {
 }
 SWEP.VElements = {
 		["element_scope"] = { type = "Model", model = "models/rtcircle.mdl", bone = "v_dh17_reference001", rel = "element_name", pos = Vector(0.75, 0, 4.98), angle = Angle(0, 0, 0), size =	 Vector(0.241, 0.241,0.241), color = Color(255, 255, 255, 255), surpresslightning = false, material = "!tfa_rtmaterial", skin = 0, bodygroup = {} },
-	["element_name"] = { type = "Model", model = "models/w_blstrpstl_004.mdl", bone = "v_dh17_reference001", rel = "", pos = Vector(0.4, 0.28, -0.519), angle = Angle(-1.17, -82.987, -1.17), size = Vector(0.69, 0.69, 0.69), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
+	["element_name"] = { type = "Model", model = "models/w_blstrpstl_004.mdl", bone = "v_dh17_reference001", rel = "", pos = Vector(0, 0, -.7), angle = Angle(-0, -90, -0), size = Vector(0.69, 0.69, 0.69), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
 }
 SWEP.BlowbackVector = Vector(0,-3,0.025)
 SWEP.Blowback_Only_Iron  = false

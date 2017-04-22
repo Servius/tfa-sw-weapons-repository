@@ -22,8 +22,8 @@ SWEP.WorldModel = "models/weapons/synbf3/w_ee3.mdl"
 SWEP.ShowViewModel = true
 SWEP.ShowWorldModel = true
 SWEP.UseHands = true
-SWEP.Primary.Sound = Sound ("weapons/synbf3/ee3_fire.wav");
-SWEP.Primary.ReloadSound = Sound ("weapons/synbf3/battlefront_standard_reload.wav");
+SWEP.Primary.Sound = Sound ("weapons/ee3/ee3_fire.ogg");
+SWEP.Primary.ReloadSound = Sound ("weapons/shared/battlefront_standard_reload.ogg");
 SWEP.Weight					= 5
 SWEP.AutoSwitchTo			= false
 SWEP.AutoSwitchFrom			= false
@@ -31,13 +31,12 @@ SWEP.Primary.Recoil			= 0.5
 SWEP.Primary.Damage			= 50
 SWEP.Primary.NumShots		= 1
 -- Selective Fire Stuff
-SWEP.SelectiveFire		= true --Allow selecting your firemode?
+SWEP.SelectiveFire		= false --Allow selecting your firemode?
 SWEP.DisableBurstFire	= false --Only auto/single?
 SWEP.OnlyBurstFire		= true --No auto, only burst/single?
 SWEP.DefaultFireMode 	= "" --Default to auto or whatev
  SWEP.FireModes = {
-"3Burst",
-"Single"
+"3Burst"
 } --Change to a text value to override it
 SWEP.Primary.Spread			= 0.0125
 SWEP.Primary.IronAccuracy = .002	-- Ironsight accuracy, should be the same for shotguns
@@ -48,14 +47,14 @@ SWEP.Primary.RangeFalloff = -1 -- The percentage of the range the bullet damage 
 --Penetration Related
 SWEP.MaxPenetrationCounter = 1 --The maximum number of ricochets.  To prevent stack overflows.
 SWEP.Primary.ClipSize		= 50
-SWEP.Primary.RPM = 60/0.175
+SWEP.Primary.RPM = 425
 SWEP.Primary.DefaultClip	= 150
 SWEP.Primary.Automatic		= false
 SWEP.Primary.Ammo			= "ar2"
 SWEP.Secondary.Automatic	= false
 SWEP.Secondary.Ammo			= "none"
 SWEP.Secondary.IronFOV = 70
-SWEP.IronSightsPos = Vector(-3.461, -8.844, 2.2)
+SWEP.IronSightsPos = Vector(-3.461, -6, 2.2)
 SWEP.IronSightsAng = Vector(0, 0, 0)
 SWEP.VElements = {
 	["element_scope"] = { type = "Model", model = "models/rtcircle.mdl", bone = "v_ee3_reference001", rel = "", pos = Vector(0, 0.43, 4.65), angle = Angle(0, 90, 0), size = Vector(0.219, 0.219, 0.219), color = Color(255, 255, 255, 255), surpresslightning = false, material = "!tfa_rtmaterial", skin = 0, bodygroup = {} }

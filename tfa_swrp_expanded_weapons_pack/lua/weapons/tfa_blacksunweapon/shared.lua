@@ -43,8 +43,8 @@ SWEP.ViewModelBoneMods = {
 	["ValveBiped.Bip01_R_Finger0"] = { scale = Vector(0.85, 0.85, 0.85), pos = Vector(-1.297, 0, 0), angle = Angle(0, 0, 0) }
 }
 
-SWEP.Primary.Sound = Sound ("weapons/synbf3/rt97c_fire.wav");
-SWEP.Primary.ReloadSound = Sound ("weapons/DC15A_reload.wav");
+SWEP.Primary.Sound = Sound ("weapons/dsbp/dsbp_fire.ogg");
+SWEP.Primary.ReloadSound = Sound ("weapons/shared/standard_reload.ogg");
 
 SWEP.Primary.KickUp			= 0.2
 

@@ -24,8 +24,8 @@ SWEP.UseHands = true
 SWEP.ViewModelBoneMods = {
 	["v_weapon.awm_parent"] = { scale = Vector(0.009, 0.009, 0.009), pos = Vector(0.925, -0.556, 0.185), angle = Angle(0, 0, 0) }
 }
-SWEP.Primary.Sound = Sound ("weapons/wpn_td_ionrepeater_r2.mp3");
-SWEP.Primary.ReloadSound = Sound ("weapons/DC15A_reload.wav");
+SWEP.Primary.Sound = Sound ("weapons/cadbane_rifle/WPN_CAD_BANE_RIFLE_SHOOT_03.ogg");
+SWEP.Primary.ReloadSound = Sound ("weapons/shared/standard_reload.ogg");
 SWEP.Primary.KickUp			= 5
 SWEP.Weight					= 15
 SWEP.AutoSwitchTo			= false
@@ -33,10 +33,10 @@ SWEP.AutoSwitchFrom			= false
 SWEP.Primary.Recoil			= 0.5
 SWEP.Primary.Damage			= 85
 SWEP.Primary.NumShots		= 1
-SWEP.Primary.Spread			= 0.0125
+SWEP.Primary.Spread			= 0.011
 SWEP.Primary.IronAccuracy = .001	-- Ironsight accuracy, should be the same for shotguns
 SWEP.Primary.ClipSize		= 10
-SWEP.Primary.RPM = 75
+SWEP.Primary.RPM = 85
 SWEP.Primary.DefaultClip	= 20
 SWEP.Primary.Automatic		= false
 SWEP.Primary.Ammo			= "ar2"
@@ -48,11 +48,11 @@ SWEP.FireModeName = nil --Change to a text value to override it
 SWEP.Secondary.Automatic	= false
 SWEP.Secondary.Ammo			= "none"
 SWEP.Secondary.IronFOV = 70
-SWEP.IronSightsPos = Vector(-8.04, -3, 1.789)
+SWEP.IronSightsPos = Vector(-8.04, -3, 2)
 SWEP.IronSightsAng = Vector(0, 0, 0)
 SWEP.VElements = {
-	["element_scope"] = { type = "Model", model = "models/rtcircle.mdl", bone = "v_weapon.awm_parent", rel = "element_name", pos = Vector(-0.401, 2.2, 4.349), angle = Angle(0, -90, 0), size = Vector(0.293, 0.293, 0.293), color = Color(255, 255, 255, 255), surpresslightning = false, material = "!tfa_rtmaterial", skin = 0, bodygroup = {} },
-	["element_name"] = { type = "Model", model = "models/wps_ld1/wps_ld1.mdl", bone = "v_weapon.awm_parent", rel = "", pos = Vector(0.518, -2.597, 2.596), angle = Angle(1.169, 0, -90), size = Vector(0.899, 0.899, 0.899), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
+	["element_scope"] = { type = "Model", model = "models/rtcircle.mdl", bone = "v_weapon.awm_parent", rel = "element_name", pos = Vector(-0.401, 2.2, 4.349), angle = Angle(3, -90, 0), size = Vector(0.293, 0.293, 0.293), color = Color(255, 255, 255, 255), surpresslightning = false, material = "!tfa_rtmaterial", skin = 0, bodygroup = {} },
+	["element_name"] = { type = "Model", model = "models/wps_ld1/wps_ld1.mdl", bone = "v_weapon.awm_parent", rel = "", pos = Vector(0.518, -2.5, 0), angle = Angle(1.169, 0, -90), size = Vector(0.899, 0.899, 0.899), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
 }
 SWEP.WElements = {
 	["element_name"] = { type = "Model", model = "models/wps_ld1/wps_ld1.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(4.675, 0.518, -1.8), angle = Angle(-180, -92.338, 17.531), size = Vector(0.699, 0.699, 0.699), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }

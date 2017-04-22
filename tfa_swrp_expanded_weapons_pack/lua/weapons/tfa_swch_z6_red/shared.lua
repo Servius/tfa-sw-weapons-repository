@@ -40,9 +40,9 @@ sound.Add( {
 	name = "TFA_SW_Z6.Fire",
 	channel = CHAN_USER_BASE+11,
 	volume = 1.0,
-	level = 120,
+	level = 100,
 	pitch = { 95, 110 },
-	sound = "weapons/repeat-1.wav"
+	sound = "weapons/z6_rotary/repeat-1.wav"
 } )
 
 sound.Add( {
@@ -51,7 +51,7 @@ sound.Add( {
 	volume = 1.0,
 	level = 70,
 	pitch = { 100, 100 },
-	sound = "weapons/z6_startspin.wav"
+	sound = "weapons/z6_rotary/z6_startspin.wav"
 } )
 
 sound.Add( {
@@ -60,7 +60,7 @@ sound.Add( {
 	volume = 1.0,
 	level = 70,
 	pitch = { 100, 100 },
-	sound = "weapons/z6_stopspin.wav"
+	sound = "weapons/z6_rotary/z6_stopspin.wav"
 } )
 
 sound.Add( {
@@ -69,7 +69,7 @@ sound.Add( {
 	volume = 1.0,
 	level = 70,
 	pitch = { 100, 100 },
-	sound = "weapons/z6_spin.wav"
+	sound = "weapons/z6_rotary/z6_spin.wav"
 } )
 
 sound.Add( {
@@ -78,11 +78,11 @@ sound.Add( {
 	volume = 1.0,
 	level = 120,
 	pitch = { 95, 110 },
-	sound = "weapons/DC15A_reload.wav"
+	sound = "weapons/shared/standard_reload.ogg"
 } )
 
 SWEP.Primary.Sound = Sound ("TFA_SW_Z6.Fire");
-SWEP.Primary.ReloadSound = Sound ("weapons/DC15A_reload.wav");
+SWEP.Primary.ReloadSound = Sound ("weapons/shared/standard_reload.ogg");
 
 SWEP.Weight					= 5
 SWEP.AutoSwitchTo			= false
@@ -163,14 +163,14 @@ function SWEP:Think2()
 	if SERVER or (CLIENT and not game.SinglePlayer()) then
 		if not oldsh and sh then
 			self:EmitSound("TFA_SW_Z6.StartSpin")
-			self.NextSpinSound = CurTime() + SoundDuration("weapons/z6_startspin.wav") - 0.5
+			self.NextSpinSound = CurTime() + SoundDuration("weapons/z6_rotary/z6_startspin.wav") - 0.5
 		elseif oldsh and not sh then
 			self:EmitSound("TFA_SW_Z6.StopSpin")
-			self.NextSpinSound = CurTime() + SoundDuration("weapons/z6_stopspin.wav")
+			self.NextSpinSound = CurTime() + SoundDuration("weapons/z6_rotary/z6_stopspin.wav")
 		elseif sh then
 			if CurTime() > self.NextSpinSound then
 				self:EmitSound("TFA_SW_Z6.Spin")
-				self.NextSpinSound = CurTime() + SoundDuration("weapons/z6_spin.wav")
+				self.NextSpinSound = CurTime() + SoundDuration("weapons/z6_rotary/z6_spin.wav")
 			end
 		elseif not sh then
 			self:StopSound("TFA_SW_Z6.Spin")

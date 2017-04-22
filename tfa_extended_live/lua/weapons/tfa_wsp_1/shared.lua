@@ -24,14 +24,14 @@ SWEP.UseHands = true
 SWEP.ViewModelBoneMods = {
 	["v_weapon.awm_parent"] = { scale = Vector(0.009, 0.009, 0.009), pos = Vector(0, 0, 0), angle = Angle(0, 0, 0) }
 }
-SWEP.Primary.Sound = Sound ("weapons/wpn_cis_sniperrifle_fire.wav");
-SWEP.Primary.ReloadSound = Sound ("weapons/DC15A_reload.wav");
+SWEP.Primary.Sound = Sound ("weapons/explosives_cannons_superlazers/WPN_ATTE_Laser_Shoot_03.ogg");
+SWEP.Primary.ReloadSound = Sound ("weapons/shared/standard_reload.ogg");
 SWEP.Primary.KickUp			= 2
 SWEP.Weight					= 5
 SWEP.AutoSwitchTo			= false
 SWEP.AutoSwitchFrom			= false
 SWEP.Primary.Recoil			= 0.5
-SWEP.Primary.Damage			= 90
+SWEP.Primary.Damage			= 105
 SWEP.Primary.NumShots		= 1
 SWEP.Primary.Spread			= 0.0125
 SWEP.Primary.IronAccuracy = .001	-- Ironsight accuracy, should be the same for shotguns
@@ -48,7 +48,7 @@ SWEP.FireModeName = nil --Change to a text value to override it
 SWEP.Secondary.Automatic	= false
 SWEP.Secondary.Ammo			= "none"
 SWEP.Secondary.IronFOV = 70
-SWEP.IronSightsPos = Vector(-7.64, -2.412, 2.319)
+SWEP.IronSightsPos = Vector(-7.66, -2.412, 2.5)
 SWEP.IronSightsAng = Vector(0, 0, 0)
 SWEP.VElements = {
 	["element_scope"] = { type = "Model", model = "models/rtcircle.mdl", bone = "v_weapon.awm_parent", rel = "element_name", pos = Vector(-0.401, 5.5, 5.999), angle = Angle(0, -90, 0), size = Vector(0.4, 0.4, 0.4), color = Color(255, 255, 255, 255), surpresslightning = false, material = "!tfa_rtmaterial", skin = 0, bodygroup = {} },

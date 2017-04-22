@@ -42,8 +42,8 @@ SWEP.ViewModelBoneMods = {
 }
 
 
-SWEP.Primary.Sound = Sound ("weapons/DC15A_fire.wav");
-SWEP.Primary.ReloadSound = Sound ("weapons/DC15A_reload.wav");
+SWEP.Primary.Sound = Sound ("weapons/dc15a/DC15A_fire.ogg");
+SWEP.Primary.ReloadSound = Sound ("weapons/shared/standard_reload.ogg");
 
 SWEP.Weight					= 5
 SWEP.AutoSwitchTo			= false

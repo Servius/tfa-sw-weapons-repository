@@ -33,5 +33,3 @@ sound.Add({
 	pitch = { 95, 110 },
 	sound = "weapons/ELG3A_reload.wav"
 })
-
-

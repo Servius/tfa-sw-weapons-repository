@@ -4,7 +4,7 @@ end
 if ( CLIENT ) then
 	SWEP.PrintName			= "DLT-19"			
 	SWEP.Author				= "TFA, Servius"
-	SWEP.ViewModelFOV      	= 50
+	SWEP.ViewModelFOV      	= 60
 	SWEP.Slot				= 2
 	SWEP.SlotPos			= 3
 --	SWEP.WepSelectIcon = surface.GetTextureID("HUD/killicons/DC15A")	
@@ -15,15 +15,15 @@ SWEP.Category = "TFA Star Wars"
 SWEP.Spawnable				= true
 SWEP.AdminSpawnable			= true
 SWEP.HoldType = "ar2"
-SWEP.ViewModelFOV = 56
+SWEP.ViewModelFOV = 60
 SWEP.ViewModelFlip = false
 SWEP.ViewModel = "models/weapons/synbf3/c_dlt19.mdl"
 SWEP.WorldModel = "models/weapons/synbf3/w_dlt19.mdl"
 SWEP.ShowViewModel = true
 SWEP.ShowWorldModel = true
 SWEP.UseHands = true
-SWEP.Primary.Sound = Sound ("weapons/synbf3/dlt19_fire.wav");
-SWEP.Primary.ReloadSound = Sound ("weapons/synbf3/battlefront_standard_reload.wav");
+SWEP.Primary.Sound = Sound ("weapons/dlt19/dlt19_fire.ogg");
+SWEP.Primary.ReloadSound = Sound ("weapons/shared/battlefront_standard_reload.ogg");
 SWEP.Weight					= 5
 SWEP.AutoSwitchTo			= false
 SWEP.AutoSwitchFrom			= false

@@ -1,17 +1,9 @@
-
-
 if ( SERVER ) then
-
 	AddCSLuaFile( "shared.lua" )
-
 end
-
 if ( CLIENT ) then
-
 	SWEP.WepSelectIcon = surface.GetTextureID("HUD/killicons/DC15A")
-	
 	killicon.Add( "tfa_dc15a_expanded", "HUD/killicons/DC15A", Color( 255, 80, 0, 255 ) )
-	
 end
 SWEP.Base				= "tfa_gun_base"
 SWEP.Category				= "TFA Star Wars Applesauce" --The category.  Please, just choose something generic or something I've already done if you plan on only doing like one swep..  
@@ -37,7 +29,7 @@ SWEP.Weight				= 30			-- This controls how "good" the weapon is for autopickup.
 --[[WEAPON HANDLING]]--
 
 --Firing related
-SWEP.Primary.Sound = Sound ("weapons/DC15A_fire.wav");			-- This is the sound of the weapon, when you shoot.
+SWEP.Primary.Sound = Sound ("weapons/dc15a/dc15a_fire.ogg");			-- This is the sound of the weapon, when you shoot.
 SWEP.Primary.SilencedSound 			= nil				-- This is the sound of the weapon, when silenced.
 SWEP.Primary.PenetrationMultiplier = 1 --Change the amount of something this gun can penetrate through
 SWEP.Primary.Damage		= 45				-- Damage, in standard damage points.
@@ -130,7 +122,7 @@ SWEP.UseHands = false
 --}
 
 
-SWEP.Primary.ReloadSound = Sound ("weapons/DC15A_reload.wav");
+SWEP.Primary.ReloadSound = Sound ("weapons/shared/standard_reload.ogg");
 
 
 SWEP.AutoSwitchTo			= false

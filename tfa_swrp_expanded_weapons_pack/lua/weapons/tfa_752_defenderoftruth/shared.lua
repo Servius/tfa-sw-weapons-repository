@@ -30,8 +30,8 @@ SWEP.AdminSpawnable			= true
 SWEP.ViewModel				= "models/weapons/v_dsbp.mdl"
 SWEP.WorldModel				= "models/weapons/w_dsbp.mdl"
 
-SWEP.Primary.Sound = Sound ("weapons/DSBP_fire.wav");
-SWEP.Primary.ReloadSound = Sound ("weapons/WESTAR34_reload.wav");
+SWEP.Primary.Sound = Sound ("weapons/dsbp/DSBP_fire.ogg");
+SWEP.Primary.ReloadSound = Sound ("weapons/dsbp/WESTAR34_reload.ogg");
 
 SWEP.Weight					= 5
 SWEP.AutoSwitchTo			= false

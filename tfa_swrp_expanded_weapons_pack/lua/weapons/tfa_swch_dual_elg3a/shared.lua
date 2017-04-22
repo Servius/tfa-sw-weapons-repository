@@ -1,27 +1,19 @@
 if ( SERVER ) then
-
 	AddCSLuaFile( "shared.lua" )
-	
 end
-
 if ( CLIENT ) then
-
-	SWEP.PrintName			= "TFA Dual ELG-3A"			
+	SWEP.PrintName			= "Dual ELG-3A"			
 	SWEP.Author				= "Servius"
 	SWEP.ViewModelFOV      	= 76
 	SWEP.Slot				= 2
 	SWEP.SlotPos			= 3
 	SWEP.WepSelectIcon = surface.GetTextureID("HUD/killicons/ELG3A")
-	
 	killicon.Add( "tfa_sw_dual_elg3a", "HUD/killicons/EKG3A", Color( 255, 80, 0, 255 ) )
-	
 end
-
 SWEP.Author				= "Servius" --Author Tooltip
 SWEP.Contact				= "http://steamcommunity.com/profiles/76561198036188853/" --Contact Info Tooltip
 SWEP.Purpose				= "Shoot some people" --Purpose Tooltip
 SWEP.Instructions				= "Left click to shoot...dummy." --Instructions Tooltip
-
 SWEP.HoldType = "duel"
 SWEP.ViewModelFOV = 72.160804020101
 SWEP.ViewModelFlip = false
@@ -38,30 +30,23 @@ SWEP.ViewModelBoneMods = {
 	["v_weapon.Right_Arm"] = { scale = Vector(1, 1, 1), pos = Vector(-3.149, -1.297, 0.185), angle = Angle(0, 0, 0) },
 	["v_weapon.elite_left"] = { scale = Vector(0.009, 0.009, 0.009), pos = Vector(0, 0, 0), angle = Angle(0, 0, 0) }
 }
-
 SWEP.VElements = {
 	["elg3a"] = { type = "Model", model = "models/weapons/w_ELG3A.mdl", bone = "v_weapon.elite_left", rel = "", pos = Vector(-0.519, -1.558, 4.675), angle = Angle(90, -99.351, 15.194), size = Vector(0.69, 0.69, 0.69), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 	["elg3a+"] = { type = "Model", model = "models/weapons/w_ELG3A.mdl", bone = "v_weapon.elite_right", rel = "", pos = Vector(-0.519, -1.558, 4.675), angle = Angle(90, -99.351, 15.194), size = Vector(0.69, 0.69, 0.69), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
 }
-
-
 SWEP.WElements = {
 	["elg3a"] = { type = "Model", model = "models/weapons/w_ELG3A.mdl", bone = "ValveBiped.Bip01_L_Hand", rel = "", pos = Vector(9.362, 1.738, 3.665), angle = Angle(0, 0, 0), size = Vector(0.827, 0.827, 0.827), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
 }
-
 SWEP.Base					= "tfa_swsft_base_servius"
-
 SWEP.Category				= "TFA Star Wars"
-
 SWEP.Spawnable				= true
 SWEP.AdminSpawnable			= true
-
-SWEP.Primary.Sound 			= Sound("TFA_SW_ELG3A.1")				-- This is the sound of the weapon, when you shoot.
-
+SWEP.Primary.Sound 			= Sound("weapons/elg3a/elg3a_fire.ogg")				-- This is the sound of the weapon, when you shoot.
 SWEP.Callback = {}
 SWEP.Callback.ChooseProceduralReloadAnim = function(self)
-	self:EmitSound("TFA_SW_ELG3A.Reload")
+	self:EmitSound("weapons/shared/standard_reload.ogg")
 end
+SWEP.Primary.ReloadSound = Sound ("weapons/shared/standard_reload.ogg");
 
 SWEP.Weight					= 5
 SWEP.AutoSwitchTo			= false

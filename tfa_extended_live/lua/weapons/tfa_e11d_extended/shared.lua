@@ -4,7 +4,7 @@ end
 if ( CLIENT ) then
 	SWEP.PrintName			= "E11D"			
 	SWEP.Author				= "TFA, Servius"
-	SWEP.ViewModelFOV      	= 50
+	SWEP.ViewModelFOV      	= 60
 	SWEP.Slot				= 2
 	SWEP.SlotPos			= 3
 --	SWEP.WepSelectIcon = surface.GetTextureID("HUD/killicons/DC15A")	
@@ -15,7 +15,7 @@ SWEP.Category = "TFA Star Wars"
 SWEP.Spawnable				= true
 SWEP.AdminSpawnable			= true
 SWEP.HoldType = "ar2"
-SWEP.ViewModelFOV = 56
+SWEP.ViewModelFOV = 60
 SWEP.ViewModelFlip = false
 SWEP.ViewModel = "models/weapons/synbf3/c_a280.mdl"
 SWEP.WorldModel = "models/weapons/synbf3/w_dh17.mdl"
@@ -26,7 +26,7 @@ SWEP.ViewModelBoneMods = {
 	["Object001"] = { scale = Vector(0.009, 0.009, 0.009), pos = Vector(0, 0, 0), angle = Angle(0, 0, 0) }
 }
 SWEP.Primary.Sound = Sound ("Weapon_E11D.Single");
-SWEP.Primary.ReloadSound = Sound ("weapons/synbf3/battlefront_standard_reload.wav");
+SWEP.Primary.ReloadSound = Sound ("weapons/shared/battlefront_standard_reload.ogg");
 SWEP.Weight					= 5
 SWEP.AutoSwitchTo			= false
 SWEP.AutoSwitchFrom			= false
@@ -55,10 +55,10 @@ SWEP.Primary.Ammo			= "ar2"
 SWEP.Secondary.Automatic	= false
 SWEP.Secondary.Ammo			= "none"
 SWEP.Secondary.IronFOV = 70
-SWEP.IronSightsPos = Vector(-3.741, -8.73, 3.24)
-SWEP.IronSightsAng = Vector(0, 0, 0)
+SWEP.IronSightsPos = Vector(-4.1, 2, 2.9)
+SWEP.IronSightsAng = Vector(-0, 0, 0)
 SWEP.VElements = {
-	["element_scope"] = { type = "Model", model = "models/farena/weapons/w_e-11d.mdl", bone = "Object001", rel = "", pos = Vector(0, 2, 0), angle = Angle(0, -90, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
+	["element_scope"] = { type = "Model", model = "models/farena/weapons/w_e-11d.mdl", bone = "Object001", rel = "", pos = Vector(-.3, 3, .5), angle = Angle(0, -90, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
 }
 SWEP.WElements = {
 	["element_name"] = { type = "Model", model = "models/farena/weapons/w_e-11d.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(5.714, 1.299, -1.558), angle = Angle(-15.195, 3, -180), size = Vector(0.889, 0.889, 0.889), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }

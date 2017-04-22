@@ -1,27 +1,17 @@
-
-
 if ( SERVER ) then
-
 	AddCSLuaFile( "shared.lua" )
-
 end
-
 if ( CLIENT ) then
-
 	SWEP.PrintName			= "Deathwatch Carlac"			
 	SWEP.Author				= "TFA, Servius"
 	SWEP.ViewModelFOV      	= 50
 	SWEP.Slot				= 2
 	SWEP.SlotPos			= 3
 end
-
 SWEP.Base					= "tfa_swsft_base_servius"
-
 SWEP.Category = "TFA Star Wars"
-
 SWEP.Spawnable				= true
 SWEP.AdminSpawnable			= true
-
 SWEP.HoldType = "pistol"
 SWEP.ViewModelFOV = 56
 SWEP.ViewModelFlip = false
@@ -30,7 +20,6 @@ SWEP.WorldModel = "models/weapons/w_dc15sa.mdl"
 SWEP.ShowViewModel = true
 SWEP.ShowWorldModel = false
 SWEP.UseHands = true
-
 SWEP.ViewModelBoneMods = {
 	["v_dh17_reference001"] = { scale = Vector(0.009, 0.009, 0.009), pos = Vector(0, 0, 0), angle = Angle(0, 0, 0) },
 	["ValveBiped.Bip01_R_Finger21"] = { scale = Vector(1, 1, 1), pos = Vector(-0.556, 0, 0), angle = Angle(0, 0, 0) },
@@ -42,16 +31,12 @@ SWEP.ViewModelBoneMods = {
 	["ValveBiped.Bip01_R_Finger22"] = { scale = Vector(0.904, 0.85, 0.904), pos = Vector(-0.556, -0.186, 0.185), angle = Angle(5.556, 0, 0) },
 	["ValveBiped.Bip01_R_Finger0"] = { scale = Vector(0.85, 0.85, 0.85), pos = Vector(-1.297, 0, 0), angle = Angle(0, 0, 0) }
 }
-
-SWEP.Primary.Sound = Sound ("weapons/WPN_MandoBlaster_Shoot_1.mp3");
-SWEP.Primary.ReloadSound = Sound ("weapons/DC15A_reload.wav");
-
+SWEP.Primary.Sound = Sound ("weapons/deathwatch_mando/WPN_MandoBlaster_Shoot_1.ogg");
+SWEP.Primary.ReloadSound = Sound("weapons/shared/standard_reload.ogg");
 SWEP.Primary.KickUp			= 0.2
-
 SWEP.Weight					= 5
 SWEP.AutoSwitchTo			= false
 SWEP.AutoSwitchFrom			= false
-
 SWEP.Primary.Recoil			= 0.3
 SWEP.Primary.Damage			= 50
 SWEP.Primary.NumShots		= 1

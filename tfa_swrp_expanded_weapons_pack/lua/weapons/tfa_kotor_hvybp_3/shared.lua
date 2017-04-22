@@ -1,27 +1,17 @@
-
-
 if ( SERVER ) then
-
 	AddCSLuaFile( "shared.lua" )
-
 end
-
 if ( CLIENT ) then
-
 	SWEP.PrintName			= "Heavy Blaster Pistol T3"			
 	SWEP.Author				= "TFA, Servius"
 	SWEP.ViewModelFOV      	= 50
 	SWEP.Slot				= 2
 	SWEP.SlotPos			= 3
 end
-
 SWEP.Base					= "tfa_swsft_base_servius"
-
 SWEP.Category = "TFA Star Wars"
-
 SWEP.Spawnable				= true
 SWEP.AdminSpawnable			= true
-
 SWEP.HoldType = "pistol"
 SWEP.ViewModelFOV = 56
 SWEP.ViewModelFlip = false
@@ -30,7 +20,6 @@ SWEP.WorldModel = "models/weapons/w_dc15sa.mdl"
 SWEP.ShowViewModel = true
 SWEP.ShowWorldModel = false
 SWEP.UseHands = true
-
 SWEP.ViewModelBoneMods = {
 	["ValveBiped.Bip01_R_Finger02"] = { scale = Vector(1, 1, 1), pos = Vector(0.555, -0.556, 0), angle = Angle(0, 0, 0) },
 	["ValveBiped.Bip01_R_Finger42"] = { scale = Vector(1, 1, 1), pos = Vector(0.185, -0.556, 0.185), angle = Angle(-3.333, 0, 0) },
@@ -43,16 +32,12 @@ SWEP.ViewModelBoneMods = {
 	["ValveBiped.Bip01_R_Finger01"] = { scale = Vector(0.924, 0.924, 0.924), pos = Vector(-0.186, 0, 0), angle = Angle(0, 0, 0) },
 	["ValveBiped.Bip01_R_Finger0"] = { scale = Vector(0.85, 0.85, 0.85), pos = Vector(-1.297, 0, 0), angle = Angle(0, 0, 0) }
 }
-
-SWEP.Primary.Sound = Sound ("weapons/sounds.bif_00819.wav");
-SWEP.Primary.ReloadSound = Sound ("weapons/DC15A_reload.wav");
-
+SWEP.Primary.Sound = Sound ("weapons/de10/de10_fire.ogg");
+SWEP.Primary.ReloadSound = Sound ("weapons/shared/standard_reload.ogg");
 SWEP.Primary.KickUp			= 0.2
-
 SWEP.Weight					= 5
 SWEP.AutoSwitchTo			= false
 SWEP.AutoSwitchFrom			= false
-
 SWEP.Primary.Recoil			= 0.5
 SWEP.Primary.Damage			= 70
 SWEP.Primary.NumShots		= 1
@@ -64,25 +49,21 @@ SWEP.Primary.DefaultClip	= 50
 SWEP.Primary.Automatic		= false
 SWEP.Primary.Ammo			= "ar2"
 SWEP.TracerName = "effect_sw_laser_red"
-
 SWEP.SelectiveFire		= false --Allow selecting your firemode?
 SWEP.DisableBurstFire	= false --Only auto/single?
 SWEP.OnlyBurstFire		= false --No auto, only burst/single?
 SWEP.DefaultFireMode 	= "" --Default to auto or whatev
 SWEP.FireModeName = nil --Change to a text value to override it
-
 SWEP.Secondary.Automatic	= false
 SWEP.Secondary.Ammo			= "none"
-
 SWEP.Secondary.IronFOV = 70
-SWEP.IronSightsPos = Vector(-4, -7.35, 1.72)
-SWEP.IronSightsAng = Vector(-2, -1, 0)	
-
+SWEP.IronSightsPos = Vector(-4, -0, 1.72)
+SWEP.IronSightsAng = Vector(-0, -0, 0)	
 SWEP.WElements = {
 	["element_name"] = { type = "Model", model = "models/w_hvyblstr_005.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(9, 2.2, -3.401), angle = Angle(167.143, -4, 0), size = Vector(0.72, 0.72, 0.72), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
 }
 SWEP.VElements = {
-	["element_name"] = { type = "Model", model = "models/w_hvyblstr_005.mdl", bone = "v_dh17_reference001", rel = "", pos = Vector(-0.601, -5.7, 0.899), angle = Angle(-1.17, -89, 3.506), size = Vector(0.755, 0.755, 0.755), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
+	["element_name"] = { type = "Model", model = "models/w_hvyblstr_005.mdl", bone = "v_dh17_reference001", rel = "", pos = Vector(-0.601, -5.7, 0.899), angle = Angle(-0, -90, 0), size = Vector(0.755, 0.755, 0.755), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
 }
 
 

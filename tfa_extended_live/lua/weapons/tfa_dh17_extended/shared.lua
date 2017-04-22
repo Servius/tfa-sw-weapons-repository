@@ -4,7 +4,7 @@ end
 if ( CLIENT ) then
 	SWEP.PrintName			= "DH-17"			
 	SWEP.Author				= "TFA, Servius"
-	SWEP.ViewModelFOV      	= 50
+	SWEP.ViewModelFOV      	= 60
 	SWEP.Slot				= 2
 	SWEP.SlotPos			= 3
 	--SWEP.WepSelectIcon = surface.GetTextureID("HUD/killicons/DC15A")	
@@ -15,20 +15,20 @@ SWEP.Category = "TFA Star Wars"
 SWEP.Spawnable				= true
 SWEP.AdminSpawnable			= true
 SWEP.HoldType = "pistol"
-SWEP.ViewModelFOV = 56
+SWEP.ViewModelFOV = 60
 SWEP.ViewModelFlip = false
 SWEP.ViewModel = "models/weapons/synbf3/c_dh17.mdl"
 SWEP.WorldModel = "models/weapons/synbf3/w_dh17.mdl"
 SWEP.ShowViewModel = true
 SWEP.ShowWorldModel = true
 SWEP.UseHands = true
-SWEP.Primary.Sound = Sound ("weapons/synbf3/dh17_fire.wav");
-SWEP.Primary.ReloadSound = Sound ("weapons/synbf3/battlefront_standard_reload.wav");
+SWEP.Primary.Sound = Sound ("weapons/dh17/dh17_fire.ogg");
+SWEP.Primary.ReloadSound = Sound ("weapons/shared/battlefront_standard_reload.ogg");
 SWEP.Weight					= 5
 SWEP.AutoSwitchTo			= false
 SWEP.AutoSwitchFrom			= false
 SWEP.Primary.Recoil			= 0.5
-SWEP.Primary.Damage			= 50
+SWEP.Primary.Damage			= 35
 SWEP.Primary.NumShots		= 1
 -- Selective Fire Stuff
 SWEP.SelectiveFire		= true --Allow selecting your firemode?
@@ -45,9 +45,9 @@ SWEP.Primary.RangeFalloff = -1 -- The percentage of the range the bullet damage 
 --Penetration Related
 SWEP.MaxPenetrationCounter = 1 --The maximum number of ricochets.  To prevent stack overflows.
 SWEP.Primary.ClipSize		= 20
-SWEP.Primary.RPM = 450
+SWEP.Primary.RPM = 425
 SWEP.Primary.DefaultClip	= 150
-SWEP.Primary.Automatic		= true
+SWEP.Primary.Automatic		= false
 SWEP.Primary.Ammo			= "ar2"
 SWEP.Secondary.Automatic	= false
 SWEP.Secondary.Ammo			= "none"

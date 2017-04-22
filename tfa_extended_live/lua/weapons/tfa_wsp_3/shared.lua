@@ -24,8 +24,8 @@ SWEP.UseHands = true
 SWEP.ViewModelBoneMods = {
 	["v_weapon.awm_parent"] = { scale = Vector(0.009, 0.009, 0.009), pos = Vector(0.925, -0.556, 0.185), angle = Angle(0, 0, 0) }
 }
-SWEP.Primary.Sound = Sound ("weapons/wpn_cis_sniperrifle_fire.wav");
-SWEP.Primary.ReloadSound = Sound ("weapons/DC15A_reload.wav");
+SWEP.Primary.Sound = Sound ("weapons/1misc_guns/WPN_Slugthrower_shoot_1.ogg");
+SWEP.Primary.ReloadSound = Sound ("weapons/shared/standard_reload.ogg");
 SWEP.Primary.KickUp			= 2
 SWEP.Weight					= 5
 SWEP.AutoSwitchTo			= false
@@ -51,7 +51,7 @@ SWEP.Secondary.IronFOV = 70
 SWEP.IronSightsPos = Vector(-7.52, -11.056, 0.879)
 SWEP.IronSightsAng = Vector(0, 0, 0)
 SWEP.VElements = {
-	["element_scope"] = { type = "Model", model = "models/rtcircle.mdl", bone = "v_weapon.awm_parent", rel = "element_name", pos = Vector(0, -3.401, 7.3), angle = Angle(0, -90, 0), size = Vector(0.3, 0.3, 0.3), color = Color(255, 255, 255, 255), surpresslightning = false, material = "!tfa_rtmaterial", skin = 0, bodygroup = {} },
+	["element_scope"] = { type = "Model", model = "models/rtcircle.mdl", bone = "v_weapon.awm_parent", rel = "element_name", pos = Vector(0, -3.36, 7.227), angle = Angle(0, -90, 0), size = Vector(0.31, 0.31, 0.31), color = Color(255, 255, 255, 255), surpresslightning = false, material = "!tfa_rtmaterial", skin = 0, bodygroup = {} },
 	["element_name"] = { type = "Model", model = "models/wps_dlt20ac/wps_dlt20ac.mdl", bone = "v_weapon.awm_parent", rel = "", pos = Vector(-0.519, -0.519, 0.518), angle = Angle(1.169, 0, -90), size = Vector(0.755, 0.755, 0.755), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
 }
 SWEP.WElements = {
@@ -87,7 +87,7 @@ SWEP.DamageType = DMG_SHOCK
 SWEP.RTMaterialOverride = -1
 SWEP.RTScopeAttachment = -1
 SWEP.Scoped_3D = true
-SWEP.ScopeReticule = "scope/gdcw_green_nobar" 
+SWEP.ScopeReticule = "scope/gdcw_red_nobar" 
 SWEP.Secondary.ScopeZoom = 7
 SWEP.ScopeReticule_Scale = {3,3}
 SWEP.Secondary.UseACOG			= false	 --Overlay option

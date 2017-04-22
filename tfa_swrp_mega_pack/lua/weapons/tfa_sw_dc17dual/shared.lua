@@ -52,8 +52,8 @@ SWEP.Spawnable				= true
 SWEP.AdminSpawnable			= true
 
 
-SWEP.Primary.Sound = Sound("weapons/DC17_fire.wav");
-SWEP.Primary.ReloadSound			= Sound ("weapons/DC17_reload.wav");
+SWEP.Primary.Sound = Sound("weapons/dc17/DC17_fire.ogg");
+SWEP.Primary.ReloadSound			= Sound ("weapons/shared/standard_reload.ogg");
 
 SWEP.Weight					= 5
 SWEP.AutoSwitchTo			= false

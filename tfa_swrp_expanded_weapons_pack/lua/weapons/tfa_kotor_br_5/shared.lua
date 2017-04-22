@@ -38,8 +38,8 @@ SWEP.ViewModelBoneMods = {
 	["ValveBiped.Bip01_L_Finger0"] = { scale = Vector(1, 1, 1), pos = Vector(0, -.0, 0), angle = Angle(5, -2, 0) }
 }
 
-SWEP.Primary.Sound = Sound ("weapons/sounds.bif_00815.wav");
-SWEP.Primary.ReloadSound = Sound ("weapons/DC15A_reload.wav");
+SWEP.Primary.Sound = Sound ("weapons/1misc_guns/WPN_LASER_BLASTER_SHOOT_01.ogg");
+SWEP.Primary.ReloadSound = Sound ("weapons/shared/standard_reload.ogg");
 
 SWEP.Primary.KickUp			= 0.2
 
@@ -77,11 +77,11 @@ SWEP.Secondary.Ammo			= "none"
 
 SWEP.Secondary.IronFOV = 70
 
-SWEP.IronSightsPos = Vector(-6.3, 0, -1)
-SWEP.IronSightsAng = Vector(-1, .1, 0)
+SWEP.IronSightsPos = Vector(-6.1, 3, -1.3)
+SWEP.IronSightsAng = Vector(-0, 0, 0)
 
 SWEP.VElements = {
-	["element_name"] = { type = "Model", model = "models/w_blstrrfl_005.mdl", bone = "v_weapon.awm_parent", rel = "", pos = Vector(-2, -4, -2), angle = Angle(90, -92, -0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = true, material = "", skin = 0, bodygroup = {} }
+	["element_name"] = { type = "Model", model = "models/w_blstrrfl_005.mdl", bone = "v_weapon.awm_parent", rel = "", pos = Vector(-2, -4, -2), angle = Angle(90, -90, -0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = true, material = "", skin = 0, bodygroup = {} }
 }
 
 SWEP.WElements = {

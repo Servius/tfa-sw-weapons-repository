@@ -30,8 +30,8 @@ SWEP.AdminSpawnable			= true
 SWEP.ViewModel				= "models/weapons/v_ELG3A.mdl"
 SWEP.WorldModel				= "models/weapons/w_ELG3A.mdl"
 
-SWEP.Primary.Sound = Sound ("weapons/ELG3A_fire.wav");
-SWEP.Primary.ReloadSound = Sound ("weapons/ELG3A_reload.wav");
+SWEP.Primary.Sound = Sound ("weapons/elg3a/ELG3A_fire.ogg");
+SWEP.Primary.ReloadSound = Sound ("weapons/shared/standard_reload.ogg");
 
 SWEP.Weight					= 5
 SWEP.AutoSwitchTo			= false

@@ -20,8 +20,8 @@ SWEP.WorldModel = "models/weapons/w_dc15sa.mdl"
 SWEP.ShowViewModel = true
 SWEP.ShowWorldModel = false
 SWEP.UseHands = true
-SWEP.Primary.Sound = Sound ("weapons/sounds.bif_00831.wav");
-SWEP.Primary.ReloadSound = Sound ("weapons/DC15A_reload.wav");
+SWEP.Primary.Sound = Sound ("weapons/z6_rotary/z6_fire.ogg");
+SWEP.Primary.ReloadSound = Sound ("weapons/shared/standard_reload.ogg");
 SWEP.Primary.KickUp			= 2
 SWEP.Weight					= 5
 SWEP.AutoSwitchTo			= false
@@ -52,8 +52,8 @@ SWEP.Secondary.Automatic	= false
 SWEP.Secondary.Ammo			= "none"
 SWEP.Secondary.IronFOV = 70
 --Viewmodel
-SWEP.IronSightsPos = Vector(-8, -5, 1.429)
-SWEP.IronSightsAng = Vector(0, 3.517, 3.517)
+SWEP.IronSightsPos = Vector(-8, -1, 1.429)
+SWEP.IronSightsAng = Vector(0, 0, 0)
 SWEP.ViewModelBoneMods = {
 	["v_weapon.awm_parent"] = { scale = Vector(0.009, 0.009, 0.009), pos = Vector(2.036, 0, 0), angle = Angle(0, 0, 0) },
 	["ValveBiped.Bip01_L_Finger01"] = { scale = Vector(1.052, 1.052, 1.052), pos = Vector(-0.186, 0.555, 0), angle = Angle(3.332, 0, 0) },
@@ -63,7 +63,7 @@ SWEP.ViewModelBoneMods = {
 }
 SWEP.VElements = {
 	["element_scope"] = { type = "Model", model = "models/rtcircle.mdl", bone = "v_weapon.awm_parent", rel = "element_gun", pos = Vector(10.5, -1.28, 4.76), angle = Angle(0, 0, -0), size = Vector(0.239, 0.239, 0.239), color = Color(255, 255, 255, 255), surpresslightning = false, material = "!tfa_rtmaterial", skin = 0, bodygroup = {} },
-	["element_gun"] = { type = "Model", model = "models/w_rptnblstr_002.mdl", bone = "v_weapon.awm_parent", rel = "", pos = Vector(-0.519, -2.597, -5.715), angle = Angle(87.662, -1.17, -85.325), size = Vector(0.95, 0.95, 0.95), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
+	["element_gun"] = { type = "Model", model = "models/w_rptnblstr_002.mdl", bone = "v_weapon.awm_parent", rel = "", pos = Vector(-0.519, -2.597, -5.715), angle = Angle(90, 0, -90), size = Vector(0.95, 0.95, 0.95), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
 }
 SWEP.WElements = {
 	["element_gun"] = { type = "Model", model = "models/w_rptnblstr_002.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(9.869, 0.518, -3.701), angle = Angle(12.857, 180, -180), size = Vector(0.788, 0.788, 0.788), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }

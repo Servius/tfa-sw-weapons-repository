@@ -20,8 +20,8 @@ SWEP.WorldModel = "models/weapons/w_dc15sa.mdl"
 SWEP.ShowViewModel = true
 SWEP.ShowWorldModel = false
 SWEP.UseHands = true
-SWEP.Primary.Sound = Sound ("weapons/sounds.bif_00817.wav");
-SWEP.Primary.ReloadSound = Sound ("weapons/DC15A_reload.wav");
+SWEP.Primary.Sound = Sound ("weapons/x8/x8_fire_6.ogg");
+SWEP.Primary.ReloadSound = Sound ("weapons/shared/standard_reload.ogg");
 SWEP.Primary.KickUp	= 2
 SWEP.Weight	= 5
 SWEP.AutoSwitchTo = false
@@ -48,8 +48,8 @@ SWEP.Secondary.IronFOV = 70
 SWEP.Primary.Range = -1 -- The distance the bullet can travel in source units.  Set to -1 to autodetect based on damage/rpm.
 SWEP.Primary.RangeFalloff = 0.8 -- The percentage of the range the bullet damage starts to fall off at.  Set to 0.8, for example, to start falling off after 80% of the range.
 --ViewModel and elements. 
-SWEP.IronSightsPos = Vector(-5.628, -6.231, 1.809)
-SWEP.IronSightsAng = Vector(0, -4.7, -0.704)
+SWEP.IronSightsPos = Vector(-4, -0, 1.809)
+SWEP.IronSightsAng = Vector(0, 0, -0)
 SWEP.ViewModelBoneMods = {
 	["v_dh17_reference001"] = { scale = Vector(0.009, 0.009, 0.009), pos = Vector(0, 0, 0), angle = Angle(0, 0, 0) },
 	["ValveBiped.Bip01_R_Finger02"] = { scale = Vector(1, 0.941, 1), pos = Vector(0, 0, 0), angle = Angle(0, 0, 0) },
@@ -63,7 +63,7 @@ SWEP.WElements = {
 }
 SWEP.VElements = {
 	["element_scope"] = { type = "Model", model = "models/rtcircle.mdl", bone = "v_dh17_reference001", rel = "element_name", pos = Vector(0.738, 0, 4.98), angle = Angle(0, 0, 0), size =	 Vector(0.241, 0.241,0.241), color = Color(255, 255, 255, 255), surpresslightning = false, material = "!tfa_rtmaterial", skin = 0, bodygroup = {} },
-	["element_name"] = { type = "Model", model = "models/w_blstrpstl_003.mdl", bone = "v_dh17_reference001", rel = "", pos = Vector(0.4, 0.28, -0.519), angle = Angle(-1.17, -82.987, -1.17), size = Vector(0.69, 0.69, 0.69), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
+	["element_name"] = { type = "Model", model = "models/w_blstrpstl_003.mdl", bone = "v_dh17_reference001", rel = "", pos = Vector(0, 0, -.7), angle = Angle(-0, -90, -0), size = Vector(0.69, 0.69, 0.69), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
 }
 SWEP.BlowbackVector = Vector(0,-3,0.025)
 SWEP.Blowback_Only_Iron  = false

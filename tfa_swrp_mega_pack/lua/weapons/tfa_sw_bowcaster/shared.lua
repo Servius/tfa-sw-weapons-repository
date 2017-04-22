@@ -26,7 +26,7 @@ SWEP.Weight				= 30			-- This controls how "good" the weapon is for autopickup.
 --[[WEAPON HANDLING]]--
 
 --Firing related
-SWEP.Primary.Sound 			= Sound ("weapons/BOWCASTER_fire.wav")				-- This is the sound of the weapon, when you shoot.
+SWEP.Primary.Sound 			= Sound ("weapons/bowcaster/BOWCASTER_fire.ogg")				-- This is the sound of the weapon, when you shoot.
 SWEP.Primary.SilencedSound 			= nil				-- This is the sound of the weapon, when silenced.
 SWEP.Primary.PenetrationMultiplier = 1 --Change the amount of something this gun can penetrate through
 SWEP.Primary.Damage		= 80					-- Damage, in standard damage points.
@@ -432,8 +432,9 @@ SWEP.ShowWorldModel = false
 
 SWEP.Callback = {}
 SWEP.Callback.ChooseProceduralReloadAnim = function(self)
-	self:EmitSound("weapons/BOWCASTER_reload.wav")
+	self:EmitSound("weapons/shared/standard_reload.ogg")
 end
+SWEP.Primary.ReloadSound = Sound ("weapons/shared/standard_reload.ogg");
 
 SWEP.DoProceduralReload = true --Do we reload using lua instead of a .mdl animation 
 SWEP.ProceduralReloadTime = 3 --Time to take when procedurally reloading, including transition in (but not out)

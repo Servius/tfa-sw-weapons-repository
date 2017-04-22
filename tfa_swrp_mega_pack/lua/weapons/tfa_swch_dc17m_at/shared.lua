@@ -33,8 +33,8 @@ SWEP.Weight					= 5
 SWEP.AutoSwitchTo			= false
 SWEP.AutoSwitchFrom			= false
 
-SWEP.Primary.Sound = Sound ("weapons/DC17M_AT_fire.wav");
-SWEP.Primary.ReloadSound = Sound ("weapons/DC17M_AT_reload.wav");
+SWEP.Primary.Sound = Sound ("weapons/explosives_cannons_superlazers/dc17m_at_fire.ogg");
+SWEP.Primary.ReloadSound = Sound ("weapons/shared/standard_reload.ogg");
 
 SWEP.Primary.Recoil			= 10
 SWEP.Primary.Damage			= 200

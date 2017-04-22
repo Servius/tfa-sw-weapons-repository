@@ -1,16 +1,10 @@
-
-
 if ( SERVER ) then
-
 	AddCSLuaFile( "shared.lua" )
-
 end
-
 if ( CLIENT ) then
-
 	SWEP.PrintName			= "Blaster Pistol T1"			
 	SWEP.Author				= "TFA, Servius"
-	SWEP.ViewModelFOV      	= 50
+	SWEP.ViewModelFOV      	= 60
 	SWEP.Slot				= 2
 	SWEP.SlotPos			= 2
 end
@@ -19,7 +13,7 @@ SWEP.Category = "TFA Star Wars"
 SWEP.Spawnable				= true
 SWEP.AdminSpawnable			= true
 SWEP.HoldType = "pistol"
-SWEP.ViewModelFOV = 56
+SWEP.ViewModelFOV = 60
 SWEP.ViewModelFlip = false
 SWEP.ViewModel = "models/weapons/synbf3/c_dh17.mdl"
 SWEP.WorldModel = "models/weapons/w_dc15sa.mdl"
@@ -37,8 +31,8 @@ SWEP.ViewModelBoneMods = {
 	["ValveBiped.Bip01_R_Finger22"] = { scale = Vector(0.904, 0.85, 0.904), pos = Vector(-0.556, -0.186, 0.185), angle = Angle(5.556, 0, 0) },
 	["ValveBiped.Bip01_R_Finger0"] = { scale = Vector(0.85, 0.85, 0.85), pos = Vector(-1.297, 0, 0), angle = Angle(0, 0, 0) }
 }
-SWEP.Primary.Sound = Sound ("weapons/sounds.bif_00818.wav");
-SWEP.Primary.ReloadSound = Sound ("weapons/DC15A_reload.wav");
+SWEP.Primary.Sound = Sound ("weapons/x8/x8_fire_6.ogg");
+SWEP.Primary.ReloadSound = Sound ("weapons/shared/standard_reload.ogg");
 SWEP.Primary.KickUp			= 0.2
 SWEP.Weight					= 5
 SWEP.AutoSwitchTo			= false
@@ -65,13 +59,13 @@ SWEP.Secondary.IronFOV = 70
 --Range Related
 SWEP.Primary.Range = -1 -- The distance the bullet can travel in source units.  Set to -1 to autodetect based on damage/rpm.
 SWEP.Primary.RangeFalloff = 0.8 -- The percentage of the range the bullet damage starts to fall off at.  Set to 0.8, for example, to start falling off after 80% of the range.
-SWEP.IronSightsPos = Vector(-5.881, -7.639, 2.619)
-SWEP.IronSightsAng = Vector(0.703, -7.035, -0.704)
+SWEP.IronSightsPos = Vector(-4.4, 2, 2)
+SWEP.IronSightsAng = Vector(0, -0, -0)
 SWEP.WElements = {
 	["element_name"] = { type = "Model", model = "models/w_blstrpstl_002.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(2.596, 1.557, -0.519), angle = Angle(8.182, 180, 180), size = Vector(0.885, 0.885, 0.885), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
 }
 SWEP.VElements = {
-	["element_name"] = { type = "Model", model = "models/w_blstrpstl_002.mdl", bone = "v_dh17_reference001", rel = "", pos = Vector(0.4, 0.28, -0.519), angle = Angle(-1.17, -82.987, -1.17), size = Vector(0.69, 0.69, 0.69), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
+	["element_name"] = { type = "Model", model = "models/w_blstrpstl_002.mdl", bone = "v_dh17_reference001", rel = "", pos = Vector(0.2, 0.28, -0.519), angle = Angle(-0, -90, 0), size = Vector(0.69, 0.69, 0.69), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
 }
 SWEP.BlowbackVector = Vector(0,-3,0.025)
 SWEP.Blowback_Only_Iron  = false

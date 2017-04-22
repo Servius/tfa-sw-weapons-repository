@@ -4,7 +4,7 @@ end
 if ( CLIENT ) then
 	SWEP.PrintName			= "E-11"			
 	SWEP.Author				= "TFA, Servius"
-	SWEP.ViewModelFOV      	= 50
+	SWEP.ViewModelFOV      	= 60
 	SWEP.Slot				= 2
 	SWEP.SlotPos			= 3
 	--SWEP.WepSelectIcon = surface.GetTextureID("HUD/killicons/DC15A")	
@@ -15,15 +15,15 @@ SWEP.Category = "TFA Star Wars"
 SWEP.Spawnable				= true
 SWEP.AdminSpawnable			= true
 SWEP.HoldType = "ar2"
-SWEP.ViewModelFOV = 56
+SWEP.ViewModelFOV = 60
 SWEP.ViewModelFlip = false
 SWEP.ViewModel = "models/weapons/synbf3/c_e11.mdl"
 SWEP.WorldModel = "models/weapons/synbf3/w_e11.mdl"
 SWEP.ShowViewModel = true
 SWEP.ShowWorldModel = true
 SWEP.UseHands = true
-SWEP.Primary.Sound = Sound ("weapons/synbf3/e11_fire.wav");
-SWEP.Primary.ReloadSound = Sound ("weapons/synbf3/battlefront_standard_reload.wav");
+SWEP.Primary.Sound = Sound ("weapons/e11/e11_fire.ogg");
+SWEP.Primary.ReloadSound = Sound ("weapons/shared/battlefront_standard_reload.ogg");
 SWEP.Weight					= 5
 SWEP.AutoSwitchTo			= false
 SWEP.AutoSwitchFrom			= false
@@ -52,10 +52,10 @@ SWEP.Primary.Ammo			= "ar2"
 SWEP.Secondary.Automatic	= false
 SWEP.Secondary.Ammo			= "none"
 SWEP.Secondary.IronFOV = 70
-SWEP.IronSightsPos = Vector(-3.221, -4, 2.559)
+SWEP.IronSightsPos = Vector(-3.221, -0, 2.559)
 SWEP.IronSightsAng = Vector(0, 0, 0)
 SWEP.VElements = {
-	["element_scope"] = { type = "Model", model = "models/rtcircle.mdl", bone = "v_e11_reference001", rel = "", pos = Vector(-1.27, -3.3, 4.599), angle = Angle(0, 90, 0), size = Vector(0.33, 0.33, 0.33), color = Color(255, 255, 255, 255), surpresslightning = false, material = "!tfa_rtmaterial", skin = 0, bodygroup = {} }
+	["element_scope"] = { type = "Model", model = "models/rtcircle.mdl", bone = "v_e11_reference001", rel = "", pos = Vector(-1.25, -3.4, 4.65), angle = Angle(0, 90, 0), size = Vector(0.35, 0.35, 0.35), color = Color(255, 255, 255, 255), surpresslightning = false, material = "!tfa_rtmaterial", skin = 0, bodygroup = {} }
 }
 SWEP.WElements = {
 	["element_scope"] = { type = "Model", model = "models/rtcircle.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(-1.201, 1.6, -5.45), angle = Angle(165, 0, 0), size = Vector(0.349, 0.349, 0.349), color = Color(255, 255, 255, 255), surpresslightning = false, material = "!tfa_rtmaterial", skin = 0, bodygroup = {} }

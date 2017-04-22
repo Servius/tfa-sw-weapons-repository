@@ -26,7 +26,7 @@ SWEP.Weight				= 30			-- This controls how "good" the weapon is for autopickup.
 --[[WEAPON HANDLING]]--
 
 --Firing related
-SWEP.Primary.Sound 			= Sound("TFA_SW_CISSHOT.1")				-- This is the sound of the weapon, when you shoot.
+SWEP.Primary.Sound 			= Sound("weapons/shared/shared_cissniper_fire.ogg")				-- This is the sound of the weapon, when you shoot.
 SWEP.Primary.SilencedSound 			= nil				-- This is the sound of the weapon, when silenced.
 SWEP.Primary.PenetrationMultiplier = 1 --Change the amount of something this gun can penetrate through
 SWEP.Primary.Damage		= 35					-- Damage, in standard damage points.
@@ -423,7 +423,7 @@ SWEP.VElements = {
 	["element_name"] = { type = "Model", model = "models/swbf3/cis/shotgun.mdl", bone = "v_weapon.xm1014_Parent", rel = "", pos = Vector(-0.173, 1.652, -9.554), angle = Angle(-87.012, 90, 0), size = Vector(1.105, 1.105, 1.105), color = Color(255, 255, 255, 255), surpresslightning = true, material = "", skin = 0, bodygroup = {} }
 }
 
-SWEP.Primary.ReloadSound = Sound("TFA_SW_CISSHOT.Reload")
+SWEP.Primary.ReloadSound = Sound("weapons/shared/standard_reload.ogg")
 
 SWEP.DoProceduralReload = true --Do we reload using lua instead of a .mdl animation 
 SWEP.ProceduralReloadTime = 3 --Time to take when procedurally reloading, including transition in (but not out)

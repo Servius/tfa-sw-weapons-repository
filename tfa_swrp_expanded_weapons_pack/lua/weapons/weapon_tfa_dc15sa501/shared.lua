@@ -30,7 +30,7 @@ SWEP.AdminSpawnable			= true
 SWEP.ViewModel				= "models/weapons/v_5015SA.mdl"
 SWEP.WorldModel				= "models/weapons/w_5015SA.mdl"
 
-SWEP.Primary.Sound = Sound ("weapons/DC15SA_fire.wav");
+SWEP.Primary.Sound = Sound ("weapons/dc15sa/DC15SA_fire.ogg");
 
 local MaxTimer				=64
 local CurrentTimer			=0

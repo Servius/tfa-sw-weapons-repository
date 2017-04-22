@@ -24,7 +24,7 @@ SWEP.AutoSwitchFrom			= true		-- Auto switch from if you pick up a better weapon
 SWEP.Weight				= 30			-- This controls how "good" the weapon is for autopickup.
 --[[WEAPON HANDLING]]--
 --Firing related
-SWEP.Primary.Sound 			= Sound("TFA_SW_CISSNIP.1")				-- This is the sound of the weapon, when you shoot.
+SWEP.Primary.Sound 			= Sound("weapons/shared/shared_cissniper_fire.ogg")				-- This is the sound of the weapon, when you shoot.
 SWEP.Primary.SilencedSound 			= nil				-- This is the sound of the weapon, when silenced.
 SWEP.Primary.PenetrationMultiplier = 1 --Change the amount of something this gun can penetrate through
 SWEP.Primary.Damage		= 150					-- Damage, in standard damage points.
@@ -324,7 +324,7 @@ SWEP.WElements = {
 	["element_name"] = { type = "Model", model = "models/swbf3/cis/sniperrifle.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(14.199, 0.63, -0.45), angle = Angle(-11.468, 2.013, 178), size = Vector(0.899, 0.899, 0.899), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
 }
 SWEP.ShowWorldModel = false
-SWEP.Primary.ReloadSound = Sound("TFA_SW_CISSNIP.Reload")
+SWEP.Primary.ReloadSound = Sound("weapons/shared/standard_reload.ogg")
 SWEP.DoProceduralReload = true --Do we reload using lua instead of a .mdl animation 
 SWEP.ProceduralReloadTime = 3 --Time to take when procedurally reloading, including transition in (but not out)
 SWEP.ImpactDecal = "FadingScorch"
