@@ -7,3 +7,6 @@ Solution/Debug: You are subscribed to one or more versions of the tfa base. In e
 Problem: I keep getting errors in console about an effect and the tfa base! 
 Solution/Debug: You are subscribed to a conflicting Star Wars weapons addon. Unsubscribe from any star wars weapons addon not located in this collection: http://steamcommunity.com/sharedfiles/filedetails/?id=909236894
 	Note: Make sure to check server content packs as well. If you find one that has repacked any of the weapons please create an issue request. We will file a dmca to solve the issue permanetly. 
+	
+Problem: Constant lua errors referencing the TFA Base and ULib. 
+Solution/Debug: This happens when you have two weapons on your server with the same name. Currently only one pack, that I know of, causes this issue and that would be the pack located here: 
