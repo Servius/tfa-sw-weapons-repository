@@ -82,12 +82,23 @@ end
 
 
 function EFFECT:Think()
-
-	self.LifeTime = self.LifeTime - FrameTime();
-	self.StartTime = self.StartTime + FrameTime(); 
-
-	return self.LifeTime > 0;
-
+    local spawn = util.CRC(tostring(self:GetPos()))
+    self.LifeTime = self.LifeTime - FrameTime();
+    self.StartTime = self.StartTime + FrameTime();
+    local dlight = DynamicLight( self:EntIndex() + spawn)
+    local endDistance = self.Speed * self.StartTime;
+    local endPos = self.StartPos + self.Normal * endDistance;
+    if ( dlight ) then
+        dlight.pos = endPos
+        dlight.r = 255
+        dlight.g = 255
+        dlight.b = 255
+        dlight.brightness = 3
+        dlight.Decay = 1000
+        dlight.Size = 300
+        dlight.DieTime = CurTime() + 3
+    end
+    return self.LifeTime > 0;
 end
 
 

@@ -8,8 +8,8 @@ EFFECT.Length				= 64;
 //EFFECT.WhizSound			= Sound( "nomad/whiz.wav" );		-- by Robinhood76 (http:--www.freesound.org/people/Robinhood76/sounds/96556/)
 EFFECT.WhizDistance			= 72;
 
-local MaterialMain			= Material( "effects/sw_laser_yellow_main" );
-local MaterialFront			= Material( "effects/sw_laser_yellow_front" );
+local MaterialMain			= Material( "effects/sw_laser_green_main" );
+local MaterialFront			= Material( "effects/sw_laser_green_front" );
 
 function EFFECT:GetTracerOrigin( data )
 
@@ -82,23 +82,12 @@ end
 
 
 function EFFECT:Think()
-    local spawn = util.CRC(tostring(self:GetPos()))
-    self.LifeTime = self.LifeTime - FrameTime();
-    self.StartTime = self.StartTime + FrameTime();
-    local dlight = DynamicLight( self:EntIndex() + spawn)
-    local endDistance = self.Speed * self.StartTime;
-    local endPos = self.StartPos + self.Normal * endDistance;
-    if ( dlight ) then
-        dlight.pos = endPos
-        dlight.r = 255
-        dlight.g = 255
-        dlight.b = 0
-        dlight.brightness = 3
-        dlight.Decay = 1000
-        dlight.Size = 300
-        dlight.DieTime = CurTime() + 3
-    end
-    return self.LifeTime > 0;
+
+	self.LifeTime = self.LifeTime - FrameTime();
+	self.StartTime = self.StartTime + FrameTime(); 
+
+	return self.LifeTime > 0;
+
 end
 
 
