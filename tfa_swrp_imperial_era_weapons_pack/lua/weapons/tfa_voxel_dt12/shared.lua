@@ -144,7 +144,7 @@ SWEP.WElements = {
 
 SWEP.WorldModel			= "models/weapons/synbf3/w_dh17.mdl" -- Weapon world model path
 
-
+SWEP.ShowWorldModel = false
 
 SWEP.HoldType 				= "pistol"		-- This is how others view you carrying the weapon. Options include:
 -- normal melee melee2 fist knife smg ar2 pistol rpg physgun grenade shotgun crossbow slam passive
@@ -320,7 +320,7 @@ SWEP.LuaShellEffect = nil --Defaults to blowback
 --Tracer Stuff
 
 SWEP.Tracer				= 0		--Bullet tracer.  TracerName overrides this.
-SWEP.TracerName 		= "effect_sw_laser_red" 	--Change to a string of your tracer name.  Can be custom.
+SWEP.TracerName 		= "vox_sw_laser_red" 	--Change to a string of your tracer name.  Can be custom.
 								--There is a nice example at https://github.com/garrynewman/garrysmod/blob/master/garrysmod/gamemodes/base/entities/effects/tooltracer.lua
 SWEP.TracerCount 		= 1 	--0 disables, otherwise, 1 in X chance
 

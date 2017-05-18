@@ -1,3 +1,4 @@
+
 SWEP.Gun					= ("tfa_voxel_dl18") --Make sure this is unique.  Specically, your folder name.
 if (GetConVar(SWEP.Gun.."_allowed")) != nil then
 	if not (GetConVar(SWEP.Gun.."_allowed"):GetBool()) then SWEP.Base = "tfa_blacklisted" SWEP.PrintName = SWEP.Gun return end
@@ -22,6 +23,7 @@ SWEP.BounceWeaponIcon   		= 	false	-- Should the weapon icon bounce?
 SWEP.AutoSwitchTo			= false		-- Auto switch to if we pick it up
 SWEP.AutoSwitchFrom			= false		-- Auto switch from if you pick up a better weapon
 SWEP.Weight				= 30			-- This controls how "good" the weapon is for autopickup.
+
 
 --[[WEAPON HANDLING]]--
 
@@ -133,9 +135,14 @@ SWEP.ViewModelBoneMods = {
 	["v_dh17_reference001"] = { scale = Vector(0.009, 0.009, 0.009), pos = Vector(0, 0, 0), angle = Angle(0, 0, 0) }
 }
 
+
+
+
+
 SWEP.VElements = {
 	["dl"] = { type = "Model", model = "models/swbf3/outerrim/weapons/dl18.mdl", bone = "v_dh17_reference001", rel = "", pos = Vector(0, -3, -2.451), angle = Angle(0, 90, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
 }
+
 
 SWEP.WElements = {
 	["18"] = { type = "Model", model = "models/swbf3/outerrim/weapons/dl18.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(7, 1, 1.5), angle = Angle(-10, 0, 180), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
@@ -145,7 +152,7 @@ SWEP.WElements = {
 
 SWEP.WorldModel			= "models/weapons/synbf3/w_dh17.mdl" -- Weapon world model path
 
-
+SWEP.ShowWorldModel = false
 
 SWEP.HoldType 				= "pistol"		-- This is how others view you carrying the weapon. Options include:
 -- normal melee melee2 fist knife smg ar2 pistol rpg physgun grenade shotgun crossbow slam passive
@@ -272,6 +279,8 @@ SWEP.ForceEmptyFireOff = true --Disables empty fire animations.  Set to false to
 
 --If you really want, you can remove things from SWEP.actlist and manually enable animations and set their lengths.
 
+
+
 SWEP.SequenceEnabled = {} --Self explanitory.  This can forcefully enable or disable a certain ACT_VM
 SWEP.SequenceLength = {}  --This controls the length of a certain ACT_VM
 SWEP.SequenceLengthOverride={} --Override this if you want to change the length of a sequence but not the next idle
@@ -321,7 +330,7 @@ SWEP.LuaShellEffect = nil --Defaults to blowback
 --Tracer Stuff
 
 SWEP.Tracer				= 0		--Bullet tracer.  TracerName overrides this.
-SWEP.TracerName 		= "effect_sw_laser_red" 	--Change to a string of your tracer name.  Can be custom.
+SWEP.TracerName 		= "vox_sw_laser_red" 	--Change to a string of your tracer name.  Can be custom.
 								--There is a nice example at https://github.com/garrynewman/garrysmod/blob/master/garrysmod/gamemodes/base/entities/effects/tooltracer.lua
 SWEP.TracerCount 		= 1 	--0 disables, otherwise, 1 in X chance
 
@@ -422,8 +431,8 @@ SWEP.CanIdleAnimateEmpty=false
 SWEP.CanIdleAnimateSilenced=false
 SWEP.CanShootAnimate=true
 SWEP.CanShootAnimateSilenced=false
-SWEP.CanReloadAnimate=true
-SWEP.CanReloadAnimateEmpty=false
+SWEP.CanReloadAnimate=false
+SWEP.CanReloadAnimateEmpty=true
 SWEP.CanReloadAnimateSilenced=false
 SWEP.CanDryFireAnimate=false
 SWEP.CanDryFireAnimateSilenced=false
@@ -480,3 +489,4 @@ function SWEP:DrawHands()
     self.UseHands = false
    
 end
+

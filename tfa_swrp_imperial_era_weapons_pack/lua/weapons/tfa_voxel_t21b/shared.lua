@@ -208,7 +208,7 @@ SWEP.data 				= {}
 SWEP.data.ironsights			= 1 --Enable Ironsights
 SWEP.Secondary.IronFOV			= 30					-- How much you 'zoom' in. Less is more!  Don't have this be <= 0.  A good value for ironsights is like 70.
 
-SWEP.IronSightsPos = Vector(-00.9, 0, 1.14)
+SWEP.IronSightsPos = Vector(0, 0, 0)
 SWEP.IronSightsAng = Vector(0, 0, 0)
 
 --[[INSPECTION]]--
@@ -312,7 +312,7 @@ SWEP.LuaShellEffect = nil --Defaults to blowback
 --Tracer Stuff
 
 SWEP.Tracer				= 0		--Bullet tracer.  TracerName overrides this.
-SWEP.TracerName 		= "effect_sw_laser_red" 	--Change to a string of your tracer name.  Can be custom.
+SWEP.TracerName 		= "vox_sw_laser_red" 	--Change to a string of your tracer name.  Can be custom.
 								--There is a nice example at https://github.com/garrynewman/garrysmod/blob/master/garrysmod/gamemodes/base/entities/effects/tooltracer.lua
 SWEP.TracerCount 		= 1 	--0 disables, otherwise, 1 in X chance
 

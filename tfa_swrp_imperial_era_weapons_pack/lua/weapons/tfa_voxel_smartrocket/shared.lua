@@ -111,7 +111,7 @@ SWEP.SprintFOVOffset = 3.75 --Add this onto the FOV when we're sprinting.
 --[[PROJECTILES]]--
 
 SWEP.ProjectileEntity = "vox_e60r_rocket" --Entity to shoot
-SWEP.ProjectileVelocity = 500 --Entity to shoot's velocity
+SWEP.ProjectileVelocity = 300 --Entity to shoot's velocity
 SWEP.ProjectileModel = nil --Entity to shoot's model
 
 --[[VIEWMODEL]]--
@@ -143,7 +143,7 @@ SWEP.VMBodyGroups = nil --{
 
 
 SWEP.WorldModel			= "models/weapons/w_irifle.mdl" -- Weapon world model path
-
+SWEP.ShowWorldModel = false
 SWEP.WElements = {
 	["models/nate159/swbf2015/pewpew/rocketlauncher.mdl"] = { type = "Model", model = "models/nate159/swbf2015/pewpew/rocketlauncher.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(5.714, 1.557, -3.636), angle = Angle(0, 0, 180), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
 }

@@ -1,0 +1,15 @@
+"AddonInfo"
+{
+	"name" "[TFA Reduxed] Star Wars Imperial Era Weapons Pack"
+	"author_name" "Author Name"
+	"info" "
+{
+	"description": "Description",
+	"type": "weapon",
+	"tags": 
+	[
+		"movie",
+		"roleplay"
+	]
+}"
+}
