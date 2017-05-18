@@ -1,0 +1,14 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "ashura_dc15s/World"
+	"$bumpmap" "ashura_dc15s/08___Default_normals_combined"
+	//"$detail"	"ashura_dc15s/World_spec"
+	//"$detail"	"ashura_dc15s/World_glow"
+	//"$detail"		"detail\metal_detail_01"
+	//"$detailscale"		"5"
+	//"$detailblendfactor"	"0.75"
+	//"$detailblendmode"	"0"
+
+	"$selfillum"		"1"
+   	"$selfillummask"	"ashura_dc15s/World_glow"
+}
