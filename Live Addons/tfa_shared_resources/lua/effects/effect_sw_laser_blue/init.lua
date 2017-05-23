@@ -79,7 +79,7 @@ function EFFECT:Init( data )
 	end
 end
 
-
+--concommand.Add("sv_dlight")
 function EFFECT:Think()
     local spawn = util.CRC(tostring(self:GetPos()))
     self.LifeTime = self.LifeTime - FrameTime();
