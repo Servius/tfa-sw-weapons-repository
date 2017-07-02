@@ -38,8 +38,8 @@ SWEP.ViewModelBoneMods = {
 	["ValveBiped.Bip01_L_Finger0"] = { scale = Vector(1, 1, 1), pos = Vector(-1, -1, 1), angle = Angle(0, 1.447, 0) }
 }
 
-SWEP.Primary.Sound = Sound ("NPC_Combine.GrenadeLaunch");
-SWEP.Primary.ReloadSound = Sound ("weapons/DC15A_reload.wav");
+SWEP.Primary.Sound = Sound ("weapons/explosives_cannons_superlazers/dc17m_at_fire.ogg");
+SWEP.Primary.ReloadSound = Sound ("weapons/shared/standard_reload.ogg");
 
 SWEP.Weight					= 5
 SWEP.AutoSwitchTo			= false
