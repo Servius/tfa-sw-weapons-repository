@@ -1,0 +1,6 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/starwars/weapons/hh15"
+	"$bumpmap" "models/starwars/weapons/hh15_n"
+	"$nocull" 1
+}
