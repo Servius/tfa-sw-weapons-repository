@@ -9,7 +9,7 @@ include("shared.lua")
 		self:SetSolid(SOLID_VPHYSICS)
 		Glow = ents.Create("env_sprite")
 		Glow:SetKeyValue("model","orangecore2.vmt")
-		Glow:SetKeyValue("rendercolor","255 150 100")
+		Glow:SetKeyValue("rendercolor","204 0 0")
 		Glow:SetKeyValue("scale","0.2")
 		Glow:SetPos(self.Entity:GetPos())
 		Glow:SetParent(self.Entity)
@@ -33,13 +33,13 @@ include("shared.lua")
 					explode:SetKeyValue("iMagnitude","200")
 					explode:Fire("Explode",0,0)
 					
-					explode:EmitSound("aweapons/sw_detonator.wav",90,60)
+					explode:EmitSound("weapons/explosives_cannons_superlazers/sw_detonator.ogg",90,60)
 
 					timer.Destroy("babysounds"..self:EntIndex())
 					self:Remove()
 				else
-					self:EmitSound("weapons/sw_detonator.wav",80,self.countsounds)
-					self.countsounds = self.countsounds + 10
+					self:EmitSound("weapons/explosives_cannons_superlazers/sw_detonator.ogg",80,self.countsounds)
+					self.countsounds = self.countsounds + 5
 				end
 			end)
 		end)
@@ -57,7 +57,7 @@ function ENT:OnTakeDamage()
 		explode:SetKeyValue("iMagnitude","200")
 		explode:Fire("Explode",0,0)
 		
-		explode:EmitSound("weapons/sw_detonator.wav",90,60)
+		explode:EmitSound("weapons/explosives_cannons_superlazers/sw_detonator.ogg",90,60)
 
 		timer.Destroy("babysounds"..self:EntIndex())
 		self:Remove()
