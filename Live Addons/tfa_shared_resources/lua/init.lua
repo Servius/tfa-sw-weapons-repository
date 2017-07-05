@@ -8,3 +8,5 @@ function rp_friendly_menu (ply)
 	return 
 	print("Menu opened.")
 end
+
+

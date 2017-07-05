@@ -9,8 +9,8 @@ include("shared.lua")
 		self:SetSolid(SOLID_VPHYSICS)
 		Glow = ents.Create("env_sprite")
 		Glow:SetKeyValue("model","orangecore2.vmt")
-		Glow:SetKeyValue("rendercolor","204 0 0")
-		Glow:SetKeyValue("scale","0.2")
+		Glow:SetKeyValue("rendercolor","255 0 0")
+		Glow:SetKeyValue("scale","0.16")
 		Glow:SetPos(self.Entity:GetPos())
 		Glow:SetParent(self.Entity)
 		Glow:Spawn()
@@ -18,7 +18,7 @@ include("shared.lua")
 		self:SetUseType(SIMPLE_USE)
 		local phys = self:GetPhysicsObject()
 		phys:Wake()
-	--	util.SpriteTrail(self, 0, Color(95 * 2,63 * 2,127 * 2), false, 15, 1, 4, 1/(15+1)*0.5, "trails/plasma.vmt")
+		util.SpriteTrail(self, 0, Color(255 * 2,0 * 2,0 * 2), false, 5, .5, .1, 1/(15+1)*0.5, "trails/tube.vmt")
 		self.countsounds = 100
 		timer.Simple(1,function()
 			if not IsValid(self) then return end
@@ -33,13 +33,13 @@ include("shared.lua")
 					explode:SetKeyValue("iMagnitude","200")
 					explode:Fire("Explode",0,0)
 					
-					explode:EmitSound("weapons/explosives_cannons_superlazers/sw_detonator.ogg",90,60)
+					explode:EmitSound("weapons/explosives_cannons_superlazers/sw_detonator_explosion.ogg",90,60)
 
 					timer.Destroy("babysounds"..self:EntIndex())
 					self:Remove()
 				else
-					self:EmitSound("weapons/explosives_cannons_superlazers/sw_detonator.ogg",80,self.countsounds)
-					self.countsounds = self.countsounds + 5
+					self:EmitSound("weapons/explosives_cannons_superlazers/wpn_thermdet_chargeup_01.ogg",80,self.countsounds)
+					self.countsounds = self.countsounds + 10
 				end
 			end)
 		end)
@@ -57,7 +57,7 @@ function ENT:OnTakeDamage()
 		explode:SetKeyValue("iMagnitude","200")
 		explode:Fire("Explode",0,0)
 		
-		explode:EmitSound("weapons/explosives_cannons_superlazers/sw_detonator.ogg",90,60)
+		explode:EmitSound("weapons/explosives_cannons_superlazers/sw_detonator_explosion.ogg",90,60)
 
 		timer.Destroy("babysounds"..self:EntIndex())
 		self:Remove()

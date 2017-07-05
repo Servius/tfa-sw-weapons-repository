@@ -1,5 +1,5 @@
-EFFECT.Duration			= 0.25;
-EFFECT.Size				= 32;
+EFFECT.Duration			= 0.1;
+EFFECT.Size				= 20;
 
 local MaterialGlow		= Material( "effects/sw_laser_bit" );
 
@@ -13,7 +13,7 @@ function EFFECT:Init( data )
 	local emitter = ParticleEmitter( self.Position );
 	if( emitter ) then
 		
-		for i = 1, 32 do
+		for i = 1, 20 do
 
 			local particle = emitter:Add( "effects/sw_laser_bit", self.Position + self.Normal * 2 );
 			particle:SetVelocity( ( self.Normal + VectorRand() * 0.75 ):GetNormal() * math.Rand( 75, 125 ) );
@@ -32,10 +32,10 @@ function EFFECT:Init( data )
 		emitter:Finish();
 	end
 	
-	local emitter_s = ParticleEmitter( self.Position );
+	--[[local emitter_s = ParticleEmitter( self.Position );
 	if( emitter_s ) then
 		for i = 1, 8 do
-			local smokeTexture	= "effects/awoi_musket_smoke_01"
+			--local smokeTexture	= "effects/awoi_musket_smoke_01"
 			
 			local particle_s = emitter_s:Add(smokeTexture, self.Position+self.Normal*2);
 			particle_s:SetVelocity((self.Normal+VectorRand()*0.10):GetNormal()*math.Rand(250, 2500));
@@ -51,9 +51,9 @@ function EFFECT:Init( data )
 			particle_s:SetColor(colour, colour, colour, 100);
 			particle_s:SetCollide(false);
 			particle_s:SetAirResistance(2000);
-		end
-		emitter_s:Finish();
-	end
+		end--]]
+		--emitter_s:Finish();
+	--end
 	
 end
 

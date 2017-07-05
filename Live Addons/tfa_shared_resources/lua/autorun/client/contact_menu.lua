@@ -54,6 +54,9 @@ function TFA_RP_FRIENDLY_MENU ()
 	
 --	TabControl:AddSheet( "Third Person", OverTheShoulder, "icon16/user.png", false, false, "Description of first tab" )
 	TabControl:AddSheet( "Help", Help, "icon16/user.png", false, false, "Description of first tab" )
+
+
+
 ----Thirdperson Tab	
 --[[Center the players view.
     local CenterB = vgui.Create( "DButton", OverTheShoulder )
