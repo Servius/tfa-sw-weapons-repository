@@ -38,7 +38,29 @@ SWEP.Primary.DamageType = DMG_SHOCK
 SWEP.DamageType = DMG_SHOCK
 
 SWEP.ImpactEffect = "effect_sw_impact" --Impact Effect
+--[[-------------------------------------------------------------------------
+Recharging SWEPs Code
+---------------------------------------------------------------------------]]
+local MaxTimer				=64
+local CurrentTimer			=0
+SWEP.Primary.Ammo			= "battery"
 
+function SWEP:Think()
+	if (self.Weapon:Clip1() < self.Primary.ClipSize) and SERVER then
+		if (CurrentTimer <= 0) then 
+			CurrentTimer = MaxTimer
+			self.Weapon:SetClip1( self.Weapon:Clip1() + 1 )
+		else
+			CurrentTimer = CurrentTimer-1
+		end
+	end
+end
+
+function SWEP:Reload()
+end
+--[[-------------------------------------------------------------------------
+Clone Arms override for all viewmodel hands. Disabled currently.
+---------------------------------------------------------------------------]]
 --[[
 function SWEP:DrawHands()
 	self.UseHandsDefault = self.UseHandsDefault or self.UseHands
