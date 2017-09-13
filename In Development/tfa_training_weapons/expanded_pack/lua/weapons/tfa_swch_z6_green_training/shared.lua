@@ -16,7 +16,7 @@ end
 SWEP.HoldType				= "crossbow"
 SWEP.Base					= "tfa_swsft_base_servius"
 
-SWEP.Category = "TFA Star Wars"
+SWEP.Category = "TFA Star Wars: Training"
 
 SWEP.Spawnable				= true
 SWEP.AdminSpawnable			= true

@@ -9,7 +9,7 @@ if ( CLIENT ) then
 	SWEP.SlotPos			= 3
 end
 SWEP.Base = "tfa_3dscoped_base"
-SWEP.Category = "TFA Star Wars"
+SWEP.Category = "TFA Star Wars: Training"
 SWEP.Spawnable				= true
 SWEP.AdminSpawnable			= true
 SWEP.HoldType = "ar2"

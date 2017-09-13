@@ -12,7 +12,7 @@ if ( CLIENT ) then
 end
 SWEP.HoldType				= "ar2"
 SWEP.Base					= "tfa_swsft_base_servius"
-SWEP.Category = "TFA Star Wars"
+SWEP.Category = "TFA Star Wars: Training"
 SWEP.Spawnable				= true
 SWEP.AdminSpawnable			= true
 SWEP.ViewModel = "models/weapons/v_IHR.mdl"

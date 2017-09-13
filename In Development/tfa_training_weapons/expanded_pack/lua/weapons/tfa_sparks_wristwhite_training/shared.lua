@@ -27,7 +27,7 @@ SWEP.Instructions				= "Left click to shoot...dummy." --Instructions Tooltip
 SWEP.HoldType				= "pistol"
 SWEP.Base					= "tfa_swsft_base_servius"
 
-SWEP.Category = "TFA Star Wars: Wrist Blasters"
+SWEP.Category = "TFA Star Wars: Training"
 
 SWEP.Spawnable				= true
 SWEP.AdminSpawnable			= true
@@ -44,7 +44,7 @@ SWEP.AutoSwitchTo			= false
 SWEP.AutoSwitchFrom			= false
 
 SWEP.Primary.Recoil			= 0.5
-SWEP.Primary.Damage			= 50
+SWEP.Primary.Damage			= 0
 SWEP.Primary.NumShots		= 1
 SWEP.Primary.Spread			= 0.0125
 SWEP.Primary.IronAccuracy = .005	-- Ironsight accuracy, should be the same for shotguns
