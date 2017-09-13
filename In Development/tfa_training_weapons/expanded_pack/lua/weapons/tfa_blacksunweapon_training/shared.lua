@@ -15,7 +15,7 @@ if ( CLIENT ) then
 	SWEP.SlotPos			= 3
 end
 
-SWEP.Base					= "tfa_swsft_base_servius"
+SWEP.Base					= "tfa_swsft_base_servius_training"
 
 SWEP.Category = "TFA Star Wars: Training"
 

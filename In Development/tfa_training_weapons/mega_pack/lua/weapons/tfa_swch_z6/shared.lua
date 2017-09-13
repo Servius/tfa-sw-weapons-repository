@@ -143,7 +143,7 @@ SWEP.BarrelFriction = SWEP.BarrelVelocityMax / SWEP.Primary.RPM_TransitionTime *
 local oldsh,sh,shfac,rpmfac,baracc
 local rpmdif = SWEP.Primary.RPM_Max - SWEP.Primary.RPM_Base
 
-DEFINE_BASECLASS("tfa_swsft_base_servius")
+DEFINE_BASECLASS("tfa_swsft_base_servius_training")
 
 function SWEP:Deploy()
 	self.BarrelRotation = 0

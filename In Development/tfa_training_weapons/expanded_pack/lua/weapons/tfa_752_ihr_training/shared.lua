@@ -11,7 +11,7 @@ if ( CLIENT ) then
 	killicon.Add( "tfa_752_ihr", "HUD/killicons/IHR", Color( 255, 80, 0, 255 ) )
 end
 SWEP.HoldType				= "ar2"
-SWEP.Base					= "tfa_swsft_base_servius"
+SWEP.Base					= "tfa_swsft_base_servius_training"
 SWEP.Category = "TFA Star Wars: Training"
 SWEP.Spawnable				= true
 SWEP.AdminSpawnable			= true

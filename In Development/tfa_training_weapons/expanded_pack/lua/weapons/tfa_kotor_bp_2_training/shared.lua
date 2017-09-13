@@ -8,7 +8,7 @@ if ( CLIENT ) then
 	SWEP.Slot				= 2
 	SWEP.SlotPos			= 2
 end
-SWEP.Base					= "tfa_swsft_base_servius"
+SWEP.Base					= "tfa_swsft_base_servius_training"
 SWEP.Category = "TFA Star Wars: Training"
 SWEP.Spawnable				= true
 SWEP.AdminSpawnable			= true

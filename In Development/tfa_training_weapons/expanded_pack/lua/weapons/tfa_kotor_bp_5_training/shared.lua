@@ -9,7 +9,7 @@ if ( CLIENT ) then
 	SWEP.SlotPos			= 2
 end
 SWEP.HoldType				= "revolver"
-SWEP.Base					= "tfa_swsft_base_servius"
+SWEP.Base					= "tfa_swsft_base_servius_training"
 SWEP.Category = "TFA Star Wars: Training"
 SWEP.Spawnable				= true
 SWEP.AdminSpawnable			= true

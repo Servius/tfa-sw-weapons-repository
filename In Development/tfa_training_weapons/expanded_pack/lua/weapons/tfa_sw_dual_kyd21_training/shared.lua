@@ -37,7 +37,7 @@ SWEP.VElements = {
 SWEP.WElements = {
 	["kyd21"] = { type = "Model", model = "models/weapons/w_KYD21.mdl", bone = "ValveBiped.Bip01_L_Hand", rel = "", pos = Vector(10, 2, 3.665), angle = Angle(360, 270, 360), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
 }
-SWEP.Base					= "tfa_swsft_base_servius"
+SWEP.Base					= "tfa_swsft_base_servius_training"
 SWEP.Category				= "TFA Star Wars"
 SWEP.Spawnable				= true
 SWEP.AdminSpawnable			= true

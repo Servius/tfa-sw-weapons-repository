@@ -25,7 +25,7 @@ SWEP.Purpose				= "Shoot some people" --Purpose Tooltip
 SWEP.Instructions				= "Left click to shoot...dummy." --Instructions Tooltip
 
 SWEP.HoldType				= "pistol"
-SWEP.Base					= "tfa_swsft_base_servius"
+SWEP.Base					= "tfa_swsft_base_servius_training"
 
 SWEP.Category = "TFA Star Wars: Training"
 
