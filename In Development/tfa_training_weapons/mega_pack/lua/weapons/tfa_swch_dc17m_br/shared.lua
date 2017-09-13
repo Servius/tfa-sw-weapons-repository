@@ -43,9 +43,9 @@ SWEP.Primary.NumShots		= 1
 SWEP.Primary.Spread			= 0.0125
 SWEP.Primary.ClipSize		= 60
 SWEP.Primary.RPM = 60/0.13125
-SWEP.Primary.DefaultClip	= 180
+--= 180
 SWEP.Primary.Automatic		= true
-SWEP.Primary.Ammo			= "ar2"
+SWEP.Primary.Ammo			= "battery"
 SWEP.TracerName = "effect_sw_laser_blue"
 
 SWEP.Secondary.Automatic	= false

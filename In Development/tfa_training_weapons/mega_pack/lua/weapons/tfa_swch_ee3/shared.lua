@@ -28,12 +28,12 @@ SWEP.Primary.NumShots		= 1
 SWEP.Primary.Spread		    = 0.0125				--This is hip-fire acuracy.  Less is more (1 is horribly awful, .0001 is close to perfect)
 SWEP.Primary.IronAccuracy   = 0.0111
 SWEP.Primary.ClipSize		= 50
-SWEP.Primary.DefaultClip	= 150
+--= 150
 SWEP.Primary.Automatic = false -- Automatic/Semi Auto
 SWEP.Primary.RPM = 600 -- This is in Rounds Per Minute / RPM
 SWEP.Primary.RPM_Burst = 600 -- RPM for burst fire, overrides semi.  This is in Rounds Per Minute / RPM
 SWEP.Primary.BurstDelay = nil -- Delay between bursts, leave nil to autocalculate
-SWEP.Primary.Ammo			= "ar2"
+SWEP.Primary.Ammo			= "battery"
 SWEP.Secondary.Automatic	= false
 SWEP.Secondary.Ammo			= "none"
 --Range Related

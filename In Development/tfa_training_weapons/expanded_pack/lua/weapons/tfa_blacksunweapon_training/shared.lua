@@ -59,9 +59,9 @@ SWEP.Primary.Spread			= 0.0125
 SWEP.Primary.IronAccuracy = .001	-- Ironsight accuracy, should be the same for shotguns
 SWEP.Primary.ClipSize		= 15
 SWEP.Primary.RPM = 200
-SWEP.Primary.DefaultClip	= 50
+--= 50
 SWEP.Primary.Automatic		= false
-SWEP.Primary.Ammo			= "ar2"
+SWEP.Primary.Ammo			= "battery"
 SWEP.TracerName = "effect_sw_laser_red"
 
 SWEP.SelectiveFire		= false --Allow selecting your firemode?

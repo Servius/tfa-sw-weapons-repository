@@ -54,7 +54,7 @@ SWEP.Primary.NumShots		= 1
 SWEP.Primary.Spread			= 0.05
 SWEP.Primary.ClipSize		= 1
 SWEP.Primary.RPM = 60/1
-SWEP.Primary.DefaultClip	= 3
+--= 3
 SWEP.Primary.Automatic		= true
 SWEP.Primary.Ammo			= "rpg_round"
 

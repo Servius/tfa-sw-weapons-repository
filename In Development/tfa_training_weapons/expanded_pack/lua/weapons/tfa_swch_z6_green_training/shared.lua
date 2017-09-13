@@ -97,9 +97,9 @@ SWEP.Primary.RPM = 250
 SWEP.Primary.RPM_Base = 120
 SWEP.Primary.RPM_Max = 1200
 SWEP.Primary.RPM_TransitionTime = 4
-SWEP.Primary.DefaultClip	= 1000
+--= 1000
 SWEP.Primary.Automatic		= true
-SWEP.Primary.Ammo			= "ar2"
+SWEP.Primary.Ammo			= "battery"
 SWEP.TracerName = "effect_sw_laser_green"
 
 SWEP.Secondary.Automatic	= false
