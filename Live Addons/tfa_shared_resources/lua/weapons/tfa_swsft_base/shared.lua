@@ -21,7 +21,8 @@ SWEP.Primary.DamageType = DMG_SHOCK
 SWEP.DamageType = DMG_SHOCK
 
 SWEP.ImpactEffect = "effect_sw_impact" --Impact Effect
-function SWEP:DrawHands()
+
+--[[function SWEP:DrawHands()
 	self.UseHandsDefault = self.UseHandsDefault or self.UseHands
 	if not self.UseHandsDefault then return end
 	if not IsValid(self) or not self:OwnerIsValid() then return end
@@ -52,3 +53,4 @@ function SWEP:DrawHands()
 
 	self.UseHands = false
 end
+-]]
