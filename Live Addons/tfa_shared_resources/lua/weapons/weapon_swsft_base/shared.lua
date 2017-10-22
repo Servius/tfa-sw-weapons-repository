@@ -24,7 +24,7 @@ SWEP.Contact		= ""
 SWEP.Purpose		= "To eradicate the disease that is our enemy"
 SWEP.Instructions	= ""
 
-//SWEP.Category = "TFA Star Wars"
+--SWEP.Category = "TFA Star Wars"
 
 SWEP.Spawnable			= false
 SWEP.AdminSpawnable		= false
@@ -32,7 +32,7 @@ SWEP.AdminSpawnable		= false
 SWEP.Primary.Recoil			= 0.5
 SWEP.Primary.Damage			= 50
 SWEP.Primary.NumShots		= 1
-SWEP.Primary.Cone			= 0.0125
+SWEP.Primary.Spread		= 0.0125
 SWEP.Primary.Delay = 0.175
 
 SWEP.Primary.ClipSize		= -1
@@ -51,8 +51,8 @@ SWEP.Secondary.Ammo			= "none"
 
 
 
-/*---------------------------------------------------------
----------------------------------------------------------*/
+--[[---------------------------------------------------------
+---------------------------------------------------------]]
 function SWEP:Initialize()
 
 	if ( SERVER ) then
@@ -65,32 +65,32 @@ function SWEP:Initialize()
 	self.Weapon:SetNetworkedBool( "Ironsights", false ) 
 end
 
-/*---------------------------------------------------------
+--[[---------------------------------------------------------
    Think does nothing
----------------------------------------------------------*/
+---------------------------------------------------------]]
 function SWEP:Think()	
 end
 
-/*---------------------------------------------------------
+--[[---------------------------------------------------------
 	Checks the objects before any action is taken
 	This is to make sure that the entities haven't been removed
----------------------------------------------------------*/
-//function SWEP:DrawWeaponSelection( x, y, wide, tall, alpha )
+-----------------------------------------------------------]]
+--function SWEP:DrawWeaponSelection( x, y, wide, tall, alpha )
 	
-	//draw.SimpleText( self.IconLetter, "DODSelectIcons", x + wide/2, y + tall*0.2, Color( 255, 210, 0, 255 ), TEXT_ALIGN_CENTER )
+	--draw.SimpleText( self.IconLetter, "DODSelectIcons", x + wide/2, y + tall*0.2, Color( 255, 210, 0, 255 ), TEXT_ALIGN_CENTER )
 	
-	// try to fool them into thinking they're playing a Tony Hawks game
-	//draw.SimpleText( self.IconLetter, "DODSelectIcons", x + wide/2 + math.Rand(-4, 4), y + tall*0.2+ math.Rand(-14, 14), Color( 255, 210, 0, math.Rand(10, 120) ), TEXT_ALIGN_CENTER )
-	//draw.SimpleText( self.IconLetter, "DODSelectIcons", x + wide/2 + math.Rand(-4, 4), y + tall*0.2+ math.Rand(-9, 9), Color( 255, 210, 0, math.Rand(10, 120) ), TEXT_ALIGN_CENTER )
+	-- try to fool them into thinking they're playing a Tony Hawks game
+	--draw.SimpleText( self.IconLetter, "DODSelectIcons", x + wide/2 + math.Rand(-4, 4), y + tall*0.2+ math.Rand(-14, 14), Color( 255, 210, 0, math.Rand(10, 120) ), TEXT_ALIGN_CENTER )
+	--draw.SimpleText( self.IconLetter, "DODSelectIcons", x + wide/2 + math.Rand(-4, 4), y + tall*0.2+ math.Rand(-9, 9), Color( 255, 210, 0, math.Rand(10, 120) ), TEXT_ALIGN_CENTER )
 	
-//end
+--end
 
 local IRONSIGHT_TIME = 0.25
 
-/*---------------------------------------------------------
+--[[---------------------------------------------------------
    Name: GetViewModelPosition
    Desc: Allows you to re-position the view model
----------------------------------------------------------*/
+---------------------------------------------------------]]
 function SWEP:GetViewModelPosition( pos, ang )
 
 	if ( !self.IronSightsPos ) then return pos, ang end
@@ -154,9 +154,9 @@ function SWEP:GetViewModelPosition( pos, ang )
 	
 end
 
-/*---------------------------------------------------------
+--[[---------------------------------------------------------
 	SetIronsights
----------------------------------------------------------*/
+---------------------------------------------------------]]
 function SWEP:SetIronsights( b )
 
 	self.Weapon:SetNetworkedBool( "Ironsights", b )
@@ -165,9 +165,9 @@ end
 
 
 SWEP.NextSecondaryAttack = 0
-/*---------------------------------------------------------
+--[[---------------------------------------------------------
 	SecondaryAttack
----------------------------------------------------------*/
+---------------------------------------------------------]]
 function SWEP:SecondaryAttack()
 
 	if ( !self.IronSightsPos ) then return end
@@ -190,17 +190,17 @@ end
 
 function SWEP:DrawHUD()
 
-	// No crosshair when ironsights is on
+	-- No crosshair when ironsights is on
 	if ( self.Weapon:GetNetworkedBool( "Ironsights" ) ) then return end
 
 	local x, y
 
-	// If we're drawing the local player, draw the crosshair where they're aiming,
-	// instead of in the center of the screen.
+	-- If we're drawing the local player, draw the crosshair where they're aiming,
+	-- instead of in the center of the screen.
 	if ( self.Owner == LocalPlayer() && self.Owner:ShouldDrawLocalPlayer() ) then
 
 		local tr = util.GetPlayerTrace( self.Owner )
-//		tr.mask = ( CONTENTS_SOLID|CONTENTS_MOVEABLE|CONTENTS_MONSTER|CONTENTS_WINDOW|CONTENTS_DEBRIS|CONTENTS_GRATE|CONTENTS_AUX )
+--		tr.mask = ( CONTENTS_SOLID|CONTENTS_MOVEABLE|CONTENTS_MONSTER|CONTENTS_WINDOW|CONTENTS_DEBRIS|CONTENTS_GRATE|CONTENTS_AUX )
 		local trace = util.TraceLine( tr )
 		
 		local coords = trace.HitPos:ToScreen()
@@ -212,13 +212,13 @@ function SWEP:DrawHUD()
 	
 	local scale = 10 * self.Primary.Cone
 	
-	// Scale the size of the crosshair according to how long ago we fired our weapon
+	-- Scale the size of the crosshair according to how long ago we fired our weapon
 	local LastShootTime = self.Weapon:GetNetworkedFloat( "LastShootTime", 0 )
 	scale = scale * (2 - math.Clamp( (CurTime() - LastShootTime) * 5, 0.0, 1.0 ))
 	
 	surface.SetDrawColor( 255, 0, 0, 255 )
 	
-	// Draw an awesome crosshair
+	-- Draw an awesome crosshair
 	local gap = 40 * scale
 	local length = gap + 20 * scale
 	surface.DrawLine( x - length, y, x - gap, y )
