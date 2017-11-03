@@ -45,16 +45,18 @@ SWEP.Primary.NumShots		= 1
 SWEP.Primary.Spread			= 0.005
 SWEP.Primary.IronAccuracy = .005	-- Ironsight accuracy, should be the same for shotguns
 SWEP.Primary.ClipSize		= 400
-SWEP.Primary.RPM            = 525
-SWEP.Primary.DefaultClip	= 400
+SWEP.Primary.RPM            = 535
+SWEP.Primary.DefaultClip	= 800
 SWEP.Primary.Automatic		= true
 SWEP.Primary.Ammo			= "ar2"
 SWEP.TracerName = "effect_sw_laser_blue"
-SWEP.SelectiveFire		= false --Allow selecting your firemode?
+SWEP.SelectiveFire		= true --Allow selecting your firemode?
 SWEP.DisableBurstFire	= false --Only auto/single?
 SWEP.OnlyBurstFire		= false --No auto, only burst/single?
-SWEP.DefaultFireMode 	= "auto" --Default to auto or whatev
+SWEP.DefaultFireMode 	= "" --Default to auto or whatev
 SWEP.FireModes = {
+"Auto",
+"12Burst"
 }
 SWEP.FireModeName = nil --Change to a text value to override it
 SWEP.Secondary.Automatic	= false
@@ -73,7 +75,7 @@ SWEP.Blowback_Only_Iron  = false
 SWEP.DoProceduralReload = true
 SWEP.ProceduralReloadTime = 2.5
 
-SWEP.MoveSpeed = 0.8
+SWEP.MoveSpeed = 0.7
 
 --[[
 SWEP.HoldType = "rpg"

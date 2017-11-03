@@ -1,0 +1,5 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/bf2/rep_weap_inf_chaingun"
+	"$bumpmap"      "models/bf2/rep_weap_inf_chaingun_n"
+}
