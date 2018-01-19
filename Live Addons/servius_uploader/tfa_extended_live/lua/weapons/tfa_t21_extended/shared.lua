@@ -56,7 +56,7 @@ SWEP.IronSightsPos = Vector(-2.421, -17, 1.519)
 SWEP.IronSightsAng = Vector(0, 0, 0)
 SWEP.BlowbackVector = Vector(0,-3,0.025)
 SWEP.Blowback_Only_Iron  = false
-SWEP.DoProceduralReload = true
+SWEP.DoProceduralReload = false
 SWEP.ProceduralReloadTime = 2.5
 ----Swft Base Code
 SWEP.TracerCount = 1
