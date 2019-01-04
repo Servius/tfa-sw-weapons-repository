@@ -1,0 +1,18 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/ven/SW_Battlefront/Weapons/e11/t_e11"
+	"$bumpmap" "models/ven/SW_Battlefront/Weapons/e11/t_e11_nm"
+	"$color2"	"[0.4 0.4 0.4]"
+	"$blendTintByBaseAlpha"	"1"
+
+	"$phongexponenttexture"	"models/ven/SW_Battlefront/Weapons/e11/t_e11_exp"
+	"$phongalbedotint" 1
+	"$phong" "1"
+	"$phongboost"	"1.73216145"
+	"$phongfresnelranges"	"[1 1.05 1.25]"
+
+	"$envmap" "models\SW_Battlefront\shared\Killy"
+	"$basealphaenvmapmask"	"1"
+	"$envmaptint"	"[0.04 0.04 0.04]"
+	"$envmapfresnel"	"1"
+}

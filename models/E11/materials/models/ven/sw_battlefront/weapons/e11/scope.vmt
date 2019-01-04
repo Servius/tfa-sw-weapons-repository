@@ -1,0 +1,15 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/ven/SW_Battlefront/Weapons/e11/scope"
+	"$color2"	"[0.4 0.4 0.4]"
+	"$blendTintByBaseAlpha"	"1"
+
+	"$phongalbedotint" 1
+	"$phong" "1"
+	"$phongboost"	"1.73216145"
+	"$phongfresnelranges"	"[1 1.05 1.25]"
+
+
+	"$envmaptint"	"[0.04 0.04 0.04]"
+	"$envmapfresnel"	"1"
+}
