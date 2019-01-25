@@ -59,7 +59,10 @@ SWEP.Secondary.IronFOV = 30
 SWEP.ProjectileEntity = "dc17m_at_rocket2" --Entity to shoot
 SWEP.ProjectileVelocity = 500 --Entity to shoot's velocity
 
-function SWEP:Think()
+DEFINE_BASECLASS(SWEP.Base)
+
+function SWEP:Think2()
+	BaseClass.Think2(self)
 	if self.Weapon:Clip1() > 0 then
 		self.Weapon:SendViewModelAnim(ACT_VM_IDLE_DEPLOYED)
 	end

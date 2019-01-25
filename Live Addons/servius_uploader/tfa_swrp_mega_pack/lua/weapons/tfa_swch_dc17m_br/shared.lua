@@ -54,7 +54,10 @@ SWEP.Secondary.Ammo			= "none"
 SWEP.IronSightsPos 			= Vector (-4.7, -6, 0.3)
 SWEP.IronSightsAng 			= Vector (0.25,0,0)
 
-function SWEP:Think()	
+DEFINE_BASECLASS(SWEP.Base)
+
+function SWEP:Think2()
+	BaseClass.Think2(self)
 	local ClipPercentage = ((100/self.Primary.ClipSize)*self.Weapon:Clip1());
 	
 	if (ClipPercentage < 1) then
