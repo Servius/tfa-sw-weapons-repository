@@ -1,0 +1,6 @@
+{
+"title" : "[TFA Star Wars] Expanded Weapons Pack",
+"type" : "weapon",
+"tags" : ["fun","roleplay"],
+"ignore" : ["*.psd", "*.vcproj", "*.svn*"]
+}

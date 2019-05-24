@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"effects/sw_i/sw_laser_bit_red"
+	"$additive"		"1"
+	"$vertexcolor"	"1"
+}
