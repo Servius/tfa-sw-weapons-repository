@@ -1,0 +1,27 @@
+"VertexlitGeneric"
+{
+	$basetexture "servius/starwars/dc15x/t_dc15x_color"
+	$bumpmap "servius/starwars/dc15x/t_dc15x_normal"
+	$color2 "[0 0 0]"
+
+	$envmap "env_cubemap"
+	$envmaptint "[0.15 0.15 0.15]"
+	$envmapfresnel 1
+	$blendTintByBaseAlpha 1
+	$normalmapalphaenvmapmask 1
+	
+	$phong 1
+    $phongfresnelranges "[1 0.8 0]"
+	$phongboost	"2"
+    $phongexponenttexture "servius/starwars/dc15x/t_dc15x_exponent"
+    $nocull 1
+
+  	$emissiveBlendEnabled 1
+    $emissiveBlendTexture "dev/null" 
+    $emissiveBlendBaseTexture  "servius/starwars/dc15x/t_dc15x_emission"
+    $emissiveBlendScrollVector 0
+  //  $emissiveBlendFlowTexture "dev/null"
+    $emissiveBlendTint "[2 2 2]"
+    $emissiveBlendStrength 1
+    $emissiveBlendScrollVector "[0 0 0]"
+}
