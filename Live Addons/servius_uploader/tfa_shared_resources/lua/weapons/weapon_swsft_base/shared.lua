@@ -114,7 +114,7 @@ function SWEP:GetViewModelPosition( pos, ang )
 	
 	local fIronTime = self.fIronTime or 0
 
-	if ( !bIron && fIronTime < CurTime() - IRONSIGHT_TIME ) then 
+	if ( !bIron and fIronTime < CurTime() - IRONSIGHT_TIME ) then 
 		return pos, ang 
 	end
 	
@@ -197,7 +197,7 @@ function SWEP:DrawHUD()
 
 	-- If we're drawing the local player, draw the crosshair where they're aiming,
 	-- instead of in the center of the screen.
-	if ( self.Owner == LocalPlayer() && self.Owner:ShouldDrawLocalPlayer() ) then
+	if ( self.Owner == LocalPlayer() and self.Owner:ShouldDrawLocalPlayer() ) then
 
 		local tr = util.GetPlayerTrace( self.Owner )
 --		tr.mask = ( CONTENTS_SOLID|CONTENTS_MOVEABLE|CONTENTS_MONSTER|CONTENTS_WINDOW|CONTENTS_DEBRIS|CONTENTS_GRATE|CONTENTS_AUX )
