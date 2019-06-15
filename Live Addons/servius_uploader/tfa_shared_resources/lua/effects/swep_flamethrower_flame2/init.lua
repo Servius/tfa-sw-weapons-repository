@@ -18,7 +18,7 @@ local StartPos = self:GetTracerShootPos(self.Position, data:GetEntity(), data:Ge
 local HitPos = data:GetOrigin()
 
 //Check if the weapon is still there
-if data:GetEntity():IsValid() and StartPos and HitPos then
+if data:GetEntity():IsValid() && StartPos && HitPos then
 
 
 	//Draw burst of flame
