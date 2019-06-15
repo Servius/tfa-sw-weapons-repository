@@ -1,5 +1,5 @@
 SWEP.Gun					= ("tfa_voxel_rt97c") --Make sure this is unique.  Specically, your folder name.
-if (GetConVar(SWEP.Gun.."_allowed")) != nil then
+if (GetConVar(SWEP.Gun.."_allowed")) ~= nil then
 	if not (GetConVar(SWEP.Gun.."_allowed"):GetBool()) then SWEP.Base = "tfa_blacklisted" SWEP.PrintName = SWEP.Gun return end
 end
 SWEP.Base				= "tfa_3dscoped_base"
@@ -151,13 +151,13 @@ function SWEP:DrawHands()
         self.Owner.SWHands:AddEffects( EF_BONEMERGE )
         self.Owner.SWHands:SetNoDraw(true)
         self.Owner.SWHands.BoneMergedEnt = vm
-    elseif self.Owner.SWHands:GetParent() != vm then
+    elseif self.Owner.SWHands:GetParent() ~= vm then
         self.Owner.SWHands:SetModel("models/weapons/c_clonearms.mdl")
         self.Owner.SWHands:SetParent(vm)
         self.Owner.SWHands:SetPos(self.Owner:GetShootPos())
         self.Owner.SWHands:SetAngles(self.Owner:EyeAngles())
         self.Owner.SWHands:AddEffects( EF_BONEMERGE )
-    elseif self.Owner.SWHands:GetModel()!="models/weapons/c_clonearms.mdl" then
+    elseif self.Owner.SWHands:GetModel() ~= "models/weapons/c_clonearms.mdl" then
         self.Owner.SWHands:SetModel("models/weapons/c_clonearms.mdl")      
     end
    

@@ -182,7 +182,7 @@ spawnmenu.AddContentType( "swvehicleeu2", function( container, obj )
     end
     icon:SetAdminOnly( obj.admin )
     local Tooltip =  Format( "%s", obj.nicename )
-    if ( obj.info and obj.info!="" ) then Tooltip = Format( "%s\n\n%s", Tooltip, obj.info ) end
+    if ( obj.info and obj.info ~= "" ) then Tooltip = Format( "%s\n\n%s", Tooltip, obj.info ) end
     icon:SetTooltip(Tooltip);
     icon:SetColor( Color( 205, 92, 92, 255 ) )
     icon.DoClick = function()

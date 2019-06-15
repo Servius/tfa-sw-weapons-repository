@@ -77,7 +77,7 @@ function SWEP:DrawHands()
 		self.Owner.SWHands:AddEffects( EF_BONEMERGE )
 		self.Owner.SWHands:SetNoDraw(true)
 		self.Owner.SWHands.BoneMergedEnt = vm
-	elseif self.Owner.SWHands.BoneMergedEnt != vm then
+	elseif self.Owner.SWHands.BoneMergedEnt ~= vm then
 		self.Owner.SWHands:SetParent(vm)
 		self.Owner.SWHands:SetPos(self.Owner:GetShootPos())
 		self.Owner.SWHands:SetAngles(self.Owner:EyeAngles())
