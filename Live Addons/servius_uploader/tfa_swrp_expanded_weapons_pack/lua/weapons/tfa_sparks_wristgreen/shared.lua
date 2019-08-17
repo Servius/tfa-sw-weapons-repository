@@ -62,10 +62,7 @@ SWEP.Secondary.Ammo			= "none"
 SWEP.IronSightsPos 			= Vector (-3.9, -6, 2.5)
 SWEP.IronSightsAng 			= Vector (-0.3, -0.05, 0)
 
-DEFINE_BASECLASS(SWEP.Base)
-
-function SWEP:Think2()
-	BaseClass.Think2(self)
+function SWEP:Think()
 	if (self.Weapon:Clip1() < self.Primary.ClipSize) and SERVER then
 		if (CurrentTimer <= 0) then 
 			CurrentTimer = MaxTimer

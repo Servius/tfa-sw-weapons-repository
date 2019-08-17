@@ -30,7 +30,7 @@ function SWEP:DrawHands()
 	if not IsValid(vm) then return end
 
 	if not IsValid(self.Owner.SWHands) then
-		self.Owner.SWHands = ClientsideModel("models/weapons/c_clonearms.mdl")
+		self.Owner.SWHands = ClientsideModel("models/player/kylejwest/cgi3dphase1clone_c_arms/cgi3dphase1clone_c_arms.mdl")
 		self.Owner.SWHands:SetParent(vm)
 		self.Owner.SWHands:SetPos(self.Owner:GetShootPos())
 		self.Owner.SWHands:SetAngles(self.Owner:EyeAngles())
@@ -38,13 +38,13 @@ function SWEP:DrawHands()
 		self.Owner.SWHands:SetNoDraw(true)
 		self.Owner.SWHands.BoneMergedEnt = vm
 	elseif self.Owner.SWHands:GetParent() ~= vm then
-		self.Owner.SWHands:SetModel("models/weapons/c_clonearms.mdl")
+		self.Owner.SWHands:SetModel("models/player/kylejwest/cgi3dphase1clone_c_arms/cgi3dphase1clone_c_arms.mdl")
 		self.Owner.SWHands:SetParent(vm)
 		self.Owner.SWHands:SetPos(self.Owner:GetShootPos())
 		self.Owner.SWHands:SetAngles(self.Owner:EyeAngles())
 		self.Owner.SWHands:AddEffects(EF_BONEMERGE)
-	elseif self.Owner.SWHands:GetModel() ~= "models/weapons/c_clonearms.mdl" then
-		self.Owner.SWHands:SetModel("models/weapons/c_clonearms.mdl")
+	elseif self.Owner.SWHands:GetModel() ~= "models/player/kylejwest/cgi3dphase1clone_c_arms/cgi3dphase1clone_c_arms.mdl" then
+		self.Owner.SWHands:SetModel("models/player/kylejwest/cgi3dphase1clone_c_arms/cgi3dphase1clone_c_arms.mdl")
 	end
 
 	if self.Owner.SWHands then

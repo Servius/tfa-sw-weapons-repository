@@ -69,7 +69,7 @@ SWEP.Secondary.IronFOV = 70
 
 SWEP.IronSightsPos = Vector(-4.5, -7, -.5)
 SWEP.IronSightsAng = Vector(1, 0, 0)
-
+--[[
 SWEP.VElements = {
 	["element_name"] = { type = "Model", model = "models/weapons/w_dc15a_neue2.mdl", bone = "v_weapon.awm_parent", rel = "", pos = Vector(-0.011, -2.924, -5.414), angle = Angle(180, 0, -89.595), size = Vector(0.95, 0.95, 0.95), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
 }
@@ -78,7 +78,7 @@ SWEP.VElements = {
 	--["element_name2"] = { type = "Model", model = "models/weapons/w_dc15a_neue2.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(8.279, 0.584, -4.468), angle = Angle(0, -90, 160.731), size = Vector(0.884, 0.884, 0.884), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
 --}
 
-
+]]
 SWEP.BlowbackVector = Vector(0,-3,0.025)
 SWEP.Blowback_Only_Iron  = false
 
