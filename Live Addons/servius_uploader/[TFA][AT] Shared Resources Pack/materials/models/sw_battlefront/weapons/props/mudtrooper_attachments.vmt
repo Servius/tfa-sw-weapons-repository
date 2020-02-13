@@ -1,0 +1,16 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/SW_Battlefront/Weapons/props/mudtrooper_attachments"
+	"$bumpmap" "models/SW_Battlefront/Weapons/props/mudtrooper_attachments_nm"
+	"$blendTintByBaseAlpha"	"1"
+
+	"$phongalbedotint" 1
+	"$phong" "1"
+	"$phongboost"	".2"
+	"$phongfresnelranges"	"[1 1.05 1.25]"
+
+	"$envmap" "models\SW_Battlefront\shared\Killy"
+	"$$normalmapalphaenvmapmask"	"1"
+	"$envmaptint"	"[0.0001 0.0001 0.0001]"
+	"$envmapfresnel"	"1"
+}

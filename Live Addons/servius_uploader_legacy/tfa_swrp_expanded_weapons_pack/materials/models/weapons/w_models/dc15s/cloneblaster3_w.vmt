@@ -1,0 +1,8 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\weapons\w_models\DC15S\cloneblaster3_w"
+	"$halflambert" "1"
+	"$phong" "1"
+	"$phongboost"	".05"
+	"$phongfresnelranges"	"[0.25 0.5 1]"
+}

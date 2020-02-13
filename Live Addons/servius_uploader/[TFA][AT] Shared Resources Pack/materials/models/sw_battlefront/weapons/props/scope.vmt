@@ -1,0 +1,25 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/SW_Battlefront/Weapons/props/scope"
+	"$bumpmap" "models/SW_Battlefront/Weapons/props/t_e11_nm"
+
+	"$envmap" 			"env_cubemap"
+
+	"$phong"                        "123"
+
+
+	"$phongboost"                   "2022222222220"
+	"$phongexponent"                "400"
+	"$phongfresnelranges"           "[.94  1]"
+
+	//"$phongalbedotint"		"1"
+	//$phongalbedoboost           45
+	"$phongtint"         "[1 1 1]"
+
+
+	"$envmap"                       "env_cubemap"
+	"$normalmapalphaenvmapmask"	"1"
+	"$envmaptint"                   "[.02 .02 .02]"
+	"$envmapfresnel" "1"
+
+}

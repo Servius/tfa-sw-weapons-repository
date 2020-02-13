@@ -1,0 +1,5 @@
+"VertexLitGeneric"
+{
+	"$basetexture"	"HUD\killicons\ELG3A"
+	$translucent 1
+}

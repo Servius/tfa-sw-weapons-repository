@@ -1,0 +1,18 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\weapons\w_models\DC17M\DC17m_Rifle"
+	"$bumpmap" "models\weapons\w_models\DC17M\DC17m_Rifle_normal"
+	"$halflambert" "1"
+	"$selfillum" 1
+	"$nocull" 1
+	"$phong" "1"
+	"$phongexponenttexture" "models\weapons\w_models\DC17M\DC17m_Rifle_exp"
+	"$phongexponent" "5"
+	"$phongboost"	".2"
+	"$phongfresnelranges"	"[0.25 0.5 1]"
+
+	//"$detail" "models\weapons\w_models\DC17M\corroded_metal"
+	//"$detailscale" 10.300
+	//"$detailblendfactor" .65
+	//"$detailblendmode" 0
+}

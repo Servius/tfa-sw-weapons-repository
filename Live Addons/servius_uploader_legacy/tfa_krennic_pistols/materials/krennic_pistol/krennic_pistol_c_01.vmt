@@ -1,0 +1,5 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "krennic_pistol/Krennic_Pistol_C_01"
+	"$BumpMap" "krennic_pistol/Krennic_Pistol_N_01"
+}

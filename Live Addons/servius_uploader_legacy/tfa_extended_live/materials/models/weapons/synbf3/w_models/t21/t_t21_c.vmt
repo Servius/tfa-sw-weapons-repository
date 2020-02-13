@@ -1,0 +1,26 @@
+"VertexLitGeneric"
+{
+	$basetexture 				"models\weapons\synbf3\w_models\T21\T_T21_C"
+	$bumpmap 					"models\weapons\synbf3\w_models\T21\T_T21_C_N"
+
+	"$phong" "1"
+
+
+	"$phongboost" "1"
+	"$phongalbedoboost" "15"
+	"$phongfresnelranges" "[.83 .83 1]"
+
+	"$basemapalphaphongmask" "1"
+
+	"$phongalbedotint" "1"
+
+	"$phongdisablehalflambert" "1"
+
+	"$envmap" "env_cubemap"
+	"$envmapfresnel" "1"
+	"$envmaptint" 		"[.02 .02 .02]"
+
+
+
+
+}

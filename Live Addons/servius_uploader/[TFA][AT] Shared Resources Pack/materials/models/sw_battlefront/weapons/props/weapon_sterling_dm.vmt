@@ -1,0 +1,17 @@
+"VertexLitGeneric"
+{
+	"$basetexture"					"models/SW_Battlefront/Weapons/props/weapon_sterling_dm"
+	"$bumpmap"						"models/SW_Battlefront/Weapons/props/weapon_sterling_nm"
+	"$color2"	"[2 2 2]"
+
+	"$phong"						"1"
+	"$phongalbedotint"				"0"
+
+	"$phongboost"					"1.0"
+	"$phongexponent"				"5"
+	"$phongfresnelranges"			"[0.7 0.7 0.7]"
+
+
+	"$envmap"						"env_cubemap"
+	"$envmaptint"					"[0.002 0.002 0.002]"
+}

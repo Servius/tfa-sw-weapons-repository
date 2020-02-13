@@ -1,0 +1,13 @@
+"VertexlitGeneric"
+{
+$basetexture "models\weapons\starwars\firstorder\w_models\f11\f11_df"
+$bumpmap "models\weapons\starwars\firstorder\w_models\f11\f11_nm"
+$halflambert "1"	
+$phongexponent "10"
+$phongfresnelranges	"[5 6 8]"
+$phong 1
+$phongboost .25
+$phongtint "[1 1 1]"
+$ambientocclusion 1
+$nocull 1
+}

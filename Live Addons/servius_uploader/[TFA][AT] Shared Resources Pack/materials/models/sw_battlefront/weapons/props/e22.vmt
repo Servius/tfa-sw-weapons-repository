@@ -1,0 +1,17 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/SW_Battlefront/Weapons/props/e22"
+	"$bumpmap" "models/SW_Battlefront/Weapons/props/e22_n"
+	"$color2"	"[2.2 2.2 2.2]"
+	"$blendTintByBaseAlpha"	"1"
+
+	"$phongalbedotint" 1
+	"$phong" "1"
+	"$phongboost"	"1"
+	"$phongfresnelranges"	"[0.01 0.01 0.01]"
+
+	"$envmap" "models\SW_Battlefront\shared\Killy"
+	"$normalmapalphaenvmapmask"	"1"
+	"$envmaptint"	"[0.0001 0.0001 0.0001]"
+	"$envmapfresnel"	"1"
+}

@@ -1,0 +1,6 @@
+"VertexlitGeneric"
+{
+	$basetexture "models\KyleJWest\Shared\CloneHair"
+	$bumpmap "models\KyleJWest\Shared\CloneHairNorm"
+	$nodecal "1"
+}

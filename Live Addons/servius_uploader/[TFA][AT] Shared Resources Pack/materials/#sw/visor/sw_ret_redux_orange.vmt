@@ -1,0 +1,5 @@
+"UnlitGeneric"
+{
+	"$basetexture" "#sw/visor/sw_ret_redux_orange"
+	"$translucent" 1
+}

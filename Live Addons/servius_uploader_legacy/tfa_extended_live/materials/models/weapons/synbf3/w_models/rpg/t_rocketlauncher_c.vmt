@@ -1,0 +1,5 @@
+"VertexLitGeneric"
+{
+	$basetexture 				"weapons\synbf3\w_models\RPG\T_RocketLauncher_C"
+	$bumpmap 					"weapons\synbf3\w_models\RPG\T_RocketLauncher_C_N"	
+}

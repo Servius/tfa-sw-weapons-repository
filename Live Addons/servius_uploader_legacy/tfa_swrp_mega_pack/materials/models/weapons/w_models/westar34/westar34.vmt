@@ -1,0 +1,15 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\weapons\w_models\WESTAR34\WESTAR34"
+	"$bumpmap" "models\weapons\w_models\WESTAR34\WESTAR34_n"
+	"$halflambert" "1"
+	"$translucent" 1
+	"$alphatest" 1
+	"$Nocull" 1
+
+	"$phong" "1"
+	"$phongexponenttexture" "models\weapons\w_models\WESTAR34\WESTAR34_s"
+	"$phongexponent" "0"
+	"$phongboost"	".2"
+	"$phongfresnelranges"	"[0.25 0.5 1]"
+}

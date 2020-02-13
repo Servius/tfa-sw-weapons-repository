@@ -1,0 +1,17 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/SW_Battlefront/Weapons/props/wires"
+	"$bumpmap" "models/SW_Battlefront/Weapons/props/wires_n"
+	"$color2"	"[0.4 0.4 0.4]"
+	"$blendTintByBaseAlpha"	"1"
+
+	"$phongalbedotint" 1
+	"$phong" "1"
+	"$phongboost"	"1.73216145"
+	"$phongfresnelranges"	"[1 1.05 1.25]"
+
+	"$envmap" "models\SW_Battlefront\shared\Killy"
+	"$$normalmapalphaenvmapmask"	"1"
+	"$envmaptint"	"[0.0002 0.0002 0.0002]"
+	"$envmapfresnel"	"1"
+}
