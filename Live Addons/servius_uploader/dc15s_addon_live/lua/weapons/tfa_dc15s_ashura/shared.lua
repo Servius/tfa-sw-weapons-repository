@@ -29,12 +29,12 @@ SWEP.AutoSwitchFrom			= false
 SWEP.SafetyPos =  Vector(0, 0, 0)
 SWEP.SafetyAng = Vector(-10, 10, 0)
 
-SWEP.Primary.Damage			= 30
+SWEP.Primary.Damage			= 40
 SWEP.Primary.NumShots		= 1
 SWEP.Primary.Spread			= 0.009
 SWEP.Primary.IronAccuracy = .001	-- Ironsight accuracy, should be the same for shotguns
 SWEP.Primary.ClipSize		= 35
-SWEP.Primary.RPM = 400
+SWEP.Primary.RPM = 86/0.25
 SWEP.Primary.DefaultClip	= 50
 SWEP.Primary.Automatic		= true
 SWEP.Primary.Ammo			= "ar2"
