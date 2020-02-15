@@ -40,6 +40,7 @@ ATTACHMENT.WeaponTable = {
 	["RTOpaque"] = true,
 	["RTMaterialOverride"] = -1,
 	["RTScopeAttachment"] = -1,
+	["IronSightsSensitivity"] = 0.2,
 	--["ScopeReticule_Scale"] = {2.5,2.5}
 }
 
@@ -186,7 +187,7 @@ function ATTACHMENT:Detach(wep)
 	wep.RTCode = wep.RTCodeOld
 	wep.RTCodeOld = nil
 end
---]]
+
 if not TFA_ATTACHMENT_ISUPDATING then
 	TFAUpdateAttachments()
 end

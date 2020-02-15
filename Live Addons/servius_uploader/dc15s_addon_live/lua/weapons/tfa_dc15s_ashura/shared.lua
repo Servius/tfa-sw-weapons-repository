@@ -70,7 +70,9 @@ SWEP.Blowback_Only_Iron  = false
 SWEP.DoProceduralReload = false
 SWEP.ProceduralReloadTime = 2.5
 
-SWEP.MuzzleFlashEffect 		= "tfa_muzzleflash_cryo"
+SWEP.DoMuzzleFlash 					= true
+SWEP.CustomMuzzleFlash 				= true
+SWEP.MuzzleFlashEffect 				= "rw_sw_muzzleflash_blue"
 		
 SWEP.GrappleHookSound			= "weapons/rpg/shotdown.wav"
 SWEP.GrappleMoveSound			= "weapons/tripwire/ropeshoot.wav"

@@ -18,8 +18,8 @@ ATTACHMENT.Icon = "entities/att_explosive_ammo.png"
 ATTACHMENT.WeaponTable = {
 	["Primary"] = {
 		["Damage"] = 600,
-		["RPM"] = 50,
-		["ClipSize"] = 25,
+		["RPM"] = 200,
+		["ClipSize"] = 75,
 		--["DamageTypeHandled"] = true,
 		["DamageType"] = DMG_BLAST,
 		["AmmoConsumption"] = 25,
@@ -29,11 +29,13 @@ ATTACHMENT.WeaponTable = {
 
 function ATTACHMENT:Attach(wep)
 	wep.ImpactEffect = "sw_explosion"
+	wep.MuzzleFlashEffect = "rw_sw_muzzleflash_green"
 	wep:Unload()
 end
 
 function ATTACHMENT:Detach(wep)
 	wep.ImpactEffect = "rw_sw_impact_blue"
+	wep.MuzzleFlashEffect = "rw_sw_muzzleflash_blue"
 	wep:Unload()
 end
 

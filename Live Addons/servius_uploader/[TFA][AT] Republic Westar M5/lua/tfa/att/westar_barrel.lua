@@ -25,6 +25,8 @@ ATTACHMENT.WeaponTable = {
 		["Damage"] = function( wep, val) return val * 1.3 end,
 	},
 	["SelectiveFire"] = false,
+	["DoMuzzleFlash"] = false,
+	["CustomMuzzleFlash"] = false,
 	
  }
 

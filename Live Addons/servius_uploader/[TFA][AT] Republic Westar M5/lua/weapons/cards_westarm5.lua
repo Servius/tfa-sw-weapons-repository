@@ -26,7 +26,11 @@ SWEP.IronInSound 					= nil
 SWEP.IronOutSound 					= nil
 SWEP.CanBeSilenced					= false
 SWEP.Silenced 						= false
-SWEP.DoMuzzleFlash 					= false
+
+SWEP.DoMuzzleFlash 					= true
+SWEP.CustomMuzzleFlash 				= true
+SWEP.MuzzleFlashEffect 				= "rw_sw_muzzleflash_blue"
+
 SWEP.SelectiveFire					= true
 SWEP.DisableBurstFire				= false
 SWEP.OnlyBurstFire					= false
