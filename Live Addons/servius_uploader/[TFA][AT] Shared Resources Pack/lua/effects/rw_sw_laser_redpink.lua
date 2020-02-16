@@ -1,10 +1,10 @@
 
-TRACER_FLAG_USEATTACHMENT	= 0x0002
-SOUND_FROM_WORLD			= 0
-CHAN_STATIC					= 6
+TRACER_FLAG_USEATTACHMENT 	= 0x0002
+SOUND_FROM_WORLD 			= 0
+CHAN_STATIC 				= 6
 
-EFFECT.Speed				= 16384
-EFFECT.Length				= 175
+EFFECT.Speed 				= 16384
+EFFECT.Length 				= 175
 
 local MaterialMain			= Material( "effect/sw_l/rw_sw_laser_m_redpink" )
 local MaterialFront			= Material( "effect/sw_l/rw_sw_laser_f_redpink" )
@@ -22,9 +22,9 @@ function EFFECT:GetTracerOrigin(data)
 
 		if (entity:IsWeapon() and entity:IsCarriedByLocalPlayer()) then
 			-- can't be done, can't call the real function
-			-- local origin = weapon:GetTracerOrigin();
+			-- local origin = weapon:GetTracerOrigin()
 			-- if( origin ) then
-			-- 	return origin, angle, entity;
+			-- 	return origin, angle, entity
 			-- end
 			-- use the view model
 			local pl = entity:GetOwner()
@@ -69,7 +69,7 @@ function EFFECT:Init(data)
 	end
 end
 
-
+--concommand.Add("sv_dlight")
 function EFFECT:Think()
 	self.LifeTime = self.LifeTime - FrameTime()
 	self.StartTime = self.StartTime + FrameTime()
@@ -105,7 +105,17 @@ function EFFECT:Render()
 	local startPos = self.StartPos + self.Normal * startDistance
 	local endPos = self.StartPos + self.Normal * endDistance
 	render.SetMaterial(MaterialFront)
-	render.DrawSprite(endPos, 8, 8, color_white)
+	render.DrawSprite(endPos, 6, 6, color_white)
 	render.SetMaterial(MaterialMain)
-	render.DrawBeam(startPos, endPos, 10, 0, 1, color_white)
+	render.DrawBeam(startPos, endPos, 6, 0, 1, color_white)
 end
+
+--[[
+
+local MaterialMain			= Material( "effect/sw_l/rw_sw_laser_m_redpink" )
+local MaterialFront			= Material( "effect/sw_l/rw_sw_laser_f_redpink" )
+local DynamicTracer 		= GetConVar("cl_dynamic_tracer")
+			dlight.r = 255
+			dlight.g = 0
+			dlight.b = 50
+]]

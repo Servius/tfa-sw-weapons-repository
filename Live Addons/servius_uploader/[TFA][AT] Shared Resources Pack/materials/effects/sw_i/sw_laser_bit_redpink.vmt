@@ -1,6 +1,6 @@
 "UnlitGeneric"
 {
-	"$basetexture"		"effect/sw_i/sw_laser_bit_redpink"
+	"$basetexture"		"effects/sw_i/sw_laser_bit_redpink"
 	"$additive"		"1"
 	"$vertexcolor"	"1"
 }

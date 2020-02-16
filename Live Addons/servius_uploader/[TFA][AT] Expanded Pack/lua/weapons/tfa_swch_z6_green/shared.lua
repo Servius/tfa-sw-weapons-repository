@@ -7,14 +7,18 @@ end
 if ( CLIENT ) then
 
 	SWEP.PrintName			= "Z6 Rotary Blaster Green"			
-	SWEP.Author				= "TFA"
+	SWEP.Author				= "TFA, SeNNoX, Servius"
 	SWEP.ViewModelFOV      	= 50
 	SWEP.Slot				= 4
 	SWEP.SlotPos			= 72	
 end
 
 SWEP.HoldType				= "crossbow"
-SWEP.Base					= "tfa_swsft_base_servius"
+SWEP.Base					= "tfa_swsft_base"
+
+SWEP.DoMuzzleFlash 					= true
+SWEP.CustomMuzzleFlash 				= true
+SWEP.MuzzleFlashEffect 				= "rw_sw_muzzleflash_green"
 
 SWEP.Category = "TFA Star Wars"
 
@@ -40,7 +44,7 @@ sound.Add( {
 	name = "TFA_SW_Z6.Fire",
 	channel = CHAN_USER_BASE+11,
 	volume = 1.0,
-	level = 100,
+	level = 120,
 	pitch = { 95, 110 },
 	sound = "weapons/z6_rotary/repeat-1.wav"
 } )
@@ -95,9 +99,20 @@ SWEP.Primary.Spread			= 0.01
 SWEP.Primary.ClipSize		= 250
 SWEP.Primary.RPM = 250
 SWEP.Primary.RPM_Base = 120
-SWEP.Primary.RPM_Max = 1200
+SWEP.Primary.RPM_Max = 525
 SWEP.Primary.RPM_TransitionTime = 4
-SWEP.Primary.DefaultClip	= 1000
+SWEP.Primary.RPM_SpoolDownMultiplier = 1
+--[[ 
+
+SWEP.Primary.RPM_SpoolDownMultiplier
+
+
+If you set it to 10, for example, it will take 1/10 as much time to fully slow down as it took to charge up
+Basically almost instantly
+Higher makes it take longer, and if you set it as 1 it will revert to a static spin down equivalent to the transition time. 
+
+]]
+SWEP.Primary.DefaultClip	= 250
 SWEP.Primary.Automatic		= true
 SWEP.Primary.Ammo			= "ar2"
 SWEP.TracerName = "rw_sw_laser_green"
@@ -115,7 +130,7 @@ SWEP.DoProceduralReload = true
 SWEP.ProceduralReloadTime = 3
 
 SWEP.WElements = {
-	//["element_name"] = { type = "Model", model = "models/weapons/w_z6_rotary_blaster.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(20.194, 1, -8.351), angle = Angle(-21.119, 0, 180), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
+	--["element_name"] = { type = "Model", model = "models/weapons/w_z6_rotary_blaster.mdl", bone = "ValveBiped.Bip01_R_Hand", rel = "", pos = Vector(20.194, 1, -8.351), angle = Angle(-21.119, 0, 180), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
 }
 
 SWEP.Offset = {
@@ -178,12 +193,15 @@ function SWEP:Think2()
 	end
 
 	oldsh = sh
-	shfac = sh and 1 or 0
+	shfac = sh and 1 or self.Primary.RPM_SpoolDownMultiplier
 	rpmfac = sh and self.Primary.RPM_Max or self.Primary.RPM_Base
-	self.Primary.RPM = math.Approach(self.Primary.RPM, rpmfac, rpmdif / self.Primary.RPM_TransitionTime * TFA.FrameTime())
-	self.BarrelVelocity = math.Clamp(self.BarrelVelocity + (sh and self.BarrelAcceleration or -self.BarrelFriction) * TFA.FrameTime(), 0, self.BarrelVelocityMax)
-	self.BarrelRotation = math.NormalizeAngle(self.BarrelRotation + self.BarrelVelocity * TFA.FrameTime())
-	self.ViewModelBoneMods["barrel"].angle.p = self.BarrelRotation
+	self.Primary.RPM = math.Approach(self.Primary.RPM, rpmfac, rpmdif / self.Primary.RPM_TransitionTime * (TFA.FrameTime()*shfac))
+	self.BarrelVelocity = math.Clamp(self.BarrelVelocity + (sh and self.BarrelAcceleration or -self.BarrelFriction) * (TFA.FrameTime()*shfac), 0, self.BarrelVelocityMax)
+	self.BarrelRotation = math.NormalizeAngle(self.BarrelRotation + self.BarrelVelocity * (TFA.FrameTime()*shfac))
+	if CLIENT then
+		self.ViewModelBoneMods["barrel"].angle.p = self.BarrelRotation
+	end
+	self:ClearStatCache()
 end
 
 SWEP.MoveSpeed = 0.8

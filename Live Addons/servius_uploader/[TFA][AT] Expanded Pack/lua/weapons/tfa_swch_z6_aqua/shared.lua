@@ -6,7 +6,7 @@ end
 
 if ( CLIENT ) then
 
-	SWEP.PrintName			= "Z6 Rotary Blaster Yellow"			
+	SWEP.PrintName			= "Z6 Rotary Blaster Aqua"			
 	SWEP.Author				= "TFA, SeNNoX, Servius"
 	SWEP.ViewModelFOV      	= 50
 	SWEP.Slot				= 4
@@ -18,7 +18,7 @@ SWEP.Base					= "tfa_swsft_base"
 
 SWEP.DoMuzzleFlash 					= true
 SWEP.CustomMuzzleFlash 				= true
-SWEP.MuzzleFlashEffect 				= "rw_sw_muzzleflash_yellow"
+SWEP.MuzzleFlashEffect 				= "rw_sw_muzzleflash_aqua"
 
 SWEP.Category = "TFA Star Wars"
 
@@ -115,7 +115,7 @@ Higher makes it take longer, and if you set it as 1 it will revert to a static s
 SWEP.Primary.DefaultClip	= 250
 SWEP.Primary.Automatic		= true
 SWEP.Primary.Ammo			= "ar2"
-SWEP.TracerName = "rw_sw_laser_yellow"
+SWEP.TracerName = "rw_sw_laser_aqua"
 
 SWEP.Secondary.Automatic	= false
 SWEP.Secondary.Ammo			= "none"
