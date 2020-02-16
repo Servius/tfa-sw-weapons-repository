@@ -2,7 +2,7 @@ if ( SERVER ) then
 	AddCSLuaFile( "shared.lua" )
 end
 if ( CLIENT ) then
-	SWEP.PrintName			= "DC-15s"			
+	SWEP.PrintName			= "DC-15s Weaker"			
 	SWEP.Author				= "TFA, Servius"
 	SWEP.Slot				= 2
 	SWEP.SlotPos			= 3
@@ -29,12 +29,12 @@ SWEP.AutoSwitchFrom			= false
 SWEP.SafetyPos =  Vector(0, 0, 0)
 SWEP.SafetyAng = Vector(-10, 10, 0)
 
-SWEP.Primary.Damage			= 30
+SWEP.Primary.Damage			= 25
 SWEP.Primary.NumShots		= 1
 SWEP.Primary.Spread			= 0.009
 SWEP.Primary.IronAccuracy = .001	-- Ironsight accuracy, should be the same for shotguns
 SWEP.Primary.ClipSize		= 35
-SWEP.Primary.RPM = 300 
+SWEP.Primary.RPM = 280 
 SWEP.Primary.DefaultClip	= 50
 SWEP.Primary.Automatic		= true
 SWEP.Primary.Ammo			= "ar2"
