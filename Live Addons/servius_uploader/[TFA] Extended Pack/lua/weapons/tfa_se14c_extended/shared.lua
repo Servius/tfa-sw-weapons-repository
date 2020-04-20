@@ -65,7 +65,7 @@ SWEP.WElements = {
 SWEP.BlowbackVector = Vector(0,-3,0.025)
 SWEP.Blowback_Only_Iron  = false
 SWEP.DoProceduralReload = true
-SWEP.ProceduralReloadTime = 2
+SWEP.ProceduralReloadTime = 2.1
 ----Swft Base Code
 SWEP.TracerCount = 1
 SWEP.MuzzleFlashEffect = ""
